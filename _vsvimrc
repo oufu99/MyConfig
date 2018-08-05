@@ -1,0 +1,23 @@
+set backspace=indent,eol,start
+:inoremap jj <Esc>hh
+
+"选择单词开始  只在插入模式用,如果是normal模式会导致s反映变慢
+
+:inoremap zw <Esc>bve
+:nmap zw <Esc>bve
+:inoremap ee <Esc>$a
+:nmap ee <Esc>$i
+:inoremap bb <Esc>^i
+:nmap bb <Esc>^i
+:inoremap ze <Esc>%i
+:nmap ze <Esc>%i
+:inoremap ;; <Esc>$a;
+:nmap ;; $a;
+
+
+:inoremap ii ""<Esc>i
+:inoremap ik ()<Esc>i
+:inoremap ij {<Enter>
+:inoremap ;; <Esc>$a;
+
+"选择单词结束
