@@ -1,23 +1,22 @@
-set backspace=indent,eol,start
+ï»¿set backspace=indent,eol,start
+
 :inoremap jj <Esc>hh
 
-"Ñ¡Ôñµ¥´Ê¿ªÊ¼  Ö»ÔÚ²åÈëÄ£Ê½ÓÃ,Èç¹ûÊÇnormalÄ£Ê½»áµ¼ÖÂs·´Ó³±äÂý
+"Ñ¡Ôñµ¥´ 
 
-:inoremap zw <Esc>bve
-:nmap zw <Esc>bve
-:inoremap ee <Esc>$a
-:nmap ee <Esc>$i
-:inoremap bb <Esc>^i
-:nmap bb <Esc>^i
-:inoremap ze <Esc>%i
-:nmap ze <Esc>%i
-:inoremap ;; <Esc>$a;
-:nmap ;; $a;
+:inoremap ;e <Esc>bve
+:nmap ;e <Esc>bve
+ 
 
-
+ 
 :inoremap ii ""<Esc>i
 :inoremap ik ()<Esc>i
-:inoremap ij {<Enter>
-:inoremap ;; <Esc>$a;
+:inoremap ij {<Enter>}
 
-"Ñ¡Ôñµ¥´Ê½áÊø
+:inoremap ;; <Esc>$a;
+:nmap ;; <Esc>$a;
+:inoremap ;x <Esc>:vsc æ–‡ä»¶.é™¤æ­¤ä¹‹å¤–å…¨éƒ¨å…³é—­<Enter>i
+:nmap ;x <Esc>:vsc æ–‡ä»¶.é™¤æ­¤ä¹‹å¤–å…¨éƒ¨å…³é—­<Enter>i
+ 
+
+ 
