@@ -5,7 +5,7 @@ http://hzyil.mobile.cn/m/custom/hzyil/Agency_promotion.aspx
 
 
 http://hzyil.mobile.cn/m/custom/hzyil/Application_agency.aspx?pId=0&manuid=10596&level=2425
-
+a123456
 
 
 
@@ -15,3 +15,6 @@ serp3_test123
 状态:
 12 注册送保证金
 13 注册送货款
+14 招募奖
+15 跨级推荐奖
+16 支付下级代理的跨级推荐奖
