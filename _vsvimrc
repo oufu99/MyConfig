@@ -17,6 +17,10 @@
 :nmap ;; <Esc>$a;
 :inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<Enter>i
 :nmap ;x <Esc>:vsc 文件.除此之外全部关闭<Enter>i
- 
 
- 
+"向前进一格,用来进入() ""等位置
+:inoremap ;i <ESC>ha
+:nmap ;; <Esc>$a;
+
+"删除
+:inoremap xx <BS>
