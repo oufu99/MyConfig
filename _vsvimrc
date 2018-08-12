@@ -20,7 +20,7 @@
 
 "向前进一格,用来进入() ""等位置
 :inoremap ;i <ESC>ha
-:nmap ;; <Esc>$a;
+:nmap ;i <Esc>$a;
 
 "删除
 :inoremap xx <BS>
