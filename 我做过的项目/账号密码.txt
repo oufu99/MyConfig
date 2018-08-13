@@ -1,0 +1,92 @@
+sql账号密码
+10.1.20.120,5388    
+serp
+PTDSe/XycOhQWQ8Cu5tIZg
+ 
+ sa  WA@@@Wei315#@#WinGG
+application  serp3_test123
+
+
+admin  
+PT_DSe/XycOhQW_Q8Cu5tIZg_sg
+
+
+
+
+1.
+
+数据库连接字符串
+server=10.1.10.1,5388;Uid=serp3;Pwd=PTDSe/XycOhQWQ8Cu5tIZg;DataBase=serp3_test;Connection Timeout=120;Application Name=zhihui_test
+
+正式环境:
+server=10.1.20.110,5388;Uid=serp;Pwd=PTDSe/XycOhQWQ8Cu5tIZg;DataBase=serp3;Connection Timeout=120;Application Name=serp3_test
+
+正式环境配置地址的账号
+http://admin.onlyid.cn/login.aspx
+
+
+ http://admin.zpserp.com/sysadmin/index.aspx
+zpserp是测试环境
+onlyId才是正式的环境
+
+http://serp.onlyid.cn/sysadmin/index.aspx
+正式环境的测试账号  serp
+
+打好断点.然后调试=>附加进程=>找到w3cxx进程后面对应IIS里绑定的名称,点进去然后登录就可以了
+
+
+测试环境:
+http://kaifa.onlyid.cn 
+kaifa/123456
+
+
+正式环境:
+http://serp.onlyid.cn/login.aspx
+serp/123456
+
+sql:
+10.1.10.1,5388
+serp3
+PTDSe/XycOhQWQ8Cu5tIZg
+
+
+
+ftp地址
+ip：10.1.10.1
+端口：1614
+
+测试环境：
+账号：kaifa    
+密码：kaifa12312
+
+正式环境：
+账号：zhengshi
+密码：zhengshi12312
+
+
+其他公司的serp的登录url和账号
+http://zhmy.onlyid.cn/
+账号：zhmy 
+密码：zh20170510
+
+tfs:
+http://182.254.229.178:8080/tfs/serp3.0/SERP/SERP%20%E5%9B%A2%E9%98%9F
+oujialin
+123456abc@
+
+连接的时候要用http://  加上这个才可以填http://182.254.229.178:8080  
+
+
+oa:oujialin   ojl2018333
+
+
+泡面
+oujialin  oujialin@123
+
+svn 
+https://113.10.188.95/svn/ymt
+yanfa 123456
+
+https://43.230.164.82/svn/ymt/一码通独立服务器资料
+如果检出有问题,就浏览版本库,把要检出的文件夹给弄出来就可以了
+

@@ -7,7 +7,7 @@ http://hzyil.mobile.cn/m/custom/hzyil/Agency_promotion.aspx
 http://hzyil.mobile.cn/m/custom/hzyil/Application_agency.aspx?pId=0&manuid=10596&level=2425
 a123456
 
-
+后台可维护,怎么维护,固定三张 或者如果为空就不显示
 
 http://hzyil.web.cn/SysAdmin/Pages/custom/hzyil/tb_customerList.aspx
 serp3_test123
