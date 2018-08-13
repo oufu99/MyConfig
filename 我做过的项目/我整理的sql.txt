@@ -1,0 +1,70 @@
+ProcessManuMappingProcedure 代码中的调用
+
+查询执行完一个存储过程后继续执行其他的存储过程
+SELECT procedure_name FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10532
+
+PC新的AppCode记录表
+ SELECT  * FROM tb_manumethod_setting WHERE manu_id =10596
+
+SELECT * FROM  dbo.tb_wx_userinfo_10471 --微信关注用户表
+
+-------红包记录---------
+SELECT * FROM tb_activity_history_1200_10471 --红包历史记录
+SELECT * FROM tb_activity_prize_history_1200_10471--红包中奖纪录
+SELECT * FROM dbo.tb_activity_redPacket_send_result_1200_10471 --红包返回结果表
+-------红包记录---------
+
+SELECT * FROM dbo.tb_public_product WHERE manufacturer_id=10471--商品表
+
+SELECT * FROM dbo.tb_public_product_actions WHERE manufacturer_id=10471--商品具体信息表
+
+
+SELECT * FROM dbo.tb_personal_center_10471--个人中心表
+
+
+SELECT * FROM dbo.tb_personal_center_in_10471--个人中心红包明细表
+
+SELECT * FROM dbo.tb_personal_center_out_10471--现金红包提现表
+
+SELECT * FROM dbo.tb_personal_center_withdrawals_10471--个人中心提现明细表 
+
+
+ 
+
+
+SELECT * FROM dbo.tb_activity_mode --活动表
+
+SELECT * FROM dbo.tb_activity_mode_custom--活动列表等等
+
+
+ SELECT * FROM tb_wx_subscribePushSet WHERE event_key= 'qrscene_314' --公众号返回表执行
+
+
+ 
+ 
+
+
+SELECT * FROM  dbo.tb_sales --导购表
+
+SELECT * FROM tb_sales_scan_history_10508 --导购扫码记录
+
+SELECT * FROM tb_sales_redPackage_history_10508 --导购领取红包记录
+
+SELECT * FROM  dbo.tb_goods--商品表
+
+SELECT * FROM tb_goods_relation_code--表层码记录
+
+SELECT * FROM tb_public_product WHERE manufacturer_id=10508  --活动表（路径跳转）
+
+SELECT * FROM dbo.tb_product WHERE manufacturer_id=10508 --商品表
+
+SELECT * FROM dbo.tb_activity_public_product WHERE  manufacturer_id=10496 --关联表
+ //通过returnid找到活动id
+            string sql = "SELECT activity_id FROM dbo.tb_activity_public_product WHERE  public_product_id=(SELECT tb_public_productID FROM tb_public_product WHERE return_id='" + returnid + "')";
+SELECT return_id FROM tb_public_product WHERE tb_public_productID=(	SELECT public_product_id FROM tb_activity_public_product WHERE manufacturer_id=10496 AND activity_id=1285)
+
+ 
+
+--根据key查到权限设置
+EXEC SearchPower 'isShowChouJiangAddress' 
+ 
