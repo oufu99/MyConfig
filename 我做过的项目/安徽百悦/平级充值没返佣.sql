@@ -1,4 +1,4 @@
-SELECT oldparent_id, upLevel_time,* FROM tb_customer_10563 WHERE  tb_customerID=167
+
 SELECT oldparent_id, upLevel_time,* FROM tb_customer_10563 WHERE tb_customerID=108
 
 
@@ -9,4 +9,11 @@ SELECT oldparent_id, upLevel_time,* FROM tb_customer_10563 WHERE tb_customerID=1
 
 	SELECT * FROM cust_payment_order_10563 WHERE cust_id=167
 
-	SELECT * FROM cust_payment_order_10563 WHERE orderNum='201808060753076252'
+	SELECT oldparent_id, upLevel_time,* FROM tb_customer_10563 WHERE name='Íõº£Ñà'
+	SELECT * FROM cust_payment_order_10563 WHERE orderNum='201808040629445081'
+
+	  SELECT *
+            FROM    tb_customer_audit_10563
+            WHERE   to_audit_customer_id = 138;
+
+			SELECT * FROM tb_user WHERE manufacturer_id=10563 AND custid=138

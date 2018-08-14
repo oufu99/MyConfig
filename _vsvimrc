@@ -15,8 +15,7 @@
 
 :inoremap ;; <Esc>$a;
 :nmap ;; <Esc>$a;
-:inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<Enter>i
-:nmap ;x <Esc>:vsc 文件.除此之外全部关闭<Enter>i
+
 
 "向前进一格,用来进入() ""等位置
 :inoremap ;i <ESC>ha
@@ -24,3 +23,18 @@
 
 "删除
 :inoremap xx <BS>
+
+
+"操作Vs
+:inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<Enter>i
+:nmap ;x <Esc>:vsc 文件.除此之外全部关闭<Enter>i
+
+
+:inoremap ;s <Esc>:vsc 生成.生成选定内容<Enter>i
+:nmap ;s <Esc>:vsc 生成.生成选定内容<Enter>i
+
+
+
+
+
+
