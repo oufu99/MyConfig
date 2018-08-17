@@ -7,6 +7,8 @@ http://youxu.mobile.cn/m/custom/pinkmifei/Application_agency.aspx?pId=0&manuid=1
 
 http://youxu.mobile.cn/m/custom/pinkmifei/Mine.aspx
 
-上级审核的，10588
+ 
 
-审核直属的看下10407
+先做PC端审核,再做手机端
+
+然后升级

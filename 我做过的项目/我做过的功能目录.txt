@@ -14,6 +14,9 @@
 米菲代理商注册,同意协议.H5上传
 添之爱
 
+自定义代理商列表的操作列
+优旭生物
+可以先在查询的时候'' as custHasAuditLowLvl ,然后在操作列拼接的时候直接加就可以了<%=custHasAuditLowLvl%>
 
 米菲通用注册H5注册,通用算parentid
 安徽百悦
