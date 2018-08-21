@@ -1,12 +1,14 @@
 ProcessManuMappingProcedure 代码中的调用
 
 查询执行完一个存储过程后继续执行其他的存储过程
-SELECT procedure_name FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10532
+SELECT procedure_name FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10596
 
 PC新的AppCode记录表
  SELECT  * FROM tb_manumethod_setting WHERE manu_id =10596
 
 SELECT * FROM  dbo.tb_wx_userinfo_10471 --微信关注用户表
+
+SELECT * FROM tb_wx_subscribePushSet WHERE event_key= 'qrscene_314' --公众号返回表执行
 
 -------红包记录---------
 
@@ -34,7 +36,7 @@ SELECT * FROM dbo.tb_personal_center_withdrawals_10471--个人中心提现明细表
  
 
 
- SELECT * FROM tb_wx_subscribePushSet WHERE event_key= 'qrscene_314' --公众号返回表执行
+
  
  
 --定制活动拦截表
