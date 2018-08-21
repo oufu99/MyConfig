@@ -35,7 +35,11 @@ SELECT * FROM dbo.tb_personal_center_withdrawals_10471--个人中心提现明细表
 
 
  SELECT * FROM tb_wx_subscribePushSet WHERE event_key= 'qrscene_314' --公众号返回表执行
-
+ 
+ 
+--定制活动拦截表
+SELECT * FROM tb_activity_catalog_mode WHERE manufacturer_id=10500
+ 
 
  
  
