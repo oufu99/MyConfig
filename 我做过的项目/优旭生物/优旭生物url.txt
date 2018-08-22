@@ -3,11 +3,13 @@ http://youxu.web.cn/sysadmin/pages/custom/youxu/youxu_setting.aspx
 http://youxu.mobile.cn/m/custom/pinkmifei/Mine.aspx
 
 
-
 http://youxu.mobile.cn/m/custom/pinkmifei/Application_agency.aspx?pId=0&manuid=10602&level=2474
 
 
-http://youxu.web.cn/SysAdmin/Pages/custom/youxu/tb_customerList.aspx?
+http://youxu.mobile.cn/m/custom/pinkmifei/Application_agency.aspx?pId=6&manuid=10602&level=2475
+
+
+http://youxu.web.cn/SysAdmin/Pages/custom/youxu/tb_customerList.aspx
 
 18820136666
 a123456

@@ -1,4 +1,6 @@
-ProcessManuMappingProcedure 代码中的调用
+ProcessManuMappingProcedure 代码中的调用后面执行存储过程的方法名
+
+
 
 查询执行完一个存储过程后继续执行其他的存储过程
 SELECT procedure_name FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10596
