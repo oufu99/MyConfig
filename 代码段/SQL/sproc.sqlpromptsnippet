@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sproc</Title>
+      <Shortcut>sproc</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[SELECT * FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10596]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

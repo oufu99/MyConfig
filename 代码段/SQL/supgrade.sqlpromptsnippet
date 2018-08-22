@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>supgrade</Title>
+      <Shortcut>supgrade</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[SELECT * FROM tb_cust_upgradeorder_10596]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

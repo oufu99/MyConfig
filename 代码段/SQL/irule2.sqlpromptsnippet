@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>irule2</Title>
+      <Shortcut>irule2</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[ INSERT dbo.tb_rule_mapping_class
+         ( manu_id ,
+           className ,
+           Json ,
+           filter_keyword ,
+           new_url
+         )
+ VALUES  ( 10596 , -- manu_id - int
+           N'Business' , -- className - nvarchar(1000)
+           N'' , -- Json - nvarchar(500)
+           N'/m/custom/pinkmifei/Agency_promotion.aspx' , -- filter_keyword - nvarchar(2000)
+           N'/m/custom/hzyil/Agency_promotion.aspx'  -- new_url - nvarchar(2000)
+         )]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

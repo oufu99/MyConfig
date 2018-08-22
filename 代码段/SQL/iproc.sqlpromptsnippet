@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>iproc</Title>
+      <Shortcut>iproc</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[ INSERT dbo.tb_manu_mapping_procedure
+         ( manu_id, procedure_name, type, sort )
+ VALUES  ( 10596, -- manu_id - int
+           'pro_customerAudit_10596', -- procedure_name - varchar(50)
+           N'audit_cust_after', -- type - nvarchar(50)
+           0  -- sort - smallint
+           )]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

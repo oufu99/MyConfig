@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>scust</Title>
+      <Shortcut>scust</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql">SELECT * FROM tb_customer_10596</Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

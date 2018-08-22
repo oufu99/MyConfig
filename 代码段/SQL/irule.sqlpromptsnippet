@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>irule</Title>
+      <Shortcut>irule</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql">INSERT dbo.tb_rule_mapping_class
+        ( manu_id ,
+          className ,
+          Json ,
+          filter_keyword ,
+          new_url
+        )
+VALUES  ( 10596 , -- manu_id - int
+          N'Business' , -- className - nvarchar(1000)
+          N'' , -- Json - nvarchar(500)
+          N'/SysAdmin/Pages/tb_customerAdd.aspx' , -- filter_keyword - nvarchar(2000)
+          N'/SysAdmin/Pages/custom/lqchun/tb_customerAdd.aspx'  -- new_url - nvarchar(2000)
+        )</Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

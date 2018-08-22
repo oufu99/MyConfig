@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>iarea</Title>
+      <Shortcut>iarea</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[INSERT dbo.tb_area
+        ( name ,
+          parent_id ,
+          region_code ,
+          district_id
+        )
+VALUES  ( N'' , -- name - nvarchar(200)
+          - , -- parent_id - int
+          N'' , -- region_code - nvarchar(50)
+          0  -- district_id - int
+        )]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

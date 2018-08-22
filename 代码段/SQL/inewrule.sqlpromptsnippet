@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>inewrule</Title>
+      <Shortcut>inewrule</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[ INSERT dbo.tb_manumethod_setting
+         ( manu_id, dllname, namespace )
+ VALUES  ( N'10596', -- manu_id - nvarchar(50)
+           N'SERP3.0.hzyil.PC', -- dllname - nvarchar(50)
+           N'hzyil'  -- namespace - nvarchar(50)
+           )]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>itype</Title>
+      <Shortcut>itype</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[INSERT dbo.tb_setting
+        ( setting_catalog_code ,
+          [key] ,
+          value ,
+          remark ,
+          manufacturer_id ,
+          is_active
+        )
+VALUES  ( N'rebateType' , -- setting_catalog_code - nvarchar(50)
+          N'' , -- key - nvarchar(50)
+          N'' , -- value - nvarchar(4000)
+          N'' , -- remark - nvarchar(4000)
+          10596 , -- manufacturer_id - int
+          1  -- is_active - int
+        )]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
