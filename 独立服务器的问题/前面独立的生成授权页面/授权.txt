@@ -1,0 +1,2 @@
+页面要放在img 的根目录下
+先调appCode的Authorization 方法
