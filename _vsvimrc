@@ -9,8 +9,8 @@
  
 
  
-:inoremap ii ()<Esc>i
-:inoremap iw ""<Esc>i
+:inoremap ik ()<Esc>i
+:inoremap ii ""<Esc>i
 
 
 :inoremap ;; <Esc>$a;
