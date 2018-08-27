@@ -36,6 +36,11 @@ SELECT * FROM dbo.tb_personal_center_out_10471--现金红包提现表
 SELECT * FROM dbo.tb_personal_center_withdrawals_10471--个人中心提现明细表 
 
  
+--微信支付相关
+SELECT * FROM dbo.tb_payment_list WHERE manuID=10532
+SELECT * FROM dbo.Pay_Parameter WHERE ManuId=10532 --配置微信支付的信息
+SELECT * FROM tb_mifei_pay WHERE manu_id=10532   --配置跳转到那个页面唤起支付  也是页面上直接跳转的页面
+SELECT * FROM dbo.tb_payment_url -- notifyUrl页面中会直接更新order表的支付状态   这里的paymentId是tb_payment_list的ID returnUrl是支付后跳转的页面
 
 
 
@@ -72,4 +77,9 @@ SELECT return_id FROM tb_public_product WHERE tb_public_productID=(	SELECT publi
 
 --根据key查到权限设置
 EXEC SearchPower 'isShowChouJiangAddress' 
+
+
+
+--米菲积分商城
+SELECT * FROM tb_integral_goods_exchange WHERE manu_id=10532
  

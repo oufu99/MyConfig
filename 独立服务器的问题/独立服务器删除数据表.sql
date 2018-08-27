@@ -93,7 +93,7 @@ FROM    #tempDt;
 
 DECLARE @tb VARCHAR(200);
 DECLARE @sql NVARCHAR(2000);
-DECLARE @manuId VARCHAR(10)= -11 '';
+DECLARE @manuId VARCHAR(10)= -11 '10316';
  --≥ß…Ã
 
 
