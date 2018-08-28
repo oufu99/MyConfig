@@ -51,3 +51,7 @@ EXEC('DELETE FROM dbo.tb_personal_center_in_'+@manuID)
 EXEC('DELETE FROM dbo.tb_personal_center_out_'+@manuID)
 EXEC('DELETE FROM dbo.tb_personal_center_withdrawals_'+@manuID)
 EXEC('DELETE FROM dbo.tb_public_product where manufacturer_id='+@manuID)
+--积分商城
+EXEC('DELETE FROM dbo.tb_integral_goods_exchange where manu_id='+@manuID)
+EXEC('DELETE FROM dbo.tb_integral_goods where manu_id='+@manuID)
+ 
