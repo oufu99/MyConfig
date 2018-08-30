@@ -1,20 +1,36 @@
 ﻿set backspace=indent,eol,start
 
 :inoremap jj <Esc>hh
+let mapleader=";"
+
 
 "ѡ�񵥴 
 
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
 :inoremap ;e <Esc>bve
 :nmap ;e <Esc>bve
- 
 
+"映射上下左右
+nnoremap  i   k
+nnoremap  k  j
+nnoremap  j   h
+
+"行首
+nmap lh   ^
  
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
 
+"方法补全相关
+inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
+inoremap ;k ()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
 
-:inoremap ;; <Esc>$a;
-:nmap ;; <Esc>$a;
+
+
+:inoremap <leader><leader> <Esc>$a;
+:nmap <leader><leader> <Esc>$a;
+
+
 
 
 "向前进一格,用来进入() ""等位置
@@ -23,15 +39,17 @@
 
 "删除
 :inoremap xx <BS>
-
+:inoremap xz <CR><CR><CR><CR>
 
 "操作Vs
-:inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<Enter>i
-:nmap ;x <Esc>:vsc 文件.除此之外全部关闭<Enter>i
+:inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
+:nmap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 
 
-:inoremap ;s <Esc>:vsc 生成.生成选定内容<Enter>i
-:nmap ;s <Esc>:vsc 生成.生成选定内容<Enter>i
+:inoremap ;s <Esc>:vsc 生成.生成选定内容<CR>i
+:nmap ;s <Esc>:vsc 生成.生成选定内容<CR>i
+
+:command func <Esc>$a;
 
 
 
