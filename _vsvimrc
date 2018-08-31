@@ -10,16 +10,17 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 :inoremap ;e <Esc>bve
 :nmap ;e <Esc>bve
 
-"映射上下左右
-:noremap  i  k
-:noremap  k  j
-:noremap  j  h
-
-"行首
-nmap lh   ^
-
 "块选择模式按a直接退出
-:vmap a <Esc>i
+:vmap a <Esc>
+
+"映射上下左右
+":noremap  i  k
+":noremap  k  j
+":noremap  j  h
+
+
+ 
+
 
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
@@ -35,7 +36,7 @@ inoremap ;k ()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
 :nmap <leader><leader> <Esc>$a;
 
 
-
+:inoremap dd <Esc>ddi
 
 "向前进一格,用来进入() ""等位置
 :inoremap ;i <ESC>ha
@@ -43,7 +44,6 @@ inoremap ;k ()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
 
 "删除
 :inoremap xx <BS>
-:inoremap xz <CR><CR><CR><CR>
 
 "操作Vs
 :inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
@@ -53,7 +53,7 @@ inoremap ;k ()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
 :inoremap ;s <Esc>:vsc 生成.生成选定内容<CR>i
 :nmap ;s <Esc>:vsc 生成.生成选定内容<CR>i
 
-:command func <Esc>$a;
+ 
 
 
 
