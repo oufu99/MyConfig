@@ -24,10 +24,15 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
+"直接换行
+:inoremap jo <Esc>o
+:inoremap ;k <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab>
+
+
 
 "方法补全相关
 inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
-inoremap ;k ()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
+
 
 
 
