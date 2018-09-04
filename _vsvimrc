@@ -31,9 +31,7 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
 
 "方法补全相关
-inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
-
-
+inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
 
 
 

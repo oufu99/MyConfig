@@ -1,9 +1,9 @@
-ProcessManuMappingProcedure 代码中的调用后面执行存储过程的方法名
+
 
 
 
 查询执行完一个存储过程后继续执行其他的存储过程
-SELECT procedure_name FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10596
+SELECT * FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10596
 
 PC新的AppCode记录表
  SELECT  * FROM tb_manumethod_setting WHERE manu_id =10596
@@ -37,7 +37,7 @@ SELECT * FROM dbo.tb_personal_center_withdrawals_10471--个人中心提现明细表
 
  
 --微信支付相关
-SELECT * FROM dbo.tb_payment_list WHERE manuID=10532
+SELECT * FROM dbo.tb_payment_list WHERE manuID=10532 二选一 以前的支付
 SELECT * FROM dbo.Pay_Parameter WHERE ManuId=10532 --配置微信支付的信息
 SELECT * FROM tb_mifei_pay WHERE manu_id=10532   --配置跳转到那个页面唤起支付  也是页面上直接跳转的页面
 SELECT * FROM dbo.tb_payment_url -- notifyUrl页面中会直接更新order表的支付状态   这里的paymentId是tb_payment_list的ID returnUrl是支付后跳转的页面
