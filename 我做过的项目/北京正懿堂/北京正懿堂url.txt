@@ -1,7 +1,7 @@
  
-最低补货 
+ 
+http://zhengyitang.web.cn/sysadmin/pages/custom/zhengyitang/unit_freight_settings.aspx
 
-触发奖励的时候判断如果target=0就不发奖励了
 
 再提货,运费模板
 
