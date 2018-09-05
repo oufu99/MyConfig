@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">SELECT * FROM tb_rule_mapping_class WHERE manu_id=10596</Code>
+      <Code Language="sql">SELECT * FROM tb_rule_mapping_class WHERE manu_id=10614</Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

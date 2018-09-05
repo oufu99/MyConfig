@@ -2,8 +2,8 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>supgrade</Title>
-      <Shortcut>supgrade</Shortcut>
+      <Title>sjifen</Title>
+      <Shortcut>sjifen</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT * FROM tb_cust_upgradeorder_10614]]></Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM tb_integral_goods_exchange WHERE manu_id=10614]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

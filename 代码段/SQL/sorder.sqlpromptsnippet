@@ -2,8 +2,8 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>supgrade</Title>
-      <Shortcut>supgrade</Shortcut>
+      <Title>sorder</Title>
+      <Shortcut>sorder</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT * FROM tb_cust_upgradeorder_10614]]></Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM tb_order_10614]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

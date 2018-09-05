@@ -26,7 +26,7 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 :inoremap ii ""<Esc>i
 "直接换行
 :inoremap jo <Esc>o
-:inoremap ;k <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab>
+:inoremap ;k <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
 
 
