@@ -1,10 +1,17 @@
  
+ http://zhengyitang.mobile.cn/m/custom/zhengyitang/Application_agency_product.aspx?pId=0&manuid=10614&level=2529
+ 
+ 
  
 http://zhengyitang.web.cn/SysAdmin/Pages/custom/zhengyitang/zhengyitang_orderAdd.aspx?ID=6
  
 http://zhengyitang.web.cn/sysadmin/pages/custom/zhengyitang/unit_freight_settings.aspx
 
 
+//H5支付
+http://zhengyitang.mobile.cn/m/paynew/PayDoNew.aspx?assemblyname=SERP3.0&assembltype=SERP3._0&orderid=35711920180905&payclass=WXH5Pay&paySource=freight
 再提货,运费模板
 
 提现
+
+6,10614

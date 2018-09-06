@@ -1,12 +1,12 @@
 USE [serp3]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_team_month_Dividend_10614]    Script Date: 2018/9/4 19:18:29 ******/
+/****** Object:  StoredProcedure [dbo].[sp_team_month_Dividend_10614]    Script Date: 2018/9/6 13:40:56 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-alter PROCEDURE [dbo].[sp_team_month_Dividend_10614]
+ALTER PROCEDURE [dbo].[sp_team_month_Dividend_10614]
 AS
     BEGIN
         BEGIN TRY	
@@ -49,17 +49,18 @@ AS
                                 0.00 ,
                                 0.00   
                         FROM    dbo.tb_customer_10614
-						where (customer_catalog_id=@max_catalog)
-						--and tb_customerID IN(61,64)
+						WHERE  --1=1 
+						(customer_catalog_id=@max_catalog)
+						--and tb_customerID IN(5)  --调试的语句 发布时注释
                       
- 
+				PRINT '开始调试'
 				    --遍历临时表中所有数据
                 WHILE @i <= ( SELECT    COUNT(1)
                               FROM      #resultT
                             )
                     BEGIN
                         SELECT  @tempCstmId = cstmId
-                        FROM    #resultT
+							FROM    #resultT
                         WHERE   Id = @i;
 						--只算自己的业绩
 						SELECT @nahuo_custId=parent_id FROM tb_customer_10614 WHERE tb_customerID=@tempCstmId
@@ -68,16 +69,16 @@ AS
                         SELECT  @tempYeJi = ISNULL(SUM(amount),0)
                         FROM    tb_order_10614
                         WHERE   status = 1   
-                                AND order_type!=3
-                               AND create_time BETWEEN DATEADD(mm,
-                                                            DATEDIFF(mm, 0,
-                                                              DATEADD(MONTH,
-                                                              -1, GETDATE())),
-                                                            0)
-                                            AND     DATEADD(mm,
-                                                            DATEDIFF(mm, 0,
-                                                              DATEADD(MONTH, 0,
-                                                              GETDATE())), 0)
+                                AND order_type!=3 AND    order_type!=1  --3是升级单,1是提货单
+                               --AND create_time BETWEEN DATEADD(mm,
+                               --                             DATEDIFF(mm, 0,
+                               --                               DATEADD(MONTH,
+                               --                               -1, GETDATE())),
+                               --                             0)
+                               --             AND     DATEADD(mm,
+                               --                             DATEDIFF(mm, 0,
+                               --                               DATEADD(MONTH, 0,
+                               --                               GETDATE())), 0)
                                 AND cust_id=@tempCstmId;
                         PRINT '此次循环代理商' + CAST(@tempCstmId AS NVARCHAR(30));
                         PRINT '此次循环业绩'+ CAST(@tempYeJi AS NVARCHAR(30));
@@ -105,9 +106,9 @@ AS
 				--执行分红
 								    	 PRINT '开始分红'
                                         EXEC dbo.sp_cust_personalcenter_in_currency @cust_id = @tempCstmId, -- int
-                                            @source = 37, -- int
+                                            @source = 30, -- int
                                             @type = 1, -- int
-                                            @business_id = 37, -- int
+                                            @business_id = 0, -- int
                                             @value = @tempFenhon, -- decimal
                                             @manufacturer_id = 10614, -- int
                                             @withdraw_status = 1, -- int
@@ -129,44 +130,18 @@ AS
                                                   @tempCstmId ,
                                                   '' ,
                                                   GETDATE() ,
-                                                  37 ,
+                                                  30 ,
                                                   0 ,
                                                   N''
                                                 );
 
-									   --从上级的佣金里面扣钱
-									   IF(@nahuo_custId!=0)
-									   BEGIN
-									   DECLARE @msg1 NVARCHAR(30)
-									    IF @tempFenhon > 0
-										begin
-									     INSERT  INTO dbo.tb_recommend_money_history_10614
-                                                ( ordered_custId ,
-                                                  money ,
-                                                  recommend_custId ,
-                                                  orderNum ,
-                                                  createTime ,
-                                                  type ,
-                                                  brandId ,
-                                                  json
-                                                )
-                                        VALUES  (  @tempCstmId,
-                                                   @tempFenhon ,
-                                                   @nahuo_custId,
-                                                  '' ,
-                                                  GETDATE() ,
-                                                  22 ,
-                                                  0 ,
-                                                  N''
-                                                );
-									   	EXEC sp_cust_personalcenter_out @nahuo_custId,22,1,0,@tempFenhon,@manufacturer_id,@msg1
-										end
-									   END
+									 
+								
 									   
                                     
 									 END;  
                                SET @i = @i + 1;  
-                            END;
+                            END
                   
             SELECT  *
             FROM    #resultT;
