@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT * FROM dbo.tb_customer_catalog where  manufacturer_id=10614]]></Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM dbo.tb_customer_catalog where  manufacturer_id=10609]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

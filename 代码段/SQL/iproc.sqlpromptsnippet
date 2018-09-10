@@ -14,8 +14,8 @@
       <Declarations />
       <Code Language="sql"><![CDATA[ INSERT dbo.tb_manu_mapping_procedure
          ( manu_id, procedure_name, type, sort )
- VALUES  ( 10614, -- manu_id - int
-           'pro_customerAudit_10614', -- procedure_name - varchar(50)
+ VALUES  ( 10609, -- manu_id - int
+           'pro_customerAudit_10609', -- procedure_name - varchar(50)
            N'audit_cust_after', -- type - nvarchar(50)
            0  -- sort - smallint
            )]]></Code>

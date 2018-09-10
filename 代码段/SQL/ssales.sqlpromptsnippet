@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ssales</Title>
+      <Shortcut>ssales</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql">SELECT  b.name ,
+        a.create_time ,
+        b.*
+FROM    dbo.tb_sales_redPackage_history_10328 a
+        LEFT JOIN tb_sales b ON a.open_id = b.openid
+WHERE   a.wl_code = '0011947157508843'
+        AND a.fail_msg = '';
+
+
+SELECT * FROM dbo.tb_wx_userinfo_10328</Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
