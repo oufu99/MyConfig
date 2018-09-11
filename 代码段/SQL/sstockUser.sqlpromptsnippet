@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sstockUser</Title>
+      <Shortcut>sstockUser</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[    DECLARE @manuId INT=10614;
+    DECLARE @sql NVARCHAR(3000);
+	DECLARE @count1 INT
+ 
+    SET @sql = 'SELECT name,password, * FROM tb_user WHERE manufacturer_id=@manuId AND custid IN 
+	(SELECT cust_id FROM tb_stock_'+CAST(@manuId AS NVARCHAR(30))+' WHERE virtual_stock>0 AND cust_id!=0)';
+	EXEC sp_executesql @sql,N'@manuId INT',@manuId]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -24,6 +24,20 @@
            N'' , -- Json - nvarchar(500)
            N'/sysadmin/pages/custom/balingniandai/tb_product_freight.aspx' , -- filter_keyword - nvarchar(2000)
            N'/SysAdmin/Pages/tb_FreightSeting.aspx'  -- new_url - nvarchar(2000)
+         )
+         
+          INSERT dbo.tb_rule_mapping_class
+         ( manu_id ,
+           className ,
+           Json ,
+           filter_keyword ,
+           new_url
+         )
+ VALUES  ( 10609 , -- manu_id - int
+           N'Business' , -- className - nvarchar(1000)
+           N'' , -- Json - nvarchar(500)
+           N'/SysAdmin/Pages/tb_productAdd.aspx' , -- filter_keyword - nvarchar(2000)
+           N'/sysadmin/pages/custom/baorou/tb_productAdd.aspx'  -- new_url - nvarchar(2000)
          )]]></Code>
     </Snippet>
   </CodeSnippet>
