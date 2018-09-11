@@ -10,7 +10,10 @@ PC新的AppCode记录表
 
 SELECT * FROM  dbo.tb_wx_userinfo_10471 --微信关注用户表
 
-SELECT * FROM tb_wx_subscribePushSet WHERE event_key= 'qrscene_314' --公众号返回表执行
+SELECT * FROM tb_wx_subscribePushSet WHERE event_key= 'qrscene_314' --微信关注回调表
+
+最初的回调地方SERP3.WeiXin=>Result=>WeiXinResult.cs 里面这是最初的   
+WeiXinResultLogger中搜 "Post的数据" 这个文本值
 
 -------红包记录---------
 
