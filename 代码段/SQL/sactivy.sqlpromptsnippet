@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>cj</Title>
-      <Shortcut>cj</Shortcut>
-      <Description>CROSS JOIN fragment</Description>
+      <Title>sactivy</Title>
+      <Shortcut>sactivy</Shortcut>
+      <Description />
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[CROSS JOIN ]]></Code>
+      <Code Language="sql"><![CDATA[EXEC SActivityInfo '4113231880263472']]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">SELECT * FROM tb_customer_10609 </Code>
+      <Code Language="sql">SELECT * FROM tb_customer_10596 </Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -14,7 +14,7 @@
       <Declarations />
       <Code Language="sql"><![CDATA[ INSERT dbo.tb_manumethod_setting
          ( manu_id, dllname, namespace )
- VALUES  ( N'10609', -- manu_id - nvarchar(50)
+ VALUES  ( N'10596', -- manu_id - nvarchar(50)
            N'SERP3.0.hzyil.PC', -- dllname - nvarchar(50)
            N'hzyil'  -- namespace - nvarchar(50)
            )]]></Code>
