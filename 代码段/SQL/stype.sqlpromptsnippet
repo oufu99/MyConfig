@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT * FROM tb_setting WHERE setting_catalog_code='rebateType' AND manufacturer_id=10596]]></Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM tb_setting WHERE setting_catalog_code='rebateType' AND manufacturer_id=10609]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

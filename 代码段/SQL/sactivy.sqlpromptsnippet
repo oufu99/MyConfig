@@ -12,7 +12,13 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[EXEC SActivityInfo '4113231880263472']]></Code>
+      <Code Language="sql"><![CDATA[EXEC SActivityInfo '4113641330355470',10481
+
+SELECT * FROM tb_activity_history_1715_10481
+SELECT * FROM dbo.tb_activity_redPacket_send_result_1715_10481  WHERE identity_code='4113641330355470'
+--查记录 ia,1
+SELECT * FROM tb_activity_history_1715_10481  WHERE identity_code='4113641330355470'
+SELECT * FROM tb_activity_prize_history_1715_10481 WHERE identity_code='4113641330355470']]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
