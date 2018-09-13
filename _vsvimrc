@@ -7,8 +7,8 @@ let mapleader=";"
 "ѡ�񵥴 
 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
-:inoremap ;e <Esc>bve
-:nmap ;e <Esc>bve
+:inoremap ;w <Esc>bve
+:nmap ;w <Esc>bve
 
 "块选择模式按a直接退出
 :vmap a <Esc>
