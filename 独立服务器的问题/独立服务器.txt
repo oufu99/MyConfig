@@ -23,15 +23,7 @@ myht.caicaitoonbaby.com
 6.客户服务器（公网）IP：47.107.35.64
 7.客户服务器登录账户：administrator
 8.客户服务器登录密码：Baorou0812
-1.公司名称：温州市菜菜头动漫产业设计有限公司
-2.公众号名称：菜菜头
-3.对应客服：成成
-4.业务员：鲁姣姣	5.客户通过备案并解析域名：my.caicaitoonbaby.com
-myht.caicaitoonbaby.com
-后台用
-6.客户服务器（公网）IP：47.105.69.132
-7.客户服务器登录账户：administrator
-8.客户服务器登录密码：Caicaitou2018
+ 
 
  
 
@@ -68,7 +60,6 @@ myht.caicaitoonbaby.com
 2）公众号名称：佐邦尚美
 3）对应客服：林秋茹
 4）业务员：高溥坤
-
 5）客户通过备案并解析域名：ws.zbsmyes.com                  admin.zbsmyes.com                  
 6）客户服务器（公网）IP：47.106.151.131
 7）客户服务器登录账户：administrator
