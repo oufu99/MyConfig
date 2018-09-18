@@ -6,32 +6,30 @@ let mapleader=";"
 
 "ѡ�񵥴 
 
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
-:inoremap ;w <Esc>bve
-:nmap ;w <Esc>bve
 
 "块选择模式按a直接退出
 :vmap a <Esc>
-
-"映射上下左右
-":noremap  i  k
-":noremap  k  j
-":noremap  j  h
-
-
  
+
+"定义行头行尾
+:inoremap <leader>e <Esc>$a
+:nmap <leader>e <Esc>$a
+:inoremap <leader>b <Esc>^i
+:nmap <leader>b <Esc>^i
+:inoremap <leader>w <Esc>bve
+:nmap <leader>w <Esc>bve
 
 
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
 "直接换行
 :inoremap jo <Esc>o
-:inoremap ;k <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
+:inoremap <leader>k <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
 
 
 "方法补全相关
-inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
+inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
 
 
 
@@ -39,22 +37,23 @@ inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk
 :nmap <leader><leader> <Esc>$a;
 
 
+
 :inoremap dd <Esc>ddi
 
 "向前进一格,用来进入() ""等位置
-:inoremap ;i <ESC>ha
-:nmap ;i <Esc>$a;
+:inoremap <leader>i <ESC>ha
+:nmap <leader>i <Esc>$a;
 
 "删除
 :inoremap xx <BS>
 
 "操作Vs
-:inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
-:nmap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
+:inoremap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
+:nmap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 
 "s 这个键太容易失误了,改成z
-:inoremap ;z <Esc>:vsc 生成.生成选定内容<CR>i
-:nmap ;z <Esc>:vsc 生成.生成选定内容<CR>i
+:inoremap <leader>z <Esc>:vsc 生成.生成选定内容<CR>i
+:nmap <leader>z <Esc>:vsc 生成.生成选定内容<CR>i
 
  
 

@@ -1,0 +1,8 @@
+cd:\
+
+D:\Mirror\Serp.Quartz\Serp.Quartz\bin\Debug\Serp.Quartz.exe install
+D:\Mirror\Serp.Quartz\Serp.Quartz\bin\Debug\Serp.Quartz.exe uninstall
+
+
+quartz 2.6.1
+topshelf  3.3.154.0

@@ -21,7 +21,7 @@ SELECT * FROM dbo.tb_activity_mode --活动表
 SELECT * FROM tb_activity_history_1200_10471 --红包历史记录
 SELECT * FROM tb_activity_prize_history_1200_10471--红包中奖纪录
 SELECT * FROM dbo.tb_activity_redPacket_send_result_1200_10471 --红包返回结果表
-
+ 
 -------红包记录---------
 
 SELECT * FROM dbo.tb_public_product WHERE manufacturer_id=10471--商品表
@@ -54,8 +54,8 @@ SELECT * FROM dbo.tb_payment_url -- notifyUrl页面中会直接更新order表的支付状态  
 SELECT * FROM tb_activity_catalog_mode WHERE manufacturer_id=10500
  
 
- 
- 
+--短信发送表
+SELECT * FROM tb_sendmsg WHERE manufacturer_id=10292 ORDER BY create_time desc	
 
 
 SELECT * FROM  dbo.tb_sales --导购表
