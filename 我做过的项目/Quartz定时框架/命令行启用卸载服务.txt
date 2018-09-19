@@ -1,7 +1,11 @@
-cd:\
 
-D:\Mirror\Serp.Quartz\Serp.Quartz\bin\Debug\Serp.Quartz.exe install
-D:\Mirror\Serp.Quartz\Serp.Quartz\bin\Debug\Serp.Quartz.exe uninstall
+启动:
+E:\ZPCode\WsScheduler_V2\WsScheduler_V2\bin\Debug\WsScheduler_V2.exe install
+net start WsSchedulerService
+
+
+net stop WsSchedulerService
+E:\ZPCode\WsScheduler_V2\WsScheduler_V2\bin\Debug\WsScheduler_V2.exe uninstall
 
 
 quartz 2.6.1
