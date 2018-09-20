@@ -1,7 +1,11 @@
-SET QUOTED_IDENTIFIER ON
+USE [serp3]
+GO
+/****** Object:  StoredProcedure [dbo].[Import_CustomerInfo_10596]    Script Date: 2018/9/20 9:22:05 ******/
 SET ANSI_NULLS ON
 GO
-alter PROC [dbo].[Import_CustomerInfo_10596]
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROC [dbo].[Import_CustomerInfo_10596]
     @express_info dbo.tb_Customer_info_10596 READONLY ,
     @manu_id INT ,
     @error_msg NVARCHAR(500) OUTPUT
@@ -132,22 +136,43 @@ AS
                         N'@express_info tb_Customer_info_10596 READONLY,@i int',
                         @express_info,@i;
 		--处理其他的业务    插入余额表
-                    --DECLARE @money DECIMAL(18, 2);
-                    --SELECT  @money = account_money
-                    --FROM    @express_info
-                    --WHERE   num = @i;
-                    --PRINT '金钱结算';
-                    --PRINT @money; 
-                    --EXEC dbo.sp_cust_personalcenter_in_currency @cust_id = @custID, -- int
-                    --    @source = 21, -- int
-                    --    @type = 4, -- int
-                    --    @business_id = 0, -- int
-                    --    @value = @money, -- decimal
-                    --    @manufacturer_id = @manu_id, -- int
-                    --    @withdraw_status = 1, -- int
-                    --    @send_status = 0, -- int
-                    --    @tbfieldname = N'', -- nvarchar(200)
-                    --    @msg = N''; -- nvarchar(1000)
+                    DECLARE @money DECIMAL(18, 2);
+                    SELECT  @money = account_money
+                    FROM    @express_info
+                    WHERE   num = @i;
+                    PRINT '金钱结算';
+                    PRINT @money; 
+                    EXEC dbo.sp_cust_personalcenter_in_currency @cust_id = @custID, -- int
+                        @source = 99, -- int
+                        @type = 4, -- int
+                        @business_id = 0, -- int
+                        @value = @money, -- decimal
+                        @manufacturer_id = @manu_id, -- int
+                        @withdraw_status = 1, -- int
+                        @send_status = 0, -- int
+                        @tbfieldname = N'', -- nvarchar(200)
+                        @msg = N''; -- nvarchar(1000)
+
+							--添加库存 lalaku
+						EXEC dbo.sp_order_stock_in_or_out @manuid = @manu_id, -- int
+                                @order_id = 0, -- int
+                                @cust_id = @custID, -- int  实际增加库存的人
+                                @to_cust_id = 0, -- int 调拨的人
+                                @product_id = -199, -- int
+                                @quantity = lalaku, -- int
+                                @type = 1, -- int
+                                @in_or_out = N'in', -- nvarchar(20)
+                                @mssage = '';
+						--添加库存 zhiniaoku
+						EXEC dbo.sp_order_stock_in_or_out @manuid = @manu_id, -- int
+                                @order_id = 0, -- int
+                                @cust_id = @custID, -- int  实际增加库存的人
+                                @to_cust_id = 0, -- int 调拨的人
+                                @product_id = -199, -- int
+                                @quantity = zhiniaoku, -- int
+                                @type = 1, -- int
+                                @in_or_out = N'in', -- nvarchar(20)
+                                @mssage = '';
 --插入循环结束
                     SET @i = @i + 1;
                 END;
@@ -174,4 +199,3 @@ AS
 	   
      
 
-GO

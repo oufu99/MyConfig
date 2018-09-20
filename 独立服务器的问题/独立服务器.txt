@@ -1,6 +1,9 @@
 
-
-
+公司名称：正懿堂
+5）通过备案并解析域名：域名：ws.zytwei.com/admin.zytwei.com
+6）服务器（公网）IP：IP：47.94.81.156
+7）服务器登录账户：administrator
+8）服务器登录密码：34o8zBeJoiIH
 
 
 

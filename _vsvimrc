@@ -46,6 +46,7 @@ inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
 
 "删除
 :inoremap xx <BS>
+:inoremap xl <Esc>lx
 
 "操作Vs
 :inoremap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
