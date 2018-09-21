@@ -1,6 +1,14 @@
 
 
 
+--微信支付相关
+SELECT * FROM dbo.tb_payment_list WHERE manuID=10532 --二选一 以前的支付
+SELECT * FROM dbo.Pay_Parameter WHERE ManuId=10614 --配置微信支付的信息
+SELECT * FROM tb_payment_url --支付后回调的地址设置 是上面那张表的Id
+SELECT * FROM tb_mifei_pay WHERE manu_id=10614   --配置跳转到那个页面唤起支付  也是页面上直接跳转的页面
+
+
+
 
 查询执行完一个存储过程后继续执行其他的存储过程
 SELECT * FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10596
@@ -39,11 +47,6 @@ SELECT * FROM dbo.tb_personal_center_out_10471--现金红包提现表
 SELECT * FROM dbo.tb_personal_center_withdrawals_10471--个人中心提现明细表 
 
  
---微信支付相关
-SELECT * FROM dbo.tb_payment_list WHERE manuID=10532 --二选一 以前的支付
-SELECT * FROM dbo.Pay_Parameter WHERE ManuId=10614 --配置微信支付的信息
-SELECT * FROM tb_payment_url --支付后回调的地址设置 是上面那张表的Id
-SELECT * FROM tb_mifei_pay WHERE manu_id=10614   --配置跳转到那个页面唤起支付  也是页面上直接跳转的页面
 
 
 
