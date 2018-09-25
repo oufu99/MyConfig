@@ -1,5 +1,5 @@
 
-
+SELECT * FROM tb_cust_upgradeorder_10636 --升级表
 
 --微信支付相关
 SELECT * FROM dbo.tb_payment_list WHERE manuID=10532 --二选一 以前的支付

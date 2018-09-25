@@ -19,7 +19,7 @@
            filter_keyword ,
            new_url
          )
- VALUES  ( 10609 , -- manu_id - int
+ VALUES  ( 10636 , -- manu_id - int
            N'Business' , -- className - nvarchar(1000)
            N'' , -- Json - nvarchar(500)
            N'/sysadmin/pages/custom/balingniandai/tb_product_freight.aspx' , -- filter_keyword - nvarchar(2000)
@@ -33,7 +33,7 @@
            filter_keyword ,
            new_url
          )
- VALUES  ( 10609 , -- manu_id - int
+ VALUES  ( 10636 , -- manu_id - int
            N'Business' , -- className - nvarchar(1000)
            N'' , -- Json - nvarchar(500)
            N'/SysAdmin/Pages/tb_productAdd.aspx' , -- filter_keyword - nvarchar(2000)

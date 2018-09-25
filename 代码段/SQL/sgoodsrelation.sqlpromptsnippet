@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sgoodsrelation</Title>
+      <Shortcut>sgoodsrelation</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[--中码: 438465180132  小码  420017213516   防伪码 4111889854585981
+SELECT * FROM dbo.tb_goods_relation_code_10428 WHERE code IN ('438465180132','')
+
+SELECT * FROM dbo.tb_goods WHERE tb_goodsID =9663
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

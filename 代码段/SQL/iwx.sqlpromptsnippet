@@ -1,9 +1,9 @@
-﻿<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>irule</Title>
-      <Shortcut>irule</Shortcut>
+      <Title>iwx</Title>
+      <Shortcut>iwx</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">INSERT dbo.tb_rule_mapping_class
+      <Code Language="sql"><![CDATA[INSERT dbo.tb_rule_mapping_class
         ( manu_id ,
           className ,
           Json ,
@@ -22,9 +22,9 @@
 VALUES  ( 10636 , -- manu_id - int
           N'Business' , -- className - nvarchar(1000)
           N'' , -- Json - nvarchar(500)
-          N'/SysAdmin/Pages/tb_customerAdd.aspx' , -- filter_keyword - nvarchar(2000)
-          N'/SysAdmin/Pages/custom/lqchun/tb_customerAdd.aspx'  -- new_url - nvarchar(2000)
-        )</Code>
+          N'/sysadmin/pages/tb_orderList.aspx' , -- filter_keyword - nvarchar(2000)
+          N'/sysadmin/pages/ws/mifei/tb_bh_order_mifei_List.aspx'  -- new_url - nvarchar(2000)
+        )]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

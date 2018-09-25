@@ -1,4 +1,16 @@
 
+功能:
+
+注册时获取openId
+注册后发放推荐奖
+升级,代理商回归
+升级后推荐代理获得差额
+
+
+提现,货款充值
+后台可以调整余额 
+
+
 代理商政策 
 http://xinmeihui.web.cn//sysadmin/pages/custom/xinmeihui/customer_setting.aspx
 

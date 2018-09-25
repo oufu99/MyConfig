@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">SELECT * FROM tb_customer_10609 </Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM tb_customer_10636 ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
