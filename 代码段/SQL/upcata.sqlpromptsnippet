@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[UPDATE  tb_customer_10636 SET customer_catalog_id=- WHERE tb_customerID=26]]></Code>
+      <Code Language="sql"><![CDATA[UPDATE  tb_customer_10532 SET customer_catalog_id=- WHERE tb_customerID=26]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

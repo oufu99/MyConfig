@@ -1,4 +1,11 @@
 
+乐悠悠
+www.5ileyoyo.com/admin.5ileyoyo.com
+6.客户服务器（公网）IP：47.92.38.17
+7.客户服务器登录账户：Administrator
+8.客户服务器登录密码：Qwe111**
+
+
 公司名称：正懿堂
 5）通过备案并解析域名：域名：ws.zytwei.com/admin.zytwei.com
 6）服务器（公网）IP：IP：47.94.81.156

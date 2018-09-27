@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
@@ -14,8 +14,8 @@
       <Declarations />
       <Code Language="sql"> INSERT dbo.tb_manu_mapping_procedure
          ( manu_id, procedure_name, type, sort )
- VALUES  ( 10636, -- manu_id - int
-           'pro_customerAudit_10636', -- procedure_name - varchar(50)
+ VALUES  ( 10532, -- manu_id - int
+           'pro_customerAudit_10532', -- procedure_name - varchar(50)
            N'audit_cust_after', -- type - nvarchar(50)
            1  -- sort - smallint
            )</Code>

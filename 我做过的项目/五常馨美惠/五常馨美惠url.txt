@@ -1,14 +1,21 @@
 
 功能:
 
-注册时获取openId
-注册后发放推荐奖
+注册时获取openId  短信没有接
+再把微信的测试一下
+
+
+ 
 升级,代理商回归
 升级后推荐代理获得差额
 
 
-提现,货款充值
-后台可以调整余额 
+唤起微信:
+http://xinmeihui.onlyid.cn/m/paynew/PayDoNew.aspx?orderid=7&payclass=WX_GZH_PayNew&paySource=register&assemblyname=SERP3.0.xinmeihui&assembltype=SERP3._0.xinmeihui
+ 
+商户号：1329969301
+支付密钥：wx789c718758a2bf8dwx789c718758a2
+ 
 
 
 代理商政策 
@@ -18,3 +25,4 @@ http://xinmeihui.web.cn//sysadmin/pages/custom/xinmeihui/customer_setting.aspx
 邀请:
 http://xinmeihui.mobile.cn/m/custom/pinkmifei/Application_agency.aspx?pId=0&manuid=10636&level=2635
 
+http://xinmeihui.onlyid.cn/m/custom/xinmeihui/Application_agency.aspx?pId=0&manuid=10636&level=2635&openid=oqqir5oAaEYbCOzGhmGWuyK4_FiU

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>iappcode</Title>
+      <Shortcut>iappcode</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[INSERT dbo.tb_manumethod_setting
+        ( manu_id, dllname, namespace )
+VALUES  ( N'10532', -- manu_id - nvarchar(50)
+          N'', -- dllname - nvarchar(50)
+          N''  -- namespace - nvarchar(50)
+          )]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
