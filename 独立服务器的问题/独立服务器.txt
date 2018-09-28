@@ -1,4 +1,10 @@
 
+优旭
+5.客户通过备案并解析域名：shyx.hzvchen.com.cn/admin.hzvchen.com.cn
+6.客户服务器（公网）IP：47.100.239.7
+7.客户服务器登录账户：administrator
+8.客户服务器登录密码：ZPJT123456@
+
 乐悠悠
 www.5ileyoyo.com/admin.5ileyoyo.com
 6.客户服务器（公网）IP：47.92.38.17

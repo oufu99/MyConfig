@@ -11,7 +11,10 @@
 
 
 唤起微信:
-http://xinmeihui.onlyid.cn/m/paynew/PayDoNew.aspx?orderid=7&payclass=WX_GZH_PayNew&paySource=register&assemblyname=SERP3.0.xinmeihui&assembltype=SERP3._0.xinmeihui
+http://xinmeihui.onlyid.cn/m/paynew/PayDoNew.aspx?orderid=tempID_7&payclass=WX_GZH_PayNew&paySource=register&assemblyname=SERP3.0.xinmeihui&assembltype=SERP3._0.xinmeihui
+
+
+http://xinmeihui.mobile.cn/m/paynew/PayDoNew.aspx?orderid=tempID_7&payclass=WX_GZH_PayNew&paySource=register&assemblyname=SERP3.0.xinmeihui&assembltype=SERP3._0.xinmeihui
  
 商户号：1329969301
 支付密钥：wx789c718758a2bf8dwx789c718758a2
