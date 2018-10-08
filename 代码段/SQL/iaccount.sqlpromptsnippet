@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>iaccount</Title>
+      <Shortcut>iaccount</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql">DECLARE @manuId int=10646
+DECLARE @custId int=1
+EXEC dbo.sp_cust_personalcenter_in @cust_id = @custId, -- int
+                                        @source = 99, -- int --下级下单返佣
+                                        @type = 4, -- int
+                                        @business_id = 0, -- int
+                                        @value = 5000, -- decimal
+                                        @manufacturer_id = @manuId, -- int
+                                        @withdraw_status = 1, -- int
+                                        @send_status = 0, -- int
+                                        @msg = N''; -- nvarchar(1000)
+</Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

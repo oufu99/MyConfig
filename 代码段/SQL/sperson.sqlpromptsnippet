@@ -12,8 +12,8 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"> SELECT * FROM dbo.cust_personal_center_10532
- SELECT * FROM dbo.cust_personal_center_in_10532 ORDER BY create_time desc	</Code>
+      <Code Language="sql"> SELECT * FROM dbo.cust_personal_center_10646
+ SELECT * FROM dbo.cust_personal_center_in_10646 ORDER BY create_time desc	</Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

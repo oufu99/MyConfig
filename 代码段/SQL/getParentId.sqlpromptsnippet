@@ -14,8 +14,8 @@
       <Declarations />
       <Code Language="sql"><![CDATA[DECLARE  @parent_str NVARCHAR(500), @oldparent_str NVARCHAR(500), @p_custId int
 
-EXEC dbo.sp_customer_GetParentStrAndOldParentStr_10532 7,
-            10532, @parent_str OUTPUT, @oldparent_str OUTPUT,
+EXEC dbo.sp_customer_GetParentStrAndOldParentStr_10646 7,
+            10646, @parent_str OUTPUT, @oldparent_str OUTPUT,
             @p_custId OUTPUT;
  SELECT @p_custId
   SELECT @oldparent_str

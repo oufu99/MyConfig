@@ -12,10 +12,10 @@ let mapleader=";"
  
 
 "定义行头行尾
-:inoremap <leader>e <Esc>$a
-:nmap <leader>e <Esc>$a
-:inoremap <leader>b <Esc>^i
-:nmap <leader>b <Esc>^i
+:inoremap ee <Esc>$a
+:nmap ee <Esc>$a
+:inoremap bb <Esc>^i
+:nmap bb <Esc>^i
 :inoremap <leader>w <Esc>bve
 :nmap <leader>w <Esc>bve
 
@@ -37,8 +37,13 @@ inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
 :nmap <leader><leader> <Esc>$a;
 
 
-
+"删除相关 
 :inoremap dd <Esc>ddi
+:inoremap <leader>de <Esc>lv$da
+:nmap <leader>de <Esc>lv$da
+:inoremap <leader>db <Esc>lv^di
+:nmap <leader>db <Esc>lv^di
+
 
 "向前进一格,用来进入() ""等位置
 :inoremap <leader>i <ESC>ha

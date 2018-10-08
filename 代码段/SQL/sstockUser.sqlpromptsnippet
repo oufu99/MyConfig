@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[    DECLARE @manuId INT=10532;
+      <Code Language="sql"><![CDATA[    DECLARE @manuId INT=10646;
     DECLARE @sql NVARCHAR(3000);
 	DECLARE @count1 INT
  

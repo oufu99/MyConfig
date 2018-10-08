@@ -12,9 +12,9 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT * FROM dbo.tb_payment_list WHERE manuID=10532 --二选一 以前的支付
-SELECT * FROM dbo.Pay_Parameter WHERE ManuId=10532 --配置微信支付的信息
-SELECT * FROM tb_mifei_pay WHERE manu_id=10532   --配置跳转到那个页面唤起支付 ]]></Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM dbo.tb_payment_list WHERE manuID=10646 --二选一 以前的支付
+SELECT * FROM dbo.Pay_Parameter WHERE ManuId=10646 --配置微信支付的信息
+SELECT * FROM tb_mifei_pay WHERE manu_id=10646   --配置跳转到那个页面唤起支付 ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

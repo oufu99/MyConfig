@@ -21,6 +21,9 @@ server=10.1.10.1,5388;Uid=serp3;Pwd=PTDSe/XycOhQWQ8Cu5tIZg;DataBase=serp3_test;C
 正式环境:
 server=10.1.20.110,5388;Uid=serp;Pwd=PTDSe/XycOhQWQ8Cu5tIZg;DataBase=serp3;Connection Timeout=120;Application Name=serp3_test
 
+web端过滤:serp3_test1
+mobile端过滤:serp3111
+
 正式环境配置地址的账号
 http://admin.onlyid.cn/login.aspx
 
