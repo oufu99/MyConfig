@@ -1,4 +1,6 @@
 ﻿set backspace=indent,eol,start
+set timeoutlen=200 ttimeoutlen=0
+
 
 :inoremap jj <Esc>hh
 let mapleader=";"
@@ -10,14 +12,15 @@ let mapleader=";"
 "块选择模式按a直接退出
 :vmap a <Esc>
  
+:inoremap p <Esc>p
 
+ 
 "定义行头行尾
 :inoremap ee <Esc>$a
-:nmap ee <Esc>$a
 :inoremap bb <Esc>^i
-:nmap bb <Esc>^i
-:inoremap <leader>w <Esc>bve
-:nmap <leader>w <Esc>bve
+
+:inoremap jw <Esc>bve
+:nmap jw bve
 
 
 :inoremap ik ()<Esc>i
@@ -46,8 +49,8 @@ inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
 
 
 "向前进一格,用来进入() ""等位置
-:inoremap <leader>i <ESC>ha
-:nmap <leader>i <Esc>$a;
+:inoremap ji <ESC>ha
+:nmap ji <Esc>$a;
 
 "删除
 :inoremap xx <BS>
