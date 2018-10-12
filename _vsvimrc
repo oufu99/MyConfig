@@ -11,16 +11,19 @@ let mapleader=";"
 
 "块选择模式按a直接退出
 :vmap a <Esc>
- 
-:inoremap p <Esc>p
+
 
  
 "定义行头行尾
-:inoremap ee <Esc>$a
-:inoremap bb <Esc>^i
+:inoremap je <Esc>$a
+:nmap je <Esc>$a
+:inoremap jb <Esc>^i
+:nmap jb <Esc>^i
+
 
 :inoremap jw <Esc>bve
 :nmap jw bve
+
 
 
 :inoremap ik ()<Esc>i
@@ -32,7 +35,11 @@ let mapleader=";"
 
 
 "方法补全相关
-inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
+:inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
+
+"括号自动补全
+:inoremap ' ''<ESC>ha
+:inoremap [ []<ESC>ha
 
 
 
@@ -50,18 +57,20 @@ inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab>
 
 "向前进一格,用来进入() ""等位置
 :inoremap ji <ESC>ha
-:nmap ji <Esc>$a;
+"后退一格
+:inoremap jl <ESC>la
+
 
 "删除
 :inoremap xx <BS>
 :inoremap xl <Esc>lx
 
 "操作Vs
-:inoremap <leader>x <Esc>:vsc 窗口.关闭文档窗口<CR>i
-:nmap <leader>x <Esc>:vsc 窗口.关闭文档窗口<CR>i
+":inoremap <leader>x <Esc>:vsc 窗口.关闭文档窗口<CR>i
+":nmap <leader>x <Esc>:vsc 窗口.关闭文档窗口<CR>i
 
-:inoremap <leader>X <Esc>:vsc 文件.除此之外全部关闭<CR>i
-:nmap <leader>X <Esc>:vsc 文件.除此之外全部关闭<CR>i
+:inoremap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
+:nmap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 
 "s 这个键太容易失误了,改成z
 :inoremap <leader>z <Esc>:vsc 生成.生成选定内容<CR>i
