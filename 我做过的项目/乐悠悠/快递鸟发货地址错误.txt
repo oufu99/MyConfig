@@ -1,0 +1,1 @@
+select * from tb_cutomer_address_10609 where cust_id=0

@@ -1,0 +1,53 @@
+
+独立服务器阿里大鱼配置添加/改成
+    <add key="smsCenterApiUrl" value="http://SMS.onlyid.cn/SendMsg" />
+	
+新建三个表,然后再用aliSMS.js就可以了
+
+CREATE TABLE [dbo].[tb_sendmsg_Center]
+(
+[ID] [int] NOT NULL IDENTITY(1, 1),
+[SMSKey] [nvarchar] (50) COLLATE Chinese_PRC_CI_AS NOT NULL,
+[SMSSecret] [nvarchar] (100) COLLATE Chinese_PRC_CI_AS NOT NULL,
+[CustID] [int] NOT NULL,
+[RegTime] [datetime] NOT NULL CONSTRAINT [DF_SMSCenter_RegTime] DEFAULT (getdate())
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[tb_sendmsg_Center] ADD CONSTRAINT [PK_SMSCenter] PRIMARY KEY CLUSTERED ([ID]) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tb_sendmsg_Center_Template]
+(
+[Id] [int] NOT NULL IDENTITY(1, 1),
+[tb_sendmsg_Center_Id] [int] NOT NULL,
+[TemplateId] [nvarchar] (100) COLLATE Chinese_PRC_CI_AS NOT NULL,
+[Type] [nvarchar] (50) COLLATE Chinese_PRC_CI_AS NOT NULL,
+[Remark] [nvarchar] (50) COLLATE Chinese_PRC_CI_AS NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[tb_sendmsg_Center_Template] ADD CONSTRAINT [PK_tb_sendmsg_Center_Template] PRIMARY KEY CLUSTERED ([Id]) ON [PRIMARY]
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'短信中心Id', 'SCHEMA', N'dbo', 'TABLE', N'tb_sendmsg_Center_Template', 'COLUMN', N'tb_sendmsg_Center_Id'
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'模板Id', 'SCHEMA', N'dbo', 'TABLE', N'tb_sendmsg_Center_Template', 'COLUMN', N'TemplateId'
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'短信类别,如注册(register),忘记密码(password)', 'SCHEMA', N'dbo', 'TABLE', N'tb_sendmsg_Center_Template', 'COLUMN', N'Type'
+GO
+
+
+CREATE TABLE [dbo].[tb_sendmsg]
+(
+[tb_sendmsgID] [int] NOT NULL IDENTITY(1, 1),
+[tel] [nvarchar] (50) COLLATE Chinese_PRC_CI_AS NOT NULL,
+[code] [nvarchar] (10) COLLATE Chinese_PRC_CI_AS NOT NULL,
+[create_time] [datetime] NOT NULL CONSTRAINT [DF_tb_sendmsg_create_time] DEFAULT (getdate()),
+[remark] [nvarchar] (50) COLLATE Chinese_PRC_CI_AS NULL,
+[cust_id] [int] NOT NULL CONSTRAINT [DF_tb_sendmsg_cust_id] DEFAULT ((0)),
+[manufacturer_id] [int] NOT NULL,
+[cip] [nvarchar] (50) COLLATE Chinese_PRC_CI_AS NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[tb_sendmsg] ADD CONSTRAINT [PK_tb_sendmsg] PRIMARY KEY CLUSTERED ([tb_sendmsgID]) ON [PRIMARY]
+GO
+
