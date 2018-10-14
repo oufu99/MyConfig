@@ -25,7 +25,6 @@ let mapleader=";"
 :nmap jw lbve
 
 
-
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
 "直接换行
@@ -37,9 +36,8 @@ let mapleader=";"
 "方法补全相关
 :inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
 
-"括号自动补全
-:inoremap ' ''<ESC>ha
-:inoremap [ []<ESC>ha
+ 
+
 
 
 
