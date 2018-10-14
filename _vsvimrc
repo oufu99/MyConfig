@@ -21,8 +21,8 @@ let mapleader=";"
 :nmap jb <Esc>^i
 
 
-:inoremap jw <Esc>bve
-:nmap jw bve
+:inoremap jw <Esc>lbve
+:nmap jw lbve
 
 
 
