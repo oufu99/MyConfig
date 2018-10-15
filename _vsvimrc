@@ -30,6 +30,8 @@ let mapleader=";"
 :inoremap ii ""<Esc>i
 "直接换行
 :inoremap jo <Esc>o
+:nmap jo o
+
 :inoremap jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
 
@@ -71,8 +73,8 @@ let mapleader=";"
 :nmap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 
 "s 这个键太容易失误了,改成z
-:inoremap <leader>z <Esc>:vsc 生成.生成选定内容<CR>i
-:nmap <leader>z <Esc>:vsc 生成.生成选定内容<CR>i
+:inoremap <leader>z <Esc>:vsc 生成.重新生成选定内容<CR>i
+:nmap <leader>z <Esc>:vsc 生成.重新生成选定内容<CR>i
 
 
 
