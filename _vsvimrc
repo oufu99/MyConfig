@@ -25,6 +25,7 @@ let mapleader=";"
 :nmap jw lbve
 
 
+
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
 "直接换行
@@ -37,7 +38,6 @@ let mapleader=";"
 :inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
 
  
-
 
 
 
@@ -70,7 +70,7 @@ let mapleader=";"
 :inoremap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 :nmap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 
-"s 这个键太容易失误了,改成z 
+"s 这个键太容易失误了,改成z
 :inoremap <leader>z <Esc>:vsc 生成.生成选定内容<CR>i
 :nmap <leader>z <Esc>:vsc 生成.生成选定内容<CR>i
 
