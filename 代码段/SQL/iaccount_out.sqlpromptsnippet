@@ -2,8 +2,8 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>iaccount</Title>
-      <Shortcut>iaccount</Shortcut>
+      <Title>iaccount_out</Title>
+      <Shortcut>iaccount_out</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -14,15 +14,14 @@
       <Declarations />
       <Code Language="sql">DECLARE @manuId int=10636
 DECLARE @custId int=1
-EXEC dbo.sp_cust_personalcenter_in @cust_id = @custId, -- int
+EXEC dbo.sp_cust_personalcenter_out @cust_id = @custId, -- int
                                         @source = 99, -- int --页面显示的类型 入下单返佣等 
                                         @type = 4, -- int  1-佣金,2-积分,3-红包,4-账户余额
                                         @business_id = 0, -- int
                                         @value = 5000, -- decimal
                                         @manufacturer_id = @manuId, -- int
-                                        @withdraw_status = 1, -- int
-                                        @send_status = 0, -- int
-                                        @msg = N''; -- nvarchar(1000)</Code>
+                                        @msg = N''; -- nvarchar(1000)
+</Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
