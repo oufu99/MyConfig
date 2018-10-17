@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>upcata</Title>
-      <Shortcut>upcata</Shortcut>
+      <Title>sapp</Title>
+      <Shortcut>sapp</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[UPDATE  tb_customer_10636 SET customer_catalog_id=- WHERE tb_customerID=26]]></Code>
+      <Code Language="sql">SELECT  dllname,namespace FROM tb_manumethod_setting WHERE manu_id='10636'</Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">DECLARE @manuId int=10646
+      <Code Language="sql">DECLARE @manuId int=10636
 DECLARE @custId int=1
 EXEC dbo.sp_cust_personalcenter_in @cust_id = @custId, -- int
                                         @source = 99, -- int --下级下单返佣

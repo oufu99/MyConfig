@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>sqlCatalogId</Title>
+			<Shortcut>sqlCatalogId</Shortcut>
+			<Description> </Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>SystemConsole</ID>
+					<Function>SimpleTypeName(global::System.Console)</Function>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[string sql = string.Format(@"SELECT customer_catalog_id FROM  tb_customer_{0} WHERE tb_customerID={1}", manuId, custId);
+            var catalogId = SQL.GetValue(sql);$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

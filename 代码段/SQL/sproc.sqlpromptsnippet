@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT * FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10646]]></Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM dbo.tb_manu_mapping_procedure  WHERE   manu_id=10636]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
