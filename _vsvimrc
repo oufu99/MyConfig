@@ -1,5 +1,5 @@
 ﻿set backspace=indent,eol,start
-set timeoutlen=200 ttimeoutlen=0
+set timeoutlen=300 ttimeoutlen=0
 
 
 :inoremap jj <Esc>hh
@@ -35,12 +35,8 @@ let mapleader=";"
 :inoremap jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
 
-
 "方法补全相关
 :inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
-
- 
-
 
 
 :inoremap <leader><leader> <Esc>$a;
