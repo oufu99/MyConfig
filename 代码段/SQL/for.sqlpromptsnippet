@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>upcata</Title>
-      <Shortcut>upcata</Shortcut>
+      <Title>for</Title>
+      <Shortcut>for</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,7 +12,15 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[UPDATE  tb_customer_10646 SET customer_catalog_id=- WHERE tb_customerID=26]]></Code>
+      <Code Language="sql">--遍历这个表
+	DECLARE @i int=1;
+	WHILE((SELECT COUNT(1) FROM #tempOrder)&gt;@i)
+	BEGIN
+	
+
+		
+			SET @i+=1;
+	END</Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
