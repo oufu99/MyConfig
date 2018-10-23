@@ -1,0 +1,8 @@
+{
+    "name": "ssf",
+    "connType": "General",
+    "label": "General",
+    "comment": "\t\t",
+    "text": "select * from ",
+    "placeholders": []
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 返利收入 </title>
+</head>
+<body>
+<div class="page">
+    <div class="select_date">
+        <div class="prev">上月</div>
+        <label for="picker-date" class="date_show">2017.05</label>
+        <input style="display: none;" type="text" id='picker-date'/>
+        <div class="next">下月</div>
+    </div>
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="fanli_topcard">
+            <h3>9854</h3>
+            <p>该月份累计收入(元)</p>
+        </div>
+        <div class="text-muted tc">2017年05月奖励明细</div>
+        <div class="cells_box">
+            <div class="weui-cells">
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <span class="avatar tx70">
+                            <img src="../assets/images/tx.jpg" alt="">
+                        </span>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <h3 class="fs28">车陂张学友</h3>
+                        <div class="fs24 text-muted mt5">电话 15963269842</div>
+                        <div class="fs24 text-muted mt5">微信 YY5626696</div>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span><span class="text-red">+</span><b class="text-red fs36">69221</b>元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells">
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <span class="avatar tx70">
+                            <img src="../assets/images/tx.jpg" alt="">
+                        </span>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <h3 class="fs28">荔湾周秀娜</h3>
+                        <div class="fs24 text-muted mt5">电话 15963269842</div>
+                        <div class="fs24 text-muted mt5">微信 YY5626696</div>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span><span class="text-red">+</span><b class="text-red fs36">69221</b>元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells">
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__hd">
+                        <span class="avatar tx70">
+                            <img src="../assets/images/tx.jpg" alt="">
+                        </span>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <h3 class="fs28">天河方中信</h3>
+                        <div class="fs24 text-muted mt5">电话 15963269842</div>
+                        <div class="fs24 text-muted mt5">微信 YY5626696</div>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <span><span class="text-red">+</span><b class="text-red fs36">362</b>元</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script>
+  $("#picker-date").picker({
+    title: "请选择",
+    cols: [
+      {
+        textAlign: 'center',
+        values: ['2018', '2019', '2020']
+      },
+      {
+        textAlign: 'center',
+        values: ['01', '02', '03', '04', '05', '06', '07']
+      }
+    ],
+    onChange: function (e) {
+      console.log(e.value[0]);
+      $(".date_show").html(e.value[0]+'.'+e.value[1]);
+	  alert(e.value[0]+'.'+e.value[1]);
+                
+                   
+    }
+  });
+</script>
+</body>
+</html>

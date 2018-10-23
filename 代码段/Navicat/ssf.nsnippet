@@ -1,0 +1,8 @@
+{
+    "name": "scust",
+    "connType": "General",
+    "label": "General",
+    "comment": "\t",
+    "text": "select * from tb_customer where tb_manufacturer=10022",
+    "placeholders": []
+}

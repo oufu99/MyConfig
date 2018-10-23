@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+  <link rel="stylesheet" href="../assets/js/Swiper-4.0.7/swiper.min.css"/>
+  <title> 商品详情 </title>
+  <style>
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 0.5;
+      width: 20px;
+      border-radius: 10px;
+    }
+
+    .cat_icon {
+      position: fixed;
+      left: 15px;
+      bottom: 80px;
+      z-index: 111;
+    }
+
+    .cat_icon img {
+      width: 40px;
+      height: 40px;
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="page-hd">
+    <div class="header bor-1px-b">
+    <div class="header-left">
+        <a href="javascript:history.go(-1)" class="left-arrow"></a>
+    </div>
+    <div class="header-title">商品详情</div>
+    <div class="header-right">
+        <a href="#"></a>
+    </div>
+</div>
+  </div>
+  <div class="page-bd">
+    <!-- 页面内容-->
+    <div class="swiper-container" id="banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="dtimg_box" style="background-image: url('../assets/images/xqbanner.jpg')"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="dtimg_box" style="background-image: url('../assets/images/xqbanner.jpg')"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="dtimg_box" style="background-image: url('../assets/images/xqbanner.jpg')"></div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="weui-cells buy-cells">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <div class="weui-flex flex-center">
+            <div class="weui-flex__item">
+              <span class="price"><span class="text-red">￥</span><b>639.00</b></span><span class="fs24 text-muted">代理价</span>
+              <span style="margin-left: 12px;" class="text-muted fs24">零售价</span><span class="fs20 text-muted" style="text-decoration: line-through;">￥899.00</span>
+            </div>
+            <div class="text-muted fs24" style="padding-top: 0.12rem;">库存 9568</div>
+          </div>
+          <div class="bor-1px-t mt30"></div>
+          <div class="pro_title">
+            小米（MI） 定制版Ninebot 九号平衡车
+          </div>
+          <div class="text-muted fs26 mt10">智能电动体感、年轻人的炫酷玩具</div>
+        </div>
+      </div>
+      <div class="max-height">
+        <div class="weui-cell ptb0">
+          <div class="weui-cell__bd">
+            <div class="label_group">
+              <h3 class="label_tit">颜色</h3>
+              <div class="labels">
+                <label>
+                  <input name="color" checked type="radio">
+                  <span>红色</span>
+                </label>
+                <label>
+                  <input name="color" type="radio">
+                  <span>绿色</span>
+                </label>
+                <label>
+                  <input name="color" type="radio">
+                  <span>蓝色</span>
+                </label>
+              </div>
+            </div>
+            <div class="label_group">
+              <h3 class="label_tit">规格</h3>
+              <div class="labels">
+                <label>
+                  <input name="size" checked type="radio">
+                  <span>S</span>
+                </label>
+                <label>
+                  <input name="size" type="radio">
+                  <span>M</span>
+                </label>
+                <label>
+                  <input name="size" type="radio">
+                  <span>L</span>
+                </label>
+                <label>
+                  <input name="size" type="radio">
+                  <span>XL</span>
+                </label>
+                <label>
+                  <input name="size" type="radio">
+                  <span>XXL</span>
+                </label>
+                <label>
+                  <input name="size" type="radio">
+                  <span>XXL</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-cell border-none">
+          <div class="weui-cell__bd">
+            <label style="position: relative; top: -8px;">数量</label>
+          </div>
+          <div class="weui-cell__ft">
+            <div class="count">
+              <a class="count_btn count_minus"></a>
+              <input class="count_number" type="number" value="1">
+              <a class="count_btn count_plus"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="weui-panel xq_panel">
+      <div class="weui-panel__hd border-left_0">商品详情</div>
+      <div class="weui-panel__bd">
+        <div style="padding: 20px;">
+          <img src="../assets/images/xqimg.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="bottom_buybtn bor-1px-t">
+    <div class="weui-flex">
+      <div class="left">
+        <a class="btn1 bor-1px-r" href="javascript:;">
+          <span><img src="../assets/images/icon_index.png" alt=""></span>
+        </a>
+        <a class="btn1" href="javascript:;">
+          <span><img src="../assets/images/icon_icart.png" alt=""><span class="weui-badge">2</span></span>
+        </a>
+      </div>
+      <div class="weui-flex__item">
+        <a class="btn2" href="javascript:;">加入购物车</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+  var banner = new Swiper('#banner', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination'
+    }
+  });
+</script>
+</body>
+</html>
