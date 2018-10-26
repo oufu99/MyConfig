@@ -39,16 +39,20 @@
         </div>
       </div>
     </div>
-    <div class="search_ad mt20">
-      <a href="###"><img style="display: block; width: 100%;" src="../assets/images/banner1.jpg" alt=""></a>
-    </div>
+
   </div>
 </div>
 
 <script src="../assets/js/lib/jquery-2.1.4.js"></script>
 <script src="../assets/js/jquery-weui.min.js"></script>
 <script>
-  // 显示隐藏取消按钮
+
+  $(function () {
+    $(".search_top input").focus();
+  });
+  /**
+   * 显示隐藏取消按钮
+   *
   $(".search_top input").on('focus', function () {
     $(".search_top").find('.weui-cell__ft').show();
   });
@@ -58,6 +62,7 @@
     },10)
 
   });
+   **/
   // 清空搜索框
   $(".search_top").find('.weui-cell__ft').on('click', function () {
     $(".search_top .weui-input").val('');

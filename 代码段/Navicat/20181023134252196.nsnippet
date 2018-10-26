@@ -1,0 +1,8 @@
+{
+    "name": "scata",
+    "connType": "General",
+    "label": "",
+    "comment": "",
+    "text": "select * from tb_customer_catalog where manufacturer_id=10022",
+    "placeholders": []
+}

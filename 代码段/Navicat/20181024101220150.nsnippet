@@ -1,0 +1,8 @@
+{
+    "name": "ssetting",
+    "connType": "General",
+    "label": "",
+    "comment": "",
+    "text": "select * from tb_setting where manufacturer_id=10022",
+    "placeholders": []
+}

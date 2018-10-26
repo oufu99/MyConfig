@@ -4,7 +4,6 @@
 
 .bottom-tabbar a .label {
   position: relative;
-  top: -0.02rem;
 }
 
 .bottom-tabbar a.active .label {
@@ -13,6 +12,14 @@
 }
 
 .start-page {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   overflow: hidden;
   background-color: #fff;
   display: -webkit-box;
@@ -30,6 +37,11 @@
           flex-direction: column;
 }
 
+.start-page.out {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
 .start-page .logo {
   margin-bottom: 0.2rem;
 }
@@ -40,6 +52,10 @@
 }
 
 .start-page .logo_box {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  position: relative;
+  top: -0.266667rem;
   text-align: center;
 }
 
@@ -60,7 +76,7 @@
   right: 0;
   -webkit-transform: translateX(40%);
           transform: translateX(40%);
-  top: 0;
+  top: -0.266667rem;
   width: 2.52rem;
   height: 2.52rem;
   border: solid 0.513333rem #535353;
@@ -74,7 +90,7 @@
   left: 0;
   -webkit-transform: translateX(-45%);
           transform: translateX(-45%);
-  top: 65%;
+  top: 60%;
   width: 1.533333rem;
   height: 1.533333rem;
   border: solid 0.513333rem #535353;
@@ -88,7 +104,7 @@
   right: 0;
   -webkit-transform: rotate(45deg) translateX(80%);
           transform: rotate(45deg) translateX(80%);
-  top: 63%;
+  top: 58%;
   width: 2.533333rem;
   height: 2.533333rem;
   border: solid 0.513333rem #535353;
@@ -174,6 +190,7 @@
   color: #334180;
   height: 0.4rem;
   line-height: 0.4rem;
+  padding: 0 0.2rem;
 }
 
 .yqdls_top {
@@ -187,6 +204,8 @@
   background-image: url("../images/cardbg.png");
   background-size: 100% 100%;
   color: #fff;
+  box-shadow: 0 0.033333rem 0.066667rem 0 rgba(255, 255, 255, 0.8), 0 0.066667rem 0.133333rem 0 rgba(11, 24, 86, 0.2);
+  border-radius: 0.133333rem;
 }
 
 .yqdls_top .cardbg h3 {
@@ -296,9 +315,9 @@
 }
 
 .regtopimg {
-  padding-bottom: 1.933333rem;
+  padding-bottom: 2.533333rem;
   background-color: #334180;
-  margin-bottom: -1.666667rem;
+  margin-bottom: -2.533333rem;
 }
 
 .regtopimg img {
@@ -354,6 +373,46 @@
   -webkit-transform: none;
           transform: none;
   border: none;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.xieyi_box {
+  position: relative;
+  background-color: #fff;
+  border-radius: 0.133333rem;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+}
+
+.xieyi_box .xieyi_box_inner {
+  max-height: 5.333333rem;
+  overflow: auto;
+}
+
+.xieyi_box .underline {
+  text-decoration: underline;
+}
+
+.xieyi_box a {
+  color: #263580;
+  text-decoration: underline;
+}
+
+.xieyi_box .close-popup {
+  position: absolute;
+  width: 0.36rem;
+  height: 0.36rem;
+  top: 105%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.xieyi_box .close-popup img {
+  width: 100%;
 }
 
 .qr_box_w {
@@ -431,6 +490,12 @@ input::-webkit-input-placeholder {
   font-size: 0.186667rem;
   color: #181818;
   font-weight: 500;
+}
+
+.input_password {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 
 .input_password .eye {
@@ -621,7 +686,7 @@ textarea::-webkit-input-placeholder {
   height: 12px;
   position: relative;
   right: 0.066667rem;
-  top: 0.02rem;
+  top: 0.033333rem;
   z-index: 99;
   background-image: url("../images/input_clean.png");
   background-size: 100% 100%;
@@ -946,7 +1011,11 @@ textarea::-webkit-input-placeholder {
 
 .search_top .weui-cell__ft {
   margin-left: 0.133333rem;
-  display: none;
+  font-size: 0.186667rem;
+}
+
+.search_top .weui-cell__ft .text-blue {
+  color: #333;
 }
 
 .search_top .weui-cell__bd {
@@ -958,23 +1027,25 @@ textarea::-webkit-input-placeholder {
 }
 
 .search_top .weui-cell__bd .weui-input {
-  font-size: 0.146667rem;
+  font-size: 0.186667rem;
 }
 
 .search_top .weui-cell__bd:before {
-  font-family: "iconfont" !important;
-  font-size: 16px;
+  content: "";
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
-  content: "\e605";
+  width: 0.226667rem;
+  height: 0.226667rem;
+  background-image: url("../images/51.png");
+  background-size: 100% 100%;
   position: absolute;
   left: 0.133333rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #666;
+  color: #999999;
 }
 
 .search_page .weui-cell {
@@ -1214,7 +1285,7 @@ textarea::-webkit-input-placeholder {
   margin-right: 0.133333rem;
   box-shadow: 0 0.033333rem 0.066667rem 0 rgba(255, 255, 255, 0.1), 0 0.066667rem 0.133333rem 0 rgba(11, 24, 86, 0.2);
   margin-bottom: 0.2rem;
-  margin-top: 0.133333rem;
+  margin-top: 0;
   background-size: 100% 100%;
   background-image: url("../images/cardbg2.png");
 }
@@ -1230,7 +1301,7 @@ textarea::-webkit-input-placeholder {
 
 .select_date {
   background-color: #f5f5f5;
-  padding: 0.133333rem 0;
+  padding: 0.2rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -1328,6 +1399,34 @@ textarea::-webkit-input-placeholder {
   top: 0;
 }
 
+.order-panel h4.weui-media-box__title {
+  margin-bottom: 0.066667rem;
+}
+
+.ptb60 {
+  padding: 0.4rem 0;
+}
+
+.page .weui-icon-checked:before {
+  content: "";
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  border: solid 1px #bdc2d6;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: relative;
+  top: -0.013333rem;
+}
+
+.page .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {
+  content: "";
+  border-color: #334180;
+  background-color: #334180;
+  background-size: 100% 100%;
+  background-image: url("../images/icon_okk.png");
+}
+
 .banner-swiper .imgbox {
   height: 0;
   overflow: hidden;
@@ -1354,6 +1453,8 @@ textarea::-webkit-input-placeholder {
           flex: 1;
   border-radius: 0;
   background-color: #fff;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 .index_card_flex {
@@ -1422,7 +1523,7 @@ textarea::-webkit-input-placeholder {
   display: block;
   background-color: #ffffff;
   border-radius: 0.1rem;
-  box-shadow: 0 0.066667rem 0.2rem 0 rgba(150, 150, 150, 0.2);
+  box-shadow: 0 0.033333rem 0.12rem 0 rgba(150, 150, 150, 0.2);
   overflow: hidden;
 }
 
@@ -1570,7 +1671,7 @@ textarea::-webkit-input-placeholder {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
   background-color: #ffffff;
-  box-shadow: 0 0.066667rem 0.2rem 0 rgba(150, 150, 150, 0.2);
+  box-shadow: 0 0.033333rem 0.12rem 0 rgba(150, 150, 150, 0.2);
   border-radius: 0.133333rem;
   overflow: hidden;
 }
@@ -1600,7 +1701,7 @@ textarea::-webkit-input-placeholder {
 
 .index_topicon {
   z-index: 99999;
-  position: absolute;
+  position: fixed;
   top: 0.173333rem;
   left: 0.2rem;
   right: 0.2rem;
@@ -1629,9 +1730,13 @@ textarea::-webkit-input-placeholder {
 }
 
 .index_topicon .icon_msg .weui-badge {
+  width: 0.093333rem;
+  height: 0.093333rem;
+  padding: 0;
+  min-width: auto;
   position: absolute;
-  top: 0.066667rem;
-  right: 0.066667rem;
+  top: 0.093333rem;
+  right: 0.08rem;
   background-color: #fa5b4f;
 }
 
@@ -1708,6 +1813,7 @@ textarea::-webkit-input-placeholder {
   margin-top: 0.106667rem;
   padding-right: 0.4rem;
   color: #333;
+  font-weight: 400;
 }
 
 .search_goods-list .pro_sale {
@@ -1809,13 +1915,16 @@ textarea::-webkit-input-placeholder {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
 }
 
 .search_goods-list.list_type .gg_group .gg_group__hd {
   margin-right: 0.133333rem;
+  font-size: 0.186667rem;
+  position: relative;
+  top: 0.02rem;
 }
 
 .search_goods-list.list_type .gg_group .gg_group__bd {
@@ -1864,14 +1973,15 @@ textarea::-webkit-input-placeholder {
 .search_goods-list.list_type .btn_box span {
   text-align: center;
   display: inline-block;
-  width: 1.733333rem;
-  height: 0.56rem;
-  line-height: 0.56rem;
+  width: 1.666667rem;
+  height: 0.533333rem;
+  line-height: 0.533333rem;
   color: #666666;
   font-size: 0.2rem;
   border-radius: 0.28rem;
   margin: 0.066667rem 0.133333rem;
   border: solid 1px #eeeeee;
+  box-shadow: 0 0.033333rem 0.1rem 0 rgba(11, 24, 86, 0.1);
 }
 
 .search_goods-list.list_type .btn_box .addbtn {
@@ -1921,6 +2031,7 @@ textarea::-webkit-input-placeholder {
   -webkit-line-clamp: 1;
   padding-right: 0.4rem;
   color: #333;
+  font-weight: 400;
 }
 
 .cart_goods-list .pro_sale {
@@ -1928,7 +2039,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .cart_goods-list .mt10 {
-  margin-top: -0.066667rem;
+  margin-top: -0.04rem;
   position: relative;
   top: 0.066667rem;
 }
@@ -2033,7 +2144,7 @@ textarea::-webkit-input-placeholder {
 .cart_goods-list.list_type .buy_box {
   margin-top: 1px;
   display: none;
-  padding: 0.2rem 0.133333rem;
+  padding: 0.2rem 0.133333rem 0.2rem 0.666667rem;
 }
 
 .cart_goods-list.list_type .gg_group {
@@ -2041,13 +2152,16 @@ textarea::-webkit-input-placeholder {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
 }
 
 .cart_goods-list.list_type .gg_group .gg_group__hd {
   margin-right: 0.133333rem;
+  font-size: 0.186667rem;
+  position: relative;
+  top: 0.02rem;
 }
 
 .cart_goods-list.list_type .gg_group .gg_group__bd {
@@ -2063,6 +2177,7 @@ textarea::-webkit-input-placeholder {
 .cart_goods-list.list_type .gg_group .label {
   font-size: 0;
   display: inline-block;
+  margin-bottom: 0.133333rem;
 }
 
 .cart_goods-list.list_type .gg_group .label span {
@@ -2096,14 +2211,15 @@ textarea::-webkit-input-placeholder {
 .cart_goods-list.list_type .btn_box span {
   text-align: center;
   display: inline-block;
-  width: 1.733333rem;
-  height: 0.56rem;
-  line-height: 0.56rem;
+  width: 1.333333rem;
+  height: 0.493333rem;
+  line-height: 0.493333rem;
   color: #666666;
   font-size: 0.2rem;
   border-radius: 0.28rem;
   margin: 0.066667rem 0.133333rem;
   border: solid 1px #eeeeee;
+  box-shadow: 0 0.033333rem 0.1rem 0 rgba(11, 24, 86, 0.1);
 }
 
 .cart_goods-list.list_type .btn_box .addbtn {
@@ -2138,7 +2254,7 @@ textarea::-webkit-input-placeholder {
   height: 0.8rem;
   line-height: 0.8rem;
   text-align: center;
-  border-bottom: 0.006667rem solid #f8f8f8;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 .fenlei .left li.active:before {
@@ -2204,6 +2320,7 @@ textarea::-webkit-input-placeholder {
   margin-top: 0.106667rem;
   padding-right: 0.4rem;
   color: #333;
+  font-weight: 400;
 }
 
 .fenlei_goods-list .pro_sale {
@@ -2317,17 +2434,20 @@ textarea::-webkit-input-placeholder {
 }
 
 .fenlei_goods-list.list_type .gg_group {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
   margin-bottom: 0.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
 }
 
 .fenlei_goods-list.list_type .gg_group .gg_group__hd {
   margin-right: 0.133333rem;
+  font-size: 0.173333rem;
+  position: relative;
+  top: 0.02rem;
 }
 
 .fenlei_goods-list.list_type .gg_group .gg_group__bd {
@@ -2353,7 +2473,7 @@ textarea::-webkit-input-placeholder {
   background-color: #fff;
   border: solid 1px #eeeeee;
   border-radius: 0.266667rem;
-  font-size: 0.173333rem;
+  font-size: 0.16rem;
   color: #666;
   text-align: center;
   padding: 0 0.2rem;
@@ -2378,12 +2498,13 @@ textarea::-webkit-input-placeholder {
   text-align: center;
   display: inline-block;
   width: 1.333333rem;
-  height: 0.56rem;
-  line-height: 0.56rem;
+  height: 0.493333rem;
+  line-height: 0.493333rem;
   color: #666666;
-  font-size: 0.2rem;
+  font-size: 0.186667rem;
   border-radius: 0.28rem;
   margin: 0.066667rem 0.066667rem;
+  box-shadow: 0 0.033333rem 0.1rem 0 rgba(11, 24, 86, 0.1);
   border: solid 1px #eeeeee;
 }
 
@@ -2396,6 +2517,44 @@ textarea::-webkit-input-placeholder {
 .fenlei_goods-list.list_type .count_minus,
 .fenlei_goods-list.list_type .count_number {
   display: none;
+}
+
+.fenlei_top {
+  margin-top: 0;
+}
+
+.fenlei_top .weui-cell {
+  padding-top: 0.133333rem;
+  padding-bottom: 0.133333rem;
+}
+
+.fenlei_top .weui-cell__bd {
+  text-align: right;
+  padding-right: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.fenlei_top .icon_search {
+  display: inline-block;
+  width: 0.28rem;
+  height: 0.28rem;
+  background-image: url("../images/search01.png");
+  background-size: 100% 100%;
+}
+
+.fenlei_top .icon_cart {
+  position: relative;
+  display: inline-block;
+  width: 0.333333rem;
+  height: 0.333333rem;
+  background-image: url("../images/icon_icart.png");
+  background-size: 100% 100%;
+}
+
+.fenlei_top .icon_cart .weui-badge {
+  position: absolute;
+  right: -0.066667rem;
+  top: -0.066667rem;
 }
 
 .dtimg_box {
@@ -2506,8 +2665,9 @@ textarea::-webkit-input-placeholder {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  font-size: 0.186667rem;
+  font-size: 0.226667rem;
   padding-top: 0.133333rem;
+  font-weight: 600;
 }
 
 .buy-cells .price {
@@ -2537,7 +2697,7 @@ textarea::-webkit-input-placeholder {
 
 .buy-cells .labels label {
   display: inline-block;
-  margin-bottom: 0.066667rem;
+  margin-bottom: 0.133333rem;
 }
 
 .buy-cells .labels input {
@@ -2580,8 +2740,8 @@ textarea::-webkit-input-placeholder {
   padding-bottom: 0;
 }
 
-#banner {
-  margin-bottom: -0.333333rem;
+.xqbanner {
+  margin-bottom: -0.333333rem !important;
 }
 
 .xq_panel {
@@ -2594,6 +2754,7 @@ textarea::-webkit-input-placeholder {
 
 .xq_panel .weui-panel__hd {
   font-size: 0.226667rem;
+  font-weight: 600;
   color: #333;
 }
 
@@ -2639,6 +2800,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .allselect_bar .left .allr {
+  font-size: 0.186667rem;
   margin-right: 0.066667rem;
 }
 
@@ -2737,6 +2899,10 @@ textarea::-webkit-input-placeholder {
 
 .team_detail {
   padding: 0.2rem;
+}
+
+.team_detail h2 {
+  font-size: 0.266667rem;
 }
 
 .team_detail p {
@@ -2891,6 +3057,10 @@ textarea::-webkit-input-placeholder {
 
 .mt50 {
   margin-top: 0.333333rem;
+}
+
+.weui-cells_checkbox .weui-icon-checked:before {
+  font-size: 0.28rem;
 }
 
 /*my 7.1.1 我的*/
@@ -3163,6 +3333,7 @@ textarea::-webkit-input-placeholder {
 .my .functionBox .weui-grid__label {
   font-size: 0.146667rem;
   color: #999;
+  margin-top: 0.133333rem;
 }
 
 .my .functionBox .weui-grid__icon {
@@ -3317,6 +3488,7 @@ textarea::-webkit-input-placeholder {
   color: #999;
   display: block;
   text-align: center;
+  margin-top: 0.066667rem;
 }
 
 .market .sales .userdata .v_coin {
@@ -3596,6 +3768,15 @@ textarea::-webkit-input-placeholder {
 
 /*myteam 我的团队*/
 
+.myteam {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
 .myteam .searchBox {
   width: 5rem;
   height: 0.666667rem;
@@ -3738,7 +3919,7 @@ textarea::-webkit-input-placeholder {
 
 .myteam .teamList .team .title {
   padding: 0.186667rem 0.266667rem;
-  font-size: 0.226667rem;
+  font-size: 0.2rem;
   font-weight: bold;
   color: #333;
   border-bottom: 0.013333rem solid #eee;
@@ -4291,7 +4472,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .lowerOrderDetails .addressBox .address {
-  padding: 0 0.2rem 0 0.2rem;
+  padding: 0 0.2rem 0.066667rem 0.2rem;
   margin-bottom: 0.2rem;
   box-sizing: border-box;
   font-size: 0.186667rem;
@@ -4305,7 +4486,7 @@ textarea::-webkit-input-placeholder {
 
 .lowerOrderDetails .paytype {
   margin: 0 0.133333rem 0.133333rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.266667rem;
   background-color: #ffffff;
   border-radius: 0.133333rem;
   overflow: hidden;
@@ -4339,6 +4520,7 @@ textarea::-webkit-input-placeholder {
 
 .lowerOrderDetails .lowerOrder {
   margin: 0 0.133333rem 0.786667rem;
+  padding-bottom: 0.266667rem;
 }
 
 .lowerOrderDetails .getBox {
@@ -4384,6 +4566,10 @@ textarea::-webkit-input-placeholder {
   font-size: 0.186667rem;
   font-weight: bold;
   color: #333;
+}
+
+.lowerOrderDetails .getBox .get:last-child {
+  border-bottom: none;
 }
 
 .lowerOrderDetails .btnBox {

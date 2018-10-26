@@ -1,0 +1,8 @@
+{
+    "name": "isetting",
+    "connType": "General",
+    "label": "",
+    "comment": "\t",
+    "text": "INSERT INTO `ymt.ws_sys`.`tb_setting`(`setting_catalog_code`, `key`, `value`, `remark`, `manufacturer_id`, `is_active`) VALUES\r\n('13',-- setting_catalog_code\r\n'RequireMoney',-- key\r\n'200', -- value\r\n'',-- remark\r\n10022,-- manufacturer_id\r\n1);-- is_active",
+    "placeholders": []
+}

@@ -1,0 +1,8 @@
+{
+    "name": "suser",
+    "connType": "General",
+    "label": "",
+    "comment": "\t",
+    "text": "select * from tb_user where  manufacturer_id=10022",
+    "placeholders": []
+}

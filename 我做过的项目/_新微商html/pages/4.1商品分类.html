@@ -11,13 +11,17 @@
 </head>
 <body>
 <div class="page">
-  <div class="search_top border-none">
-    <div class="weui-cell ">
-      <div class="weui-cell__bd">
-        <input id="srarchInput" class="weui-input" placeholder="请输入搜索关键词" value="" type="search"/>
+
+  <div class="weui-cells fenlei_top">
+    <div class="weui-cell">
+      <div class="weui-cell__hd fs30">商品分类</div>
+      <div class="weui-cell__bd bor-1px-r">
+        <span class="icon_search"></span>
       </div>
       <div class="weui-cell__ft">
-        <span class="text-blue">取消</span>
+        <span class="icon_cart">
+          <span class="weui-badge">10</span>
+        </span>
       </div>
     </div>
   </div>
@@ -200,7 +204,7 @@
         </span>
       <p class="label">首页</p>
     </a>
-    <a href="我的.html" class="bottom-tabbar__item active">
+    <a href="4.1商品分类.html" class="bottom-tabbar__item active">
         <span class="icon">
           <img src="../assets/images/bottom_icon02.png"/>
           <img class="lhimg" src="../assets/images/bottom_icon02_lh.png"/>
@@ -214,14 +218,14 @@
         </span>
       <p class="label">发现</p>
     </a>
-    <a href="销售.html" class="bottom-tabbar__item ">
+    <a href="7.1销售主页.html" class="bottom-tabbar__item ">
         <span class="icon">
           <img src="../assets/images/bottom_icon04.png"/>
           <img class="lhimg" src="../assets/images/bottom_icon04_lh.png"/>
         </span>
       <p class="label">销售</p>
     </a>
-    <a href="我的.html" class="bottom-tabbar__item ">
+    <a href="7.1.1我的.html" class="bottom-tabbar__item ">
         <span class="icon">
           <img src="../assets/images/bottom_icon05.png"/>
           <img class="lhimg" src="../assets/images/bottom_icon05_lh.png"/>
@@ -268,6 +272,9 @@
     var ggsh = $(this).parents('.goods-list_item').find('.pro_gg');
     var cinp = $(this).parents('.goods-list_item').find('.count_number');
     var minus = $(this).parents('.goods-list_item').find('.count_minus');
+    if(number == 1){
+      minus.css('opacity','0.5');
+    }
     if(number<1){
       gg.hide();
       cinp.hide();
@@ -286,7 +293,9 @@
     var ggsh = $(this).parents('.goods-list_item').find('.pro_gg');
     var cinp = $(this).parents('.goods-list_item').find('.count_number');
     var minus = $(this).parents('.goods-list_item').find('.count_minus');
-    console.log(gg);
+    if(number > 1){
+      minus.css('opacity','1');
+    }
     if(number>0){
       gg.show();
       cinp.show();

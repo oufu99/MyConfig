@@ -1,8 +1,8 @@
 ﻿set backspace=indent,eol,start
-set timeoutlen=300 ttimeoutlen=0
+set timeoutlen=500 ttimeoutlen=0
 
 
-:inoremap jj <Esc>hh
+:inoremap jj <Esc>
 let mapleader=";"
 
 
@@ -45,8 +45,12 @@ let mapleader=";"
 
 "删除相关 
 :inoremap dd <Esc>ddi
+
+"删除到行尾
 :inoremap <leader>de <Esc>lv$da
 :nmap <leader>de <Esc>lv$da
+
+"删除到行头
 :inoremap <leader>db <Esc>lv^di
 :nmap <leader>db <Esc>lv^di
 
@@ -72,7 +76,11 @@ let mapleader=";"
 :inoremap <leader>z <Esc>:vsc 生成.重新生成选定内容<CR>i
 :nmap <leader>z <Esc>:vsc 生成.重新生成选定内容<CR>i
 
+:inoremap <leader>t <Esc>:vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
+:nmap <leader>t <Esc>:vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
 
+:inoremap <leader>g <Esc>:vsc 窗口.固定选项卡<CR>
+:nmap <leader>g <Esc>:vsc 窗口.固定选项卡<CR>
 
 
 

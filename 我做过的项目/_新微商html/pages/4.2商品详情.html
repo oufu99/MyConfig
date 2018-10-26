@@ -10,14 +10,20 @@
   <link rel="stylesheet" href="../assets/js/Swiper-4.0.7/swiper.min.css"/>
   <title> 商品详情 </title>
   <style>
+
+    .swiper-pagination{
+      bottom: 40px !important;
+    }
     .swiper-pagination-bullet {
-      background-color: #fff;
+      background-color: #eeeeee;
+      border: 1px solid #eee;
       opacity: 1;
     }
 
     .swiper-pagination-bullet-active {
-      opacity: 0.5;
-      width: 20px;
+      opacity: 1;
+      border: 1px solid #eee;
+      background-color: #fff;
       border-radius: 10px;
     }
 
@@ -51,7 +57,7 @@
   </div>
   <div class="page-bd">
     <!-- 页面内容-->
-    <div class="swiper-container" id="banner">
+    <div class="swiper-container xqbanner" id="banner">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="dtimg_box" style="background-image: url('../assets/images/xqbanner.jpg')"></div>
@@ -70,7 +76,7 @@
         <div class="weui-cell__bd">
           <div class="weui-flex flex-center">
             <div class="weui-flex__item">
-              <span class="price"><span class="text-red">￥</span><b>639.00</b></span><span class="fs24 text-muted">代理价</span>
+              <span class="price" style="position: relative; top: 3px;"><span class="text-red">￥</span><b>639.00</b></span><span class="fs24 text-muted">代理价</span>
               <span style="margin-left: 12px;" class="text-muted fs24">零售价</span><span class="fs20 text-muted" style="text-decoration: line-through;">￥899.00</span>
             </div>
             <div class="text-muted fs24" style="padding-top: 0.12rem;">库存 9568</div>
@@ -135,11 +141,11 @@
         </div>
         <div class="weui-cell border-none">
           <div class="weui-cell__bd">
-            <label style="position: relative; top: -8px;">数量</label>
+            <label class="fs28 fw600" style="position: relative; top: -8px;">数量</label>
           </div>
           <div class="weui-cell__ft">
             <div class="count">
-              <a class="count_btn count_minus"></a>
+              <a class="count_btn count_minus" style="opacity: 0.5;"></a>
               <input class="count_number" type="number" value="1">
               <a class="count_btn count_plus"></a>
             </div>
@@ -164,7 +170,7 @@
         <a class="btn1 bor-1px-r" href="javascript:;">
           <span><img src="../assets/images/icon_index.png" alt=""></span>
         </a>
-        <a class="btn1" href="javascript:;">
+        <a class="btn1" href="4.3购物车.html">
           <span><img src="../assets/images/icon_icart.png" alt=""><span class="weui-badge">2</span></span>
         </a>
       </div>

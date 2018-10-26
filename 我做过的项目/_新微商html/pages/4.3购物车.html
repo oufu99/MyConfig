@@ -11,6 +11,17 @@
 </head>
 <body>
 <div class="page">
+  <div class="page-hd">
+    <div class="header bor-1px-b">
+    <div class="header-left">
+        <a href="javascript:history.go(-1)" class="left-arrow"></a>
+    </div>
+    <div class="header-title">购物车</div>
+    <div class="header-right">
+        <a href="#"></a>
+    </div>
+</div>
+  </div>
   <div class="allselect_bar">
     <div class="left"><span class="allr"><i class="icon_rd"></i>全选</span><span class="text-muted fs24">当前购物车共12件商品</span></div>
     <div class="right">
@@ -21,7 +32,6 @@
     <!-- 页面内容-->
     <div class="cart_goods-list list_type">
       <ul>
-
         <li class="goods-list_item">
           <div class="pro_box">
             <div class="rdbox"><i class="icon_rd"></i></div>
@@ -218,6 +228,9 @@
     var ggsh = $(this).parents('.goods-list_item').find('.pro_gg');
     var cinp = $(this).parents('.goods-list_item').find('.count_number');
     var minus = $(this).parents('.goods-list_item').find('.count_minus');
+    if(number == 1){
+      minus.css('opacity','0.5');
+    }
     if(number<1){
       gg.hide();
       cinp.hide();
@@ -236,7 +249,9 @@
     var ggsh = $(this).parents('.goods-list_item').find('.pro_gg');
     var cinp = $(this).parents('.goods-list_item').find('.count_number');
     var minus = $(this).parents('.goods-list_item').find('.count_minus');
-    console.log(gg);
+    if(number > 1){
+      minus.css('opacity','1');
+    }
     if(number>0){
       gg.show();
       cinp.show();

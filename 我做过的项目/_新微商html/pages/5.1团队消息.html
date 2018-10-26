@@ -24,7 +24,7 @@
     </div>
     <div class="page-bd">
         <!-- 页面内容-->
-        <div class="weui-cells mt0">
+        <div id="uifo1" class="weui-cells mt0">
             <div class="weui-cell">
                 <div class="weui-cell__hd team_img">
                     <img src="../assets/images/tx.jpg" alt="">
@@ -35,11 +35,35 @@
                 </div>
             </div>
         </div>
+
+        <div  id="uifo2" class="weui-cells mt0" style="display: none;">
+            <div class="weui-cell">
+                <div class="weui-cell__hd team_img">
+                    <img src="../assets/images/tx.jpg" alt="">
+                </div>
+                <div class="weui-cell__bd">
+                    <p class="fs30 fw600">你的男神</p>
+                    <p class="fs26 text-muted">待处理订单总有10张</p>
+                </div>
+            </div>
+        </div>
+
+        <div  id="uifo3" class="weui-cells mt0" style="display: none;">
+            <div class="weui-cell">
+                <div class="weui-cell__hd team_img">
+                    <img src="../assets/images/tx.jpg" alt="">
+                </div>
+                <div class="weui-cell__bd">
+                    <p class="fs30 fw600">你的男神</p>
+                    <p class="fs26 text-muted">推荐团队90人，下级进货人员20人</p>
+                </div>
+            </div>
+        </div>
         <div class="weui-tab">
             <div class="weui-navbar">
                 <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
                     <span style="position: relative;"> 团队消息
-                    <span class="weui-badge" style="position: absolute;">1</span></span>
+                    <span class="weui-badge" style="position: absolute; top: -5px;">1</span></span>
                 </a>
                 <a class="weui-navbar__item" href="#tab2">
                     订单通知
@@ -133,7 +157,7 @@
                                 </div>
                                 <div class="weui-media-box__bd">
                                     <h4 class="weui-media-box__title fs28 fw600 text-default">下级“你的女孩”请求发货</h4>
-                                    <p class="weui-media-box__desc fs24 text-muted">补水保湿霜、美白去皱霜等</p>
+                                    <p class="weui-media-box__desc fs24 text-muted mt10">补水保湿霜、美白去皱霜等</p>
                                 </div>
                             </a>
                         </div>
@@ -156,7 +180,7 @@
                                 </div>
                                 <div class="weui-media-box__bd">
                                     <h4 class="weui-media-box__title fs28 fw600 text-default">下级“你的女孩”请求发货</h4>
-                                    <p class="weui-media-box__desc fs24 text-muted">补水保湿霜、美白去皱霜等</p>
+                                    <p class="weui-media-box__desc fs24 text-muted mt10">补水保湿霜、美白去皱霜等</p>
                                 </div>
                             </a>
                         </div>
@@ -179,7 +203,7 @@
                                 </div>
                                 <div class="weui-media-box__bd">
                                     <h4 class="weui-media-box__title fs28 fw600 text-default">下级“你的女孩”请求发货</h4>
-                                    <p class="weui-media-box__desc fs24 text-muted">补水保湿霜、美白去皱霜等</p>
+                                    <p class="weui-media-box__desc fs24 text-muted mt10">补水保湿霜、美白去皱霜等</p>
                                 </div>
                             </a>
                         </div>
@@ -188,7 +212,7 @@
                 <div id="tab3" class="weui-tab__bd-item">
                     <div class="weui-panel weui-panel_access system-panel">
                         <div class="weui-panel__bd">
-                            <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                            <a href="5.4公告详情.html" class="weui-media-box weui-media-box_appmsg">
                                 <div class="weui-media-box__hd">
                                     <img class="weui-media-box__thumb" src="../assets/images/tx.jpg">
                                 </div>
@@ -212,7 +236,7 @@
                     </div>
                     <div class="weui-panel weui-panel_access system-panel">
                         <div class="weui-panel__bd">
-                            <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                            <a href="5.4公告详情.html" class="weui-media-box weui-media-box_appmsg">
                                 <div class="weui-media-box__hd">
                                     <img class="weui-media-box__thumb" src="../assets/images/tx.jpg">
                                 </div>
@@ -238,8 +262,33 @@
             </div>
         </div>
     </div>
-
+</div>
+  
     <script src="../assets/js/lib/jquery-2.1.4.js"></script>
 <script src="../assets/js/jquery-weui.min.js"></script>
+
+  <script>
+      
+      $(function () {
+        $(".weui-navbar__item").on('click', function () {
+          var index = $(this).index();
+          if(index == 1){
+            $("#uifo2").show();
+            $("#uifo1").hide();
+            $("#uifo3").hide();
+
+          } else if(index ==0 ) {
+            $("#uifo1").show();
+            $("#uifo2").hide();
+            $("#uifo3").hide();
+          } else {
+            $("#uifo3").show();
+            $("#uifo1").hide();
+            $("#uifo2").hide();
+
+          }
+        });
+      });
+  </script>
 </body>
 </html>

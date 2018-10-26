@@ -211,6 +211,9 @@
     var ggsh = $(this).parents('.goods-list_item').find('.pro_gg');
     var cinp = $(this).parents('.goods-list_item').find('.count_number');
     var minus = $(this).parents('.goods-list_item').find('.count_minus');
+    if(number == 1){
+      minus.css('opacity','0.5');
+    }
     if(number<1){
       gg.hide();
       cinp.hide();
@@ -229,7 +232,9 @@
     var ggsh = $(this).parents('.goods-list_item').find('.pro_gg');
     var cinp = $(this).parents('.goods-list_item').find('.count_number');
     var minus = $(this).parents('.goods-list_item').find('.count_minus');
-    console.log(gg);
+    if(number > 1){
+      minus.css('opacity','1');
+    }
     if(number>0){
       gg.show();
       cinp.show();

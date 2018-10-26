@@ -1,0 +1,8 @@
+{
+    "name": "icata",
+    "connType": "General",
+    "label": "",
+    "comment": "",
+    "text": "insert into tb_customer_catalog (`manufacturer_id`,`name`,`parent_id`,`parent_str`,`is_active`,`identity_img`,`audit_type`,`auditor`,`IsStatus`,`brand_id`,`sort`,`remark`\r\n) values(10022,'钻代',0,',0,12,',1,'',1,0,0,0,0,'')",
+    "placeholders": []
+}

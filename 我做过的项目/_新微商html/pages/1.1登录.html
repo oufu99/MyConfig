@@ -26,12 +26,13 @@
           <div class="weui-flex">
             <div><span class="hd_qh">+86</span></div>
             <div class="weui-flex__item"><input class="weui-input phone_input" placeholder="在这里输入手机号" type="text"></div>
+            <div>
+              <i style="display: none;" class="clean_input"></i>
+            </div>
           </div>
 
         </div>
-        <div>
-          <i style="display: none;" class="clean_input"></i>
-        </div>
+
       </div>
 
       <div class="weui-cell mt20">
@@ -52,6 +53,20 @@
   </div>
   <div class="tc" style="background-color: #fff; padding: 0.25rem 0;"><a href="1.2找回密码.html" class="fs26"
                                                                          style="color: #999999; text-decoration: underline;">忘记密码</a>
+  </div>
+</div>
+
+<div class="start-page">
+  <!-- 页面内容-->
+  <span class="sp1"></span>
+  <span class="sp2"></span>
+  <span class="sp3"></span>
+  <div class="logo_box">
+    <div class="logo">
+      <img src="../assets/images/logo.png" alt="">
+    </div>
+    <h3 class="title">素雅新微商</h3>
+    <h4 class="subtitle">欢迎使用新进货系统</h4>
   </div>
 </div>
 
@@ -107,6 +122,11 @@
       }
     });
   });
+
+  /*3秒隐藏启动欢迎页*/
+  var t = setTimeout(function () {
+    $('.start-page').addClass('out');
+  },3000)
 </script>
 </body>
 </html>
