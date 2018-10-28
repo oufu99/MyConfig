@@ -36,24 +36,25 @@ let mapleader=";"
 
 
 "方法补全相关
-:inoremap <leader>f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
+:inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
 
 
-:inoremap <leader><leader> <Esc>$a;
-:nmap <leader><leader> <Esc>$a;
+:inoremap ;; <Esc>$a;
+:nmap ;; <Esc>$a;
 
 
-"删除相关 
+"删除相关          开始
 :inoremap dd <Esc>ddi
 
-"删除到行尾
+"删除到行尾  普通模式加个l才不会把光标前的删除掉
 :inoremap <leader>de <Esc>lv$da
-:nmap <leader>de <Esc>lv$da
+:nmap <leader>de <Esc>v$da
 
 "删除到行头
-:inoremap <leader>db <Esc>lv^di
-:nmap <leader>db <Esc>lv^di
+:inoremap <leader>db <Esc>v^di
+:nmap <leader>db <Esc>v^di
 
+"删除相关          结束
 
 "向前进一格,用来进入() ""等位置
 :inoremap ji <ESC>ha
@@ -66,21 +67,21 @@ let mapleader=";"
 :inoremap xl <Esc>lx
 
 "操作Vs
-":inoremap <leader>x <Esc>:vsc 窗口.关闭文档窗口<CR>i
-":nmap <leader>x <Esc>:vsc 窗口.关闭文档窗口<CR>i
+":inoremap ;x <Esc>:vsc 窗口.关闭文档窗口<CR>i
+":nmap ;x <Esc>:vsc 窗口.关闭文档窗口<CR>i
 
-:inoremap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
-:nmap <leader>x <Esc>:vsc 文件.除此之外全部关闭<CR>i
+:inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
+:nmap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 
 "s 这个键太容易失误了,改成z
-:inoremap <leader>z <Esc>:vsc 生成.重新生成选定内容<CR>i
-:nmap <leader>z <Esc>:vsc 生成.重新生成选定内容<CR>i
+:inoremap ;z <Esc>:vsc 生成.重新生成选定内容<CR>i
+:nmap ;z <Esc>:vsc 生成.重新生成选定内容<CR>i
 
-:inoremap <leader>t <Esc>:vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
-:nmap <leader>t <Esc>:vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
+:inoremap ;t <Esc>:vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
+:nmap ;t <Esc>:vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
 
-:inoremap <leader>g <Esc>:vsc 窗口.固定选项卡<CR>
-:nmap <leader>g <Esc>:vsc 窗口.固定选项卡<CR>
+:inoremap ;g <Esc>:vsc 窗口.固定选项卡<CR>
+:nmap ;g <Esc>:vsc 窗口.固定选项卡<CR>
 
 
 
