@@ -15,10 +15,10 @@ let mapleader=";"
 
  
 "定义行头行尾
-:inoremap je <Esc>$a
-:nmap je <Esc>$a
-:inoremap jb <Esc>^i
-:nmap jb <Esc>^i
+:inoremap ee <Esc>$a
+:nmap ee <Esc>$a
+:inoremap bb <Esc>^i
+:nmap bb <Esc>^i
 
 
 :inoremap jw <Esc>lbve
@@ -28,11 +28,10 @@ let mapleader=";"
 
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
-"直接换行
-:inoremap jo <Esc>o
-:nmap jo o
 
+"换行并添加{  }
 :inoremap jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
+:nmap jk o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
 
 "方法补全相关
