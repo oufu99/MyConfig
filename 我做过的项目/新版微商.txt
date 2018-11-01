@@ -17,8 +17,8 @@ suya.suyamobile.cn/Home/Index
 我的团队
 suya.suyamobile.cn/Home/MyTeam
 
-
-suya.suyamobile.cn/Commision/Index
+佣金列表
+suya.suyamobile.cn/Commision/InCommision
 
 增加一个判断,如果isactive!=0就不能注册
 

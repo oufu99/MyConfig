@@ -7,68 +7,73 @@ let mapleader=";"
 
 
 "ѡ�񵥴 
+"中心思想,命令模式的那些常用键就不要动他了,除非是定义一个极其常用的键
 
+"可以用的键  n在vim中好像没什么用
 
 "块选择模式按a直接退出
 :vmap a <Esc>
 
 
- 
-"定义行头行尾
-:inoremap ee <Esc>$a
-:nmap ee <Esc>$a
-:inoremap bb <Esc>^i
-:nmap bb <Esc>^i
 
+"+++++++++++++++++++++方法补全相关开始+++++++++++++++++++++
+"新建一个方法
+:inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
 
-:inoremap jw <Esc>lbve
-:nmap jw lbve
+"换行并添加{  } 只是普通模式用,命令模式移动的时候会触发
+:inoremap jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
+:inoremap ;jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
-
+:inoremap jo <Esc>$o
 
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
-
-"换行并添加{  }
-:inoremap jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
-:nmap jk o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
+"+++++++++++++++++++++方法补全结束+++++++++++++++++++++
 
 
-"方法补全相关
-:inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
+"+++++++++++++++++++++选中相关开始+++++++++++++++++++++
+:nmap nw wve
 
+"加个l是因为让光标在第一格的时候可以选择,但是在最末尾就不行,但是可以直接用ji来前进一格
+:inoremap jw <Esc>lbve
+:nmap jw lbve
+"+++++++++++++++++++++选中相关结束+++++++++++++++++++++
 
+"+++++++++++++++++++++光标移动开始+++++++++++++++++++++
 :inoremap ;; <Esc>$a;
 :nmap ;; <Esc>$a;
 
-
-"删除相关          开始
-:inoremap dd <Esc>ddi
-
-"删除到行尾  普通模式加个l才不会把光标前的删除掉
-:inoremap <leader>de <Esc>lv$da
-:nmap <leader>de <Esc>v$da
-
-"删除到行头
-:inoremap <leader>db <Esc>v^di
-:nmap <leader>db <Esc>v^di
-
-"删除相关          结束
+"移动到行头行尾
+:inoremap ee <Esc>$a
+:nmap ;ee <Esc>$a
+:inoremap bb <Esc>^i
+:nmap ;bb <Esc>^i
 
 "向前进一格,用来进入() ""等位置
 :inoremap ji <ESC>ha
 "后退一格
 :inoremap jl <ESC>la
+"+++++++++++++++++++++光标移动结束+++++++++++++++++++++
 
+
+"+++++++++++++++++++++删除相关开始+++++++++++++++++++++
+:inoremap dd <Esc>ddi
 
 "删除
 :inoremap xx <BS>
 :inoremap xl <Esc>lx
 
-"操作Vs
-":inoremap ;x <Esc>:vsc 窗口.关闭文档窗口<CR>i
-":nmap ;x <Esc>:vsc 窗口.关闭文档窗口<CR>i
+"删除到行尾  普通模式加个l才不会把光标前的删除掉
+:inoremap ;de <Esc>lv$da
+:nmap ;de <Esc>v$da
 
+"删除到行头
+:inoremap ;db <Esc>v^di
+:nmap ;db <Esc>v^di
+
+"+++++++++++++++++++++删除相关结束+++++++++++++++++++++
+
+"+++++++++++++++++++++操作Vs开始+++++++++++++++++++++++
 :inoremap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 :nmap ;x <Esc>:vsc 文件.除此之外全部关闭<CR>i
 
@@ -81,6 +86,10 @@ let mapleader=";"
 
 :inoremap ;g <Esc>:vsc 窗口.固定选项卡<CR>
 :nmap ;g <Esc>:vsc 窗口.固定选项卡<CR>
+
+"+++++++++++++++++++++操作Vs结束+++++++++++++++++++++++
+
+
 
 
 

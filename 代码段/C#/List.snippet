@@ -2,26 +2,22 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>cempty</Title>
-			<Shortcut>cempty</Shortcut>
+			<Title>List</Title>
+			<Shortcut>List</Shortcut>
 			<Description> </Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
-				<SnippetType>SurroundsWith</SnippetType>
 			</SnippetTypes>
 		</Header>
 		<Snippet>
 			<Declarations>
-				<Literal>
-					<ID>name</ID>
-					<Default>msg</Default>
+				<Literal Editable="false">
+					<ID>SystemConsole</ID>
+					<Function>SimpleTypeName(global::System.Console)</Function>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[if (string.IsNullOrEmpty($name$))
-                {
-					$selected$$end$
-                }]]>
+			<Code Language="csharp"><![CDATA[List<$end$>]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
