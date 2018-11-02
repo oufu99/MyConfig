@@ -3,7 +3,10 @@ set timeoutlen=500 ttimeoutlen=0
 
 
 :inoremap jj <Esc>
-let mapleader=";"
+
+"设置Leader键
+"<leader>
+let mapleader="<Space>"
 
 
 "ѡ�񵥴 
@@ -24,7 +27,8 @@ let mapleader=";"
 :inoremap jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 :inoremap ;jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
-:inoremap jo <Esc>$o
+"不能用的原因是join 的时候总是混淆
+":inoremap jo <Esc>$o
 
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
@@ -45,9 +49,9 @@ let mapleader=";"
 
 "移动到行头行尾
 :inoremap ee <Esc>$a
-:nmap ;ee <Esc>$a
+:nmap <leader>e <Esc>$a
 :inoremap bb <Esc>^i
-:nmap ;bb <Esc>^i
+:nmap <leader>b <Esc>^i
 
 "向前进一格,用来进入() ""等位置
 :inoremap ji <ESC>ha
@@ -65,11 +69,11 @@ let mapleader=";"
 
 "删除到行尾  普通模式加个l才不会把光标前的删除掉
 :inoremap ;de <Esc>lv$da
-:nmap ;de <Esc>v$da
+:nmap <Leader>de <Esc>v$da
 
 "删除到行头
 :inoremap ;db <Esc>v^di
-:nmap ;db <Esc>v^di
+:nmap <Leader>db <Esc>v^di
 
 "+++++++++++++++++++++删除相关结束+++++++++++++++++++++
 
