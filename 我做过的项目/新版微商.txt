@@ -8,6 +8,10 @@ http://suya.suyamobile.cn/agent/InviteQrCode?catalogId=12&parentId=0
 注册页面
 suya.suyamobile.cn/Agent/Register?catalogId=12&parentId=0
 
+
+登录:
+suya.suyamobile.cn/Login/Index
+
 个人资料:
 suya.suyamobile.cn/Home/PersonalData
 
@@ -25,5 +29,11 @@ suya.suyamobile.cn/Notice/Index
 
 增加一个判断,如果isactive!=0就不能注册
 
+
+
+分页:
+  orderby c.CreateTime descending
+  
+list = list.Skip((searchModel.PageIndex - 1) * searchModel.PageSize).Take(searchModel.PageSize).ToList();
 
  
