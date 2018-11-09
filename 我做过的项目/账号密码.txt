@@ -10,6 +10,7 @@ application  serp3_test123
 admin  
 PT_DSe/XycOhQW_Q8Cu5tIZg_sg
 
+http://meixin.onlyid.cn/SysAdmin/Tools/Login.ashx?domain=meixin&manuId=10646
 
 
 1.
