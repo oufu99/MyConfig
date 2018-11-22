@@ -19,7 +19,7 @@
           filter_keyword ,
           new_url
         )
-VALUES  ( 10636 , -- manu_id - int
+VALUES  ( 10596   , -- manu_id - int
           N'Business' , -- className - nvarchar(1000)
           N'' , -- Json - nvarchar(500)
           N'/SysAdmin/Pages/tb_customerAdd.aspx' , -- filter_keyword - nvarchar(2000)

@@ -2,8 +2,8 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sparent</Title>
-      <Shortcut>sparent</Shortcut>
+      <Title>cast</Title>
+      <Shortcut>cast</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT customer_catalog_id, parent_id,parent_str,oldparent_id,oldparent_str, * FROM tb_customer_10596   ORDER BY createtime desc	]]></Code>
+      <Code Language="sql"><![CDATA[Cast(@ as NVARCHAR(50))]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

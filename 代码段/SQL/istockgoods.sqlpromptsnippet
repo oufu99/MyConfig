@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>istockgoods</Title>
+      <Shortcut>istockgoods</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"> EXEC dbo.sp_order_stock_in_or_out_10474 @manuid = @manuid, -- int
+                                @order_id = @order_id, -- int
+                                @cust_id = @custid, -- int
+                                @to_cust_id = @targetId, -- int
+                                @goods_id = @goods_id, -- int
+                                @quantity = @quantity, -- int
+                                @type = 1, -- int
+                                @in_or_out = N'in', -- nvarchar(20)
+                                @mssage = @mssage OUTPUT;
+</Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

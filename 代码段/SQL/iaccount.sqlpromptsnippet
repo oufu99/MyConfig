@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">DECLARE @manuId int=10636
+      <Code Language="sql"><![CDATA[DECLARE @manuId int=10596  
 DECLARE @custId int=1
 EXEC dbo.sp_cust_personalcenter_in @cust_id = @custId, -- int
                                         @source = 99, -- int --页面显示的类型 入下单返佣等 
@@ -22,7 +22,7 @@ EXEC dbo.sp_cust_personalcenter_in @cust_id = @custId, -- int
                                         @manufacturer_id = @manuId, -- int
                                         @withdraw_status = 1, -- int
                                         @send_status = 0, -- int
-                                        @msg = N''; -- nvarchar(1000)</Code>
+                                        @msg = N''; -- nvarchar(1000)]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

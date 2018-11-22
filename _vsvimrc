@@ -67,6 +67,11 @@ let mapleader="<Space>"
 :inoremap xx <BS>
 :inoremap xl <Esc>lx
 
+" 重写x和X的删除
+:nmap X <Del>
+:nmap x h<Del>
+
+
 "删除到行尾  普通模式加个l才不会把光标前的删除掉
 :inoremap ;de <Esc>lv$da
 :nmap <Leader>de <Esc>v$da

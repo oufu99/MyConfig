@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT * FROM tb_customer_10636 WHERE mobile='10055555555' OR name='1005']]></Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM tb_customer_10596   WHERE mobile='10055555555' OR name='1005']]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>istockproduct</Title>
+      <Shortcut>istockproduct</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[ EXEC dbo.sp_order_stock_in_or_out @manuid = 10596  , -- int
+                        @order_id = 0, -- int
+                        @cust_id = @custId, -- int
+                        @to_cust_id = 0, -- int
+                        @product_id = @zs_product_id, -- int
+                        @quantity = @shiyongzhuang, -- int
+                        @type = 2, -- int
+                        @in_or_out = N'in', -- nvarchar(20)
+                        @mssage = @mssage OUTPUT;]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

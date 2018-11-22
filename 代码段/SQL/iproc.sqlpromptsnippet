@@ -14,8 +14,8 @@
       <Declarations />
       <Code Language="sql"> INSERT dbo.tb_manu_mapping_procedure
          ( manu_id, procedure_name, type, sort )
- VALUES  ( 10636, -- manu_id - int
-           'pro_customerAudit_10636', -- procedure_name - varchar(50)
+ VALUES  ( 10596  , -- manu_id - int
+           'pro_customerAudit_10596  ', -- procedure_name - varchar(50)
            N'audit_cust_after'audit_order_after, -- type - nvarchar(50)
            1  -- sort - smallint 执行顺序 0 最新执行
            )

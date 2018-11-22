@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">SELECT  dllname,namespace FROM tb_manumethod_setting WHERE manu_id='10636'</Code>
+      <Code Language="sql">SELECT  dllname,namespace FROM tb_manumethod_setting WHERE manu_id='10596  '</Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

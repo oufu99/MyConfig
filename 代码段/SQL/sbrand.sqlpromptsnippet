@@ -2,8 +2,8 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sparent</Title>
-      <Shortcut>sparent</Shortcut>
+      <Title>sbrand</Title>
+      <Shortcut>sbrand</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT customer_catalog_id, parent_id,parent_str,oldparent_id,oldparent_str, * FROM tb_customer_10596   ORDER BY createtime desc	]]></Code>
+      <Code Language="sql"><![CDATA[SELECT * FROM tb_customer_brand_10596 WHERE tb_customerID=5890 AND is_active=1]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
