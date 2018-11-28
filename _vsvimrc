@@ -53,6 +53,11 @@ let mapleader="<Space>"
 :inoremap bb <Esc>^i
 :nmap <leader>b <Esc>^i
 
+"填加新行
+:inoremap jb <Esc>o
+:nmap jb <Esc>o
+
+
 "向前进一格,用来进入() ""等位置
 :inoremap ji <ESC>ha
 "后退一格
