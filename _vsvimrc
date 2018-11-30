@@ -28,7 +28,7 @@ let mapleader="<Space>"
 :inoremap ;jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
 "不能用的原因是join 的时候总是混淆
-":inoremap jo <Esc>$o
+:inoremap jo<Tab> <Esc>$o
 
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
