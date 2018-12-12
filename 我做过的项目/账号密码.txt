@@ -13,7 +13,8 @@ PT_DSe/XycOhQW_Q8Cu5tIZg_sg
 http://meixin.onlyid.cn/SysAdmin/Tools/Login.ashx?domain=meixin&manuId=10646
 
 
-1.
+
+
 
 数据库连接字符串
 server=10.1.10.1,5388;Uid=serp3;Pwd=PTDSe/XycOhQWQ8Cu5tIZg;DataBase=serp3_test;Connection Timeout=120;Application Name=zhihui_test
@@ -26,8 +27,20 @@ mysql数据库：
 winmobi
 sql@$#P@ssw0rd
 
+4.0 数据库连接字符串
+server=10.1.20.120;port=5389;database=zp.control_center; uid=winmobi;Password=sql@$#P@ssw0rd
+
 web端过滤:serp3_test1
 mobile端过滤:serp3111
+
+4.0项目git账号密码
+oufu99
+zpcode@123
+
+https://yunpan.360.cn/file/index#/fileManage/my/file/%2F
+13533311703
+8351067hhj  
+
 
 正式环境配置地址的账号
 http://admin.onlyid.cn/login.aspx

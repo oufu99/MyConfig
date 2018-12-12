@@ -25,6 +25,7 @@ EXEC('DELETE FROM dbo.tb_cutomer_address_'+@manuID)
 EXEC('DELETE FROM dbo.tb_mifei_sucai_'+@manuID)
 EXEC('DELETE FROM dbo.tb_cust_upgradeorder_'+@manuID)
 EXEC('DELETE FROM dbo.stock_in_or_out_'+@manuID)
+EXEC('DELETE FROM dbo.tb_stock_in_'+@manuID)
 EXEC('DELETE FROM dbo.tb_stock_'+@manuID)
 EXEC('DELETE FROM dbo.tb_noticeNew_'+@manuID)
 EXEC('DELETE FROM dbo.Commission_Withdrawals_'+@manuID)
@@ -55,3 +56,5 @@ EXEC('DELETE FROM dbo.tb_public_product where manufacturer_id='+@manuID)
 EXEC('DELETE FROM dbo.tb_integral_goods_exchange where manu_id='+@manuID)
 EXEC('DELETE FROM dbo.tb_integral_goods where manu_id='+@manuID)
  
+ --²Ö¿â¼°¿â´æ
+ --delete dbo.tb_warehouse WHERE manufacturer_id=--

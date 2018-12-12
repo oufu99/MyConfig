@@ -1,3 +1,7 @@
+
+报表地址
+hzyil.web.cn/SysAdmin/Pages/custom/hzyil/tb_customerInfo.aspx
+
 http://hzyil.web.cn/SysAdmin/Pages/custom/hzyil/hzyil_setting.aspx
 
 
