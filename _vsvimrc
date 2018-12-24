@@ -1,5 +1,5 @@
 ﻿set backspace=indent,eol,start
-set timeoutlen=500 ttimeoutlen=0
+set timeoutlen=300 ttimeoutlen=0
 
 
 :inoremap jj <Esc>
@@ -16,8 +16,9 @@ let mapleader="<Space>"
 
 "块选择模式按a直接退出
 :vmap a <Esc>
+:nmap <Esc> a
 
-
+ 
 
 "+++++++++++++++++++++方法补全相关开始+++++++++++++++++++++
 "新建一个方法
@@ -49,14 +50,18 @@ let mapleader="<Space>"
 
 "移动到行头行尾
 :inoremap ee <Esc>$a
+:vmap ee $
 :nmap <leader>e <Esc>$a
 :inoremap bb <Esc>^i
 :nmap <leader>b <Esc>^i
 
 "填加新行
-:inoremap jb <Esc>o
-:nmap jb <Esc>o
+:inoremap ib <Esc>o
+:nmap ib <Esc>o
 
+"添加方法后进入大括号
+:inoremap jb <Esc>jo
+:nmap jb jo
 
 "向前进一格,用来进入() ""等位置
 :inoremap ji <ESC>ha
@@ -93,14 +98,16 @@ let mapleader="<Space>"
 
 "s 这个键太容易失误了,改成z
 :inoremap ;z <Esc>:vsc 生成.重新生成选定内容<CR>i
-:nmap ;z <Esc>:vsc 生成.重新生成选定内容<CR>i
+:nmap ;z :vsc 生成.重新生成选定内容<CR>i
 
 :inoremap ;t <Esc>:vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
-:nmap ;t <Esc>:vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
+:nmap ;t :vsc 编辑器上下文菜单.导航.与活动文档同步<CR>
 
 :inoremap ;g <Esc>:vsc 窗口.固定选项卡<CR>
-:nmap ;g <Esc>:vsc 窗口.固定选项卡<CR>
+:nmap ;g :vsc 窗口.固定选项卡<CR>
 
+:inoremap ;c <Esc>:vsc 项目.添加类<CR>
+:nmap <Ctrl>c :vsc 项目.添加类<CR>
 "+++++++++++++++++++++操作Vs结束+++++++++++++++++++++++
 
 

@@ -1,4 +1,10 @@
 
+
+忘记密码
+http://suya.suyamobile.cn/Login/ForgetPwd
+
+
+
 选择级别
 http://suya.suyamobile.cn/Agent/InviteSelectCatalog 
 
