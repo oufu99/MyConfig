@@ -12,7 +12,9 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[DECLARE @msg NVARCHAR(100)]]></Code>
+      <Code Language="sql"><![CDATA[DECLARE @msg NVARCHAR(100)
+    ,@msg OUTPUT
+SELECT @msg]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

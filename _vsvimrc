@@ -15,21 +15,22 @@ let mapleader="<Space>"
 "可以用的键  n在vim中好像没什么用
 
 "块选择模式按a直接退出
-:vmap a <Esc>
+:vmap a <Esc>a
 :nmap <Esc> a
 
- 
+"按vv直接进入块模式
+:inoremap vv <Esc>v
+:nmap vv v
 
 "+++++++++++++++++++++方法补全相关开始+++++++++++++++++++++
 "新建一个方法
 :inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
 
-"换行并添加{  } 只是普通模式用,命令模式移动的时候会触发
+"换行并添加{  } 只是普通模式用,命令模式移动(j,k都是移动键)的时候会触发
 :inoremap jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
-:inoremap ;jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
 
 "不能用的原因是join 的时候总是混淆
-:inoremap jo<Tab> <Esc>$o
+
 
 :inoremap ik ()<Esc>i
 :inoremap ii ""<Esc>i
@@ -46,14 +47,15 @@ let mapleader="<Space>"
 
 "+++++++++++++++++++++光标移动开始+++++++++++++++++++++
 :inoremap ;; <Esc>$a;
-:nmap ;; <Esc>$a;
+:nmap ;; $a;
 
 "移动到行头行尾
 :inoremap ee <Esc>$a
 :vmap ee $
-:nmap <leader>e <Esc>$a
+:nmap <leader>e $a
 :inoremap bb <Esc>^i
-:nmap <leader>b <Esc>^i
+:nmap <leader>b ^i
+:vmap bb ^
 
 "填加新行
 :inoremap ib <Esc>o
