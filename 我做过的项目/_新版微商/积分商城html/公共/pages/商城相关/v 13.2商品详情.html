@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/aclrw.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title>商品详情</title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        <div class="header bor-1px-b">
+    <div class="header-left">
+        <a href="javascript:history.go(-1)" class="left-arrow"></a>
+    </div>
+    <div class="header-title">商品详情</div>
+    <div class="header-right">
+        <a href="#"></a>
+    </div>
+</div>
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="swiper-container banner-oer">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../assets/images/15_03.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../assets/images/15_03.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../assets/images/15_03.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="mg-15">
+            <div class="weui-cells border-20 mg_t30">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="smll">
+                            <span class="img"><img class="img-w26" src="../assets/images/12_23.jpg"></span>
+                            <span class="fs-30 color-fa font-w600">3698</span>
+                            <span class="fs-26 color-fa font-w600"> 159元</span>
+                            <span class="pd-l35 fs-24 color-9">原价 ￥499</span>
+                            <div class="weui-cell__bd tr"><span class="fs-24 color-9">库存 9568</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="fs-34 color-33 font-w600">小米（MI） 定制版Ninebot 九号平衡车 </div>
+                        <div class="fs-28 color-9">智能电动体感、年轻人的炫酷玩具</div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells border-bt20">
+               <div class="weui-cell">
+                   <div class="weui-cell__bd"><span class="color-33 fs-34 font-w600">商品详情</span></div>
+               </div>
+               <div class="weui-cell pd-0">
+                   <div class="imer"><img src="../assets/images/17_03.jpg"></div>
+               </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom-tabbar-wrapper-btm">
+        <div class="bottom-tabbar-btm">
+
+                <div class="width10">
+                    <a href="###" class="weui-bottom weui-btn_red">立即兑换</a>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script src="../assets/js/lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="../assets/js/Swiper-4.0.7/swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    
+    spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/aclrw.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 示例页面 </title>
+</head>
+<body>
+<div class="page">
+    <div class="page-hd">
+        <div class="header bor-1px-b">
+    <div class="header-left">
+        <a href="javascript:history.go(-1)" class="left-arrow"></a>
+    </div>
+    <div class="header-title">示例页面</div>
+    <div class="header-right">
+        <a href="#"></a>
+    </div>
+</div>
+    </div>
+
+    <div class="page-bd">
+        <!-- 页面内容-->
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">真实姓名</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="city" type="text" placeholder="请输入真实姓名"/>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">身份证号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请填写身份证号码"/>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">是否做过微商</label>
+                </div>
+                <div class="weui-cell__bd weui-cells_checkbox">
+                    <label for="s11">
+                        <input type="radio" class="weui-check" name="rd1" id="s11">
+                        <i class="weui-icon-checked"></i>
+                        <span>是</span>
+                    </label>
+                    <label for="s12" style="margin-left: 10px;">
+                        <input type="radio" class="weui-check" name="rd1" id="s12" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                        <span>否</span>
+                    </label>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">微信人数</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请填写微信人数"/>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">所在地区</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input id='city-picker' class="weui-input" type="text" placeholder="请选择地区"/>
+                </div>
+                <div class="weui-cell__ft"></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">婚否</label>
+                </div>
+                <div class="weui-cell__bd weui-cells_checkbox">
+                    <label for="s13">
+                        <input type="radio" class="weui-check" name="rd2" id="s13">
+                        <i class="weui-icon-checked"></i>
+                        <span>是</span>
+                    </label>
+                    <label for="s14" style="margin-left: 10px;">
+                        <input type="radio" class="weui-check" name="rd2" id="s14" checked="checked">
+                        <i class="weui-icon-checked"></i>
+                        <span>否</span>
+                    </label>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">微信号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" value="BV15624514" placeholder="请输入微信号"/>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">手机号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请填写手机号码"/>
+                </div>
+                <div>
+                    <a href="javascript:;" class="inline-btn getcode">获取验证</a>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">短信验证码</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入短信验证码"/>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells__title">推荐人信息</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label for="my-input"  class="weui-label">日历选择</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id='my-input'  type="text" placeholder="请选择日期"/>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">年月区间选择</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <label for="star-picker"><span class="show_value text-muted">请选择日期</span></label>
+                    <input style="display: none;" class="weui-input" id='star-picker' value="" type="text" placeholder="请选择日期"/>
+                    <input style="display: none;" class="weui-input" id='end-picker' value="" type="text" placeholder="请选择日期"/>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">姓名</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" value="谢明华" type="text" placeholder=""/>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">手机号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" value="13578454563" type="text" placeholder=""/>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">微信号</label>
+                </div>
+                <div class="weui-cell__bd weui-cells_checkbox">
+                    <input class="weui-input" value="huiyui464335058" type="text" placeholder=""/>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div>需缴纳：<span class="text-red fs30">380</span></div>
+                    <div class="fs22 text-muted">(当前佣金账户余额：380，提交后将自动扣除)</div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-btn-area weui-cells_checkbox">
+            <label style="display: block; text-align: center;">
+                <input type="checkbox" class="weui-check" name="agree">
+                <i class="weui-icon-checked"></i>
+                <span class="weui-agree__text">
+                        已阅读并同意<a href="javascript:;">《平台代理服务协议》</a>
+                      </span>
+            </label>
+            <a class="weui-btn weui-btn_primary mt20" href="注册审核中.html">确定</a>
+        </div>
+
+    </div>
+    <div class="bottom-tabbar-wrapper">
+  <div class="bottom-tabbar">
+    <a href="index.html" class="bottom-tabbar__item active">
+        <span class="icon">
+            <img src="../assets/images/bottom_icon01.png"/>
+            <img class="lhimg" src="../assets/images/bottom_icon01_lh.png"/>
+        </span>
+      <p class="label">首页</p>
+    </a>
+    <a href="消息.html" class="bottom-tabbar__item ">
+        <span class="icon">
+            <img src="../assets/images/bottom_icon02.png"/>
+            <img class="lhimg" src="../assets/images/bottom_icon02_lh.png"/>
+        </span>
+      <p class="label">消息</p>
+    </a>
+    <a href="云仓.html" class="bottom-tabbar__item ">
+        <span class="icon">
+            <img src="../assets/images/bottom_icon03.png"/>
+            <img class="lhimg" src="../assets/images/bottom_icon03_lh.png"/>
+        </span>
+      <p class="label">云仓</p>
+    </a>
+    <a href="直购.html" class="bottom-tabbar__item ">
+        <span class="icon">
+            <img src="../assets/images/bottom_icon04.png"/>
+            <img class="lhimg" src="../assets/images/bottom_icon04_lh.png"/>
+        </span>
+      <p class="label">直购</p>
+    </a>
+    <a href="登录.html" class="bottom-tabbar__item ">
+        <span class="icon">
+            <img src="../assets/images/bottom_icon05.png"/>
+            <img class="lhimg" src="../assets/images/bottom_icon05_lh.png"/>
+        </span>
+      <p class="label">我的</p>
+    </a>
+  </div>
+</div>
+</div>
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script src="../assets/js/lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script>
+  $("#my-input").calendar({
+    onChange: function (p, values, displayValues) {
+      console.log(values, displayValues);
+    }
+  });
+
+    $("#city-picker").cityPicker({
+        title: "请选择地区"
+    });
+
+    var start = ''
+    $("#star-picker").datetimePicker({
+      title: "请选择开始日期",
+      date: true,
+      onChange: function (e) {
+        console.log(e.value);
+        start = e.value[0]+'.'+e.value[1]
+      },
+      onClose: function () {
+        $("#end-picker").trigger('click')
+      }
+    });
+
+    $("#end-picker").datetimePicker({
+      title: "请选择结束日期",
+      date: true,
+      onChange: function (e) {
+
+        //start += '至'+e.value[0]+'.'+e.value[1]
+      },
+      onClose: function (e) {
+        var end = e.value[0]+'.'+e.value[1];
+        console.log(start+'至'+end);
+        $(".show_value").html(start+'至'+end);
+      }
+    });
+</script>
+</body>
+</html>

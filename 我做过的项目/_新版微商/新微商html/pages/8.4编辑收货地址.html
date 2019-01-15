@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+    <title> 新增地址 </title>
+</head>
+
+<body>
+    <div class="page addAddress">
+        <div class="page-bd">
+            <!-- 页面内容-->
+            <div class="title">新增地址</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">联系人</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text"  placeholder="请输入联系人姓名">
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">联系电话</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" pattern="[0-9]*" placeholder="请输入联系人电话">
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">所属地区</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" value="广东省 广州市 天河区" id="city-picker" type="text"  placeholder="请选择所属地区" readonly>
+                    </div>
+                    <div class="weui-cell__ft"><img src="../assets/images/sanright.png"></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">详细地址</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text"  placeholder="请输入详细地址">
+                    </div>
+                </div>
+            </div>
+
+            <div class="weui-btn-area mt100">
+                  <a href="#" class="weui-btn weui-btn_primary">确定</a>
+            </div>
+        </div>
+        <script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+        <script>
+              $("#city-picker").cityPicker({
+                  title: "请选择收货地址"
+                });
+        </script>
+</body>
+
+</html>

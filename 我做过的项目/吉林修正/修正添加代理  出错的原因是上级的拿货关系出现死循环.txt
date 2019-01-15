@@ -1,0 +1,23 @@
+
+
+select   request_session_id   spid,OBJECT_NAME(resource_associated_entity_id) tableName   
+from   sys.dm_tran_locks where resource_type='OBJECT' 
+AND OBJECT_NAME(resource_associated_entity_id)='tb_customer_10086'
+
+ 
+
+
+
+declare @p18 nvarchar(50)
+set @p18=NULL
+exec tb_customer_user_INSERT @name=N'c≤‚ ‘11',@customer_catalog_id=640,@contact=N'c≤‚ ‘11',@mobile=N'13588889999',@email=N'0',@remark=N'Œ¢–≈ÃÌº”',@weixi_no=N'13588889999',@id_card=N'13588889999',@MyCustID=10086,@MyUserID=634,@Myjinum=-1,@userName=N'Œ¥…Û∫À',@password=N'0',@openid=N'-1',@authcode=N'58711224',@qq=N'0',@address=N'dd',@Message=@p18 output
+select @p18
+
+
+SELECT * FROM dbo.tb_customer_10086 ORDER BY createtime desc	
+
+SELECT * FROM dbo.tb_customer_10086 WHERE tb_customerId=634
+
+SELECT * FROM dbo.tb_customer_10086 WHERE tb_customerId=182
+SELECT * FROM dbo.tb_customer_10086 WHERE tb_customerId=432
+SELECT * FROM dbo.tb_customer_10086 WHERE tb_customerId=8277

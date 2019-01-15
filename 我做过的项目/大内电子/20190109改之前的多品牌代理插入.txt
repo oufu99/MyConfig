@@ -1,0 +1,96 @@
+USE [serp3]
+GO
+/****** Object:  StoredProcedure [dbo].[tb_customer_brand_INSERT]    Script Date: 2019/1/9 14:15:03 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER  PROCEDURE [dbo].[tb_customer_brand_INSERT]
+    @customerID INT ,
+    @manuId INT ,
+    @catalog_id INT ,
+    @code NVARCHAR(500) ,
+    @msg NVARCHAR(500) OUTPUT
+AS
+    DECLARE @sql NVARCHAR(MAX) ,
+        @tableName NVARCHAR(50) ,
+        @ctableName NVARCHAR(50) ,
+        @parent_id INT ,
+        @parent_str NVARCHAR(100) ,
+        @oldparent_id INT ,
+        @oldparent_str NVARCHAR(100) ,
+        @custId INT,
+		@brandId int;
+    SET @tableName = 'tb_customer_brand_' + CONVERT(NVARCHAR(10), @manuId);
+    SET @ctableName = 'tb_customer_' + CONVERT(NVARCHAR(10), @manuId);
+    IF (@customerID > 0 )
+        BEGIN
+            SELECT  @custId = custid,@brandId=brandId
+            FROM    tb_invite_code
+            WHERE   code = @code;
+			--查询出custId后没有brandId需要添加品牌来过滤, 1214 欧佳林修改
+            IF (@custId = 0 )
+                BEGIN
+                    SET @parent_id = 0;
+                    SET @oldparent_id = 0;
+                    SET @parent_str = ',0,'
+                        + CONVERT(NVARCHAR(50), @customerID) + ',';
+                    SET @oldparent_str = ',0,'
+                        + CONVERT(NVARCHAR(50), @customerID) + ',';
+                END;
+            ELSE
+                BEGIN
+                    SET @parent_id = @custId;
+                    SET @oldparent_id = @custId;
+					
+					--因为多品牌逻辑是更改级别之后原来的数据不删,is_active改为0 所以要排序取最后一行
+                    SET @sql = 'SELECT top 1 @parent_str=parent_str,@oldparent_str=oldparent_str FROM '
+                        + @tableName + ' WHERE tb_customerID=@custId and is_active=1
+						 and customer_catalog_id in 
+						 (SELECT tb_customer_catalogID FROM dbo.tb_customer_catalog where  manufacturer_id=@manuId and brand_id=@brandId)
+						  ORDER BY ID desc';
+						  PRINT @sql
+                    EXEC sp_executesql @sql,
+                        N'@tableName NVARCHAR(50),@custId int ,@parent_str NVARCHAR(100) OUTPUT,@manuId int,@brandId int,@oldparent_str NVARCHAR(100) OUTPUT',
+                        @tableName, @custId, @parent_str OUT,@manuId,@brandId,@oldparent_str out;
+
+                    SELECT  @custId AS custId;
+                    SELECT  @sql AS sql1;
+                    SELECT  @parent_str AS parent_str1;
+                    SET @parent_str = @parent_str
+                        + CONVERT(NVARCHAR(50), @customerID) + ',';
+                    SET @oldparent_str = @oldparent_str+ CONVERT(NVARCHAR(50), @customerID) + ',';;
+                    
+					PRINT '查找parent'
+					PRINT @oldparent_str
+				PRINT @parent_id
+				PRINT  @parent_str
+				PRINT  @oldparent_str
+                END;
+            SET @sql = ' 
+  IF NOT EXISTS(SELECT 1 FROM ' + @tableName
+                + ' WHERE  tb_customerID=@customerID AND customer_catalog_id=@catalog_id and audit_status !=-1)
+   BEGIN
+		 INSERT into ' + @tableName
+                + ' SELECT @customerID,@catalog_id,@parent_id
+		,@parent_str,@oldparent_id,@oldparent_str,0,null,null,-1,1
+	end';
+	PRINT '开始插入'
+	PRINT @tableName
+	PRINT @oldparent_str
+	PRINT @sql
+            EXEC sp_executesql @sql,
+                N'@parent_id INT ,@parent_str NVARCHAR(100),@oldparent_id INT,
+  @oldparent_str NVARCHAR(100),@customerID int ,@catalog_id int',
+                @parent_id = @parent_id, @parent_str = @parent_str,
+                @oldparent_id = @oldparent_id, @oldparent_str = @oldparent_str,
+                @customerID = @customerID, @catalog_id = @catalog_id;
+				--更新 invite 表标记已被使用
+            UPDATE  dbo.tb_invite_code
+            SET     is_use = 1 ,
+                    use_customer_id = @customerID ,
+                    use_time = GETDATE()
+            WHERE   manufacturer_id = @manuId
+                    AND code = @code;
+        END;
+

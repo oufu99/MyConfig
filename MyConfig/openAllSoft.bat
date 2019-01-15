@@ -1,11 +1,15 @@
 @echo off
 :: 两个::是注释
 start "" "D:\MyLove\VimD\userPlugins\InitProgram.ahk"
+:: 两个qq号
+start "" "C:\Program Files (x86)\Tencent\QQ\Bin\QQ.exe"
 start "" "C:\Program Files (x86)\Tencent\QQ\Bin\QQ.exe"
 start "" "C:\Program Files (x86)\Tencent\WeChat\WeChat.exe"
 
 start "" "D:\MyLove\VimD\vimd.exe"
-start "" "E:\ZPCode\SuYa_V2\SuYa_V2.sln"
+:: start "" "E:\ZPCode\SuYa_V2\SuYa_V2.sln"
+start "" "E:\ZPCode\Mifei_v2\Mifei_v2.sln"
+
 start "" "C:\Program Files\Listary\Listary.exe"
 :: vid有点问题先关闭再打开
 taskkill /f /im vimd.exe

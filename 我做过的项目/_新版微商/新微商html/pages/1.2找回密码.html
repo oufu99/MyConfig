@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+  <title> 忘记密码 </title>
+</head>
+<body>
+<div class="page login_page">
+  <div class="page-hd border-none">
+    <div class="header bor-1px-b">
+    <div class="header-left">
+        <a href="javascript:history.go(-1)" class="left-arrow"></a>
+    </div>
+    <div class="header-title">忘记密码</div>
+    <div class="header-right">
+        <a href="#"></a>
+    </div>
+</div>
+  </div>
+
+  <div class="page-bd" style="background-color: #fff;">
+    <!-- 页面内容-->
+
+    <div class="login_top">
+      <div class="login_logo">
+        <div class="avatar">
+          <img src="../assets/images/logo.png" alt="">
+        </div>
+        <h3>素雅新微商</h3>
+      </div>
+      <div class="thtitle">忘记密码</div>
+    </div>
+
+    <div id="step1" class="weui-cells bigpad_cells mt30">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <div class="input_lable"><i class="icon_phone"></i>手机</div>
+          <div class="weui-flex">
+            <div><span class="hd_qh">+86</span></div>
+            <div class="weui-flex__item"><input class="weui-input phone_input" placeholder="在这里输入手机号" type="text"></div>
+            <div>
+              <i style="display: none;" class="clean_input"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="weui-cell mt20">
+        <div class="weui-cell__bd">
+          <div class="input_lable"><i class="icon_yzm"></i>验证码</div>
+          <div class="weui-flex input_password">
+            <div class="weui-flex__item"><input class="weui-input" maxlength="4" id="yzm_input" placeholder="输入手机验证码" type="number"></div>
+            <div>
+              <span class="getcode text-blue">获取验证</span>
+              <span class="reget_time" style="display: none;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="step2"  style="display: none;"  class="weui-cells bigpad_cells mt30">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <div class="input_lable"><i class="icon_lock"></i>新密码</div>
+          <div class="weui-flex input_password">
+            <div class="weui-flex__item"><input class="weui-input"   placeholder="请再次确认密码" type="password"></div>
+            <i class="eye"></i>
+          </div>
+
+        </div>
+        <div>
+          <i style="display: none;" class="clean_input"></i>
+        </div>
+      </div>
+
+      <div class="weui-cell mt20">
+        <div class="weui-cell__bd">
+          <div class="input_lable"><i class="icon_lock"></i>确认密码</div>
+          <div class="weui-flex input_password">
+            <div class="weui-flex__item"><input class="weui-input" placeholder="请再次确认密码" type="password"></div>
+            <i class="eye"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="weui-btn-area mt100">
+      <a href="#" id="nextbtn" class="weui-btn weui-btn_primary">下一步</a>
+      <a style="display: none;" href="#" id="okbtn" class="weui-btn weui-btn_primary">完成</a>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script>
+  $(function () {
+
+
+    // 下一步按钮
+    $("#nextbtn").on('click', function () {
+      $("#step1").hide();
+      $("#step2").show();
+      $("#okbtn").show();
+      $("#nextbtn").hide();
+    });
+
+
+    // 文本框获得焦点，底线高亮
+    $(".weui-input").on('focus', function () {
+      var $this = $(this);
+      $this.parents('.weui-cell').addClass('focus');
+    });
+    $(".weui-input").on('blur', function () {
+      var $this = $(this);
+      $this.parents('.weui-cell').removeClass('focus');
+    });
+
+    // 检测文本框有值 侧显示清空按钮
+    $(".phone_input").on('input propertychange', function () {
+      if($(this).val().length>1){
+        $(".clean_input").show();
+      }
+    });
+    
+    // 获取验证码
+    $(".getcode").on('click', function () {
+
+      settime();
+      $.toast("验证码发送成功", "text");
+
+    });
+
+    var getcode = $(".getcode");
+    var regetTime = $('.reget_time');
+    var countdown = 60;
+    function settime() {
+      if (countdown == 0) {
+        getcode.show();
+        regetTime.hide();
+        countdown = 60;
+        return false;
+      } else {
+        getcode.hide();
+        regetTime.show();
+        countdown--;
+        regetTime.html('剩余'+ countdown + 's');
+      }
+      setTimeout(function() {
+        settime();
+      },1000);
+    };
+
+    // 清空手机文本框
+    $(".clean_input").on('click', function () {
+      $(".phone_input").val('');
+      $(this).hide();
+    });
+
+    $("#yzm_input").on('input propertychange', function () {
+      // 检测是不输入4位验证码
+      var  len = $(this).val().length;
+      if(len>3){
+        $("#regbtn").removeClass('disabled_btn');
+      } else {
+        $("#regbtn").addClass('disabled_btn');
+      }
+    });
+
+
+    // 切换密码框是否可见
+    $(".input_password").on('click', '.eye', function () {
+      var $this = $(this);
+      if($this.hasClass('close')){
+        $this.removeClass('close');
+        $this.parents('.input_password').find('input').attr('type', 'password');
+      } else {
+        $this.addClass('close');
+        $this.parents('.input_password').find('input').attr('type', 'text');
+      }
+    });
+  });
+</script>
+</body>
+</html>

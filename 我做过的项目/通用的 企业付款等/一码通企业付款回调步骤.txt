@@ -1,0 +1,21 @@
+个人中心发送红包位置
+E:\ZPCode\SERP3.0\SERP.Web\SysAdmin\RedPacketPostMsg.aspx.cs
+
+
+INSERT dbo.tb_wx_subscribePushSet
+        ( event_key ,
+          pushUrl ,
+          is_active ,
+          remark ,
+          realUrl ,
+          manufacturer_id
+        )
+VALUES  ( N'qrscene_311' , -- event_key - nvarchar(50)
+          N'http://192.168.0.10:8081/WeiXinMessage/SendRedPacketBussinessPay/WeiXinMessageDeal' , -- pushUrl - nvarchar(200)
+          1 , -- is_active - int
+          N'能用企业付款的关注回调' , -- remark - nvarchar(500)
+          N'ymt.onlyid.cn' , -- realUrl - nvarchar(200)
+          10626  -- manufacturer_id - int
+        )
+		
+		UPDATE  tb_activity_catalog_mode SET view_url='meishanger/RedPacket/RedPacketIndex' WHERE manufacturer_id=-

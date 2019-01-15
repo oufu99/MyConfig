@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<link rel="stylesheet" href="../assets/css/zpui.css"/>
+<link rel="stylesheet" href="../assets/css/all.css"/>
+<script src="../assets/js/page.js"></script>
+
+  <title> 搜索 </title>
+</head>
+<body>
+<div class="page">
+  <div class="search_top border-none">
+    <div class="weui-cell ">
+      <div class="weui-cell__bd">
+        <input id="srarchInput" class="weui-input" placeholder="请输入搜索关键词" value="" type="search"/>
+      </div>
+      <div class="weui-cell__ft">
+        <span class="text-blue">取消</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-bd">
+    <!-- 页面内容-->
+    <div class="weui-cells hot_search">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <h3>热门词汇</h3>
+          <div class="spwrap">
+            <span>胶原蛋白</span>
+            <span>补水面膜</span>
+            <span>收纳</span>
+            <span>沐浴露</span>
+            <span>母亲节礼物</span>
+            <span>桃胶</span>
+            <span>保湿祛痘</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="../assets/js/lib/jquery-2.1.4.js"></script>
+<script src="../assets/js/jquery-weui.min.js"></script>
+<script>
+
+  $(function () {
+    $(".search_top input").focus();
+  });
+  /**
+   * 显示隐藏取消按钮
+   *
+  $(".search_top input").on('focus', function () {
+    $(".search_top").find('.weui-cell__ft').show();
+  });
+  $(".search_top input").on('blur', function () {
+    setTimeout(function () {
+      $(".search_top").find('.weui-cell__ft').hide();
+    },10)
+
+  });
+   **/
+  // 清空搜索框
+  $(".search_top").find('.weui-cell__ft').on('click', function () {
+    $(".search_top .weui-input").val('');
+  });
+
+  $("#srarchInput").on('search', function () {
+    window.location.href = '3.2搜索结果页.html';
+  });
+
+  $(".spwrap > span").on('click', function () {
+    window.location.href = '3.2搜索结果页.html';
+  });
+</script>
+</body>
+</html>
