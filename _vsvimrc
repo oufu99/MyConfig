@@ -1,18 +1,21 @@
 ﻿set backspace=indent,eol,start
 set timeoutlen=300 ttimeoutlen=0
 
-
 :inoremap jj <Esc>
 
 "设置Leader键
 "<leader>
 let mapleader="<Space>"
 
+" 删除键无效问题
+:nmap <BS> s
+:vmap <BS> s
 
 "ѡ�񵥴 
 "中心思想,命令模式的那些常用键就不要动他了,除非是定义一个极其常用的键
 
 "可以用的键  n在vim中好像没什么用
+
 
 "块选择模式按a直接退出
 :vmap a <Esc>a

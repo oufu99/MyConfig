@@ -1,0 +1,8 @@
+{
+    "name": "manuId",
+    "connType": "General",
+    "label": "",
+    "comment": "",
+    "text": "manufacturer_id",
+    "placeholders": []
+}

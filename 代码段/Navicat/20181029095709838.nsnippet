@@ -1,0 +1,8 @@
+{
+    "name": "sorder",
+    "connType": "General",
+    "label": "",
+    "comment": "\t\t\t",
+    "text": "select * from tb_order where manu_id=10022",
+    "placeholders": []
+}

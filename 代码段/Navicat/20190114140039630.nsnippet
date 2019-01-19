@@ -1,0 +1,8 @@
+{
+    "name": "irule2",
+    "connType": "General",
+    "label": "",
+    "comment": "",
+    "text": "INSERT INTO `ymt.ws_sys`.`tb_rule_mapping_class`(`ManuId`, `ClassName`, `Json`, `filter_keyword`, `new_url`) VALUES ( 10052, 'mobileRedirect', NULL, '/agent/pay', '/youzuan/agent/pay');",
+    "placeholders": []
+}

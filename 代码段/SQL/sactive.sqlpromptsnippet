@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sactive</Title>
+      <Shortcut>sactive</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[dbo.SActivityInfo @identity_code = N'', -- nvarchar(50)
+    @manuId = 0 -- int
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

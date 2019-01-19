@@ -1,0 +1,8 @@
+{
+    "name": "spwd",
+    "connType": "General",
+    "label": "",
+    "comment": "\t",
+    "text": " select * from tb_user where  system_role_id=-10",
+    "placeholders": []
+}

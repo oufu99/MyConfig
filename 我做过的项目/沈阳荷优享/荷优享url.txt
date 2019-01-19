@@ -1,0 +1,21 @@
+http://heyouxiang.mobile.cn/m
+
+
+
+http://heyouxiang.mobile.cn/m/custom/heyouxiang/customer_reg.aspx
+
+http://heyouxiang.mobile.cn/m/custom/heyouxiang/sales.aspx?CustID=0&openid=123
+
+//代理商列表
+http://heyouxiang.web.cn/sysadmin/pages/custom/heyouxiang/tb_customerList.aspx
+
+http://heyouxiang.web.cn/sysadmin/pages/custom/heyouxiang/tb_customerAdd.aspx
+
+http://heyouxiang.web.cn/sysadmin/pages/custom/heyouxiang/salesRedMoney.aspx?openid=123&c=528445711771&manuID=10724
+
+
+//红包
+http://rp.ymttest.cn/heyouxiang/RedPacket/RedPacketIndex?type=chou&activityId=2240&wxkeystr=CnzGJX32Xzy&wxextinfo=8088826989601338&ManuId=10724&openId=12345
+
+SELECT * FROM dbo.tb_goods_relation_code_10724
+SELECT * FROM tb_activity_prize_code_10724

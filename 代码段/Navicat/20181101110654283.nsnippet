@@ -1,0 +1,8 @@
+{
+    "name": "icommisionhistory",
+    "connType": "General",
+    "label": "",
+    "comment": "",
+    "text": "INSERT INTO `ymt.ws_sys`.`tb_recommend_money_history`( `money`, `recommend_custId`, `createTime`, `brandId`, `json`, `manu_id`, `trigger_custId`, `rebate_custId`, `business_id`, `SourceType`) VALUES (2000.00, 36, '2018-10-18 15:15:14',0, NULL, -num, 37, 30, 0, 8);",
+    "placeholders": []
+}

@@ -3,4 +3,11 @@ http://youzuan.mifeimobile.cn/agent/Register?&catalogId=124&parentId=353&ManuId=
 
  
 升级:
-http://youzuan.mifeimobile.cn/youzuan/Upgrade/Index
+http://youzuan.mifeimobile.cn/youzuan/Upgrade/Index 
+
+ 
+ 
+注册升级
+渠道说明 :我的渠道
+充值和提现 
+积分商城
