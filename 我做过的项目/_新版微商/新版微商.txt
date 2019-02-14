@@ -4,6 +4,14 @@
 http://suya.suyamobile.cn/Login/ForgetPwd
 
 
+升级
+http://suya.suyamobile.cn/Upgrade/Index
+
+
+
+修改资料
+http://suya.suyamobile.cn/Agent/EditInfo
+
 
 选择级别
 http://suya.suyamobile.cn/Agent/InviteSelectCatalog 
