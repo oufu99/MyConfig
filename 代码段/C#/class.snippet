@@ -2,9 +2,9 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>cempty</Title>
-			<Shortcut>cempty</Shortcut>
-			<Description> </Description>
+			<Title>class</Title>
+			<Shortcut>class</Shortcut>
+			<Description>类的代码片段</Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -15,13 +15,14 @@
 			<Declarations>
 				<Literal>
 					<ID>name</ID>
-					<Default>msg</Default>
+					<ToolTip>类名</ToolTip>
+					<Default>MyClass</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[if (!string.IsNullOrEmpty($name$))
-                {
-					$selected$$end$
-                }]]>
+			<Code Language="csharp"><![CDATA[public class $name$
+	{
+		$selected$$end$
+	}]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

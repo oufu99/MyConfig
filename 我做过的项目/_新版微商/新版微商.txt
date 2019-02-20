@@ -8,6 +8,10 @@ http://suya.suyamobile.cn/Login/ForgetPwd
 http://suya.suyamobile.cn/Upgrade/Index
 
 
+升级审核
+http://suya.suyamobile.cn/Upgrade/List
+
+
 
 修改资料
 http://suya.suyamobile.cn/Agent/EditInfo
