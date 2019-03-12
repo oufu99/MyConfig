@@ -27,7 +27,7 @@ let mapleader="<Space>"
 
 "+++++++++++++++++++++方法补全相关开始+++++++++++++++++++++
 "新建一个方法
-:inoremap ;f public static void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
+:inoremap ;f public  void Func()<CR>{<CR><CR>}<Esc>ka<tab><tab><tab><Esc>kk$hhbve
 
 "换行并添加{  } 只是普通模式用,命令模式移动(j,k都是移动键)的时候会触发
 :inoremap jk <Esc>o{<CR><CR>}<Esc>ka<tab><tab><tab><tab><tab>
@@ -41,8 +41,6 @@ let mapleader="<Space>"
 
 
 "+++++++++++++++++++++选中相关开始+++++++++++++++++++++
-:nmap nw wve
-
 "加个l是因为让光标在第一格的时候可以选择,但是在最末尾就不行,但是可以直接用ji来前进一格
 :inoremap jw <Esc>lbve
 :nmap jw lbve
