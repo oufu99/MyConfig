@@ -9,8 +9,8 @@ start "" "C:\Program Files (x86)\Tencent\WeChat\WeChat.exe"
 start "" "D:\MyLove\VimD\vimd.exe"
 
 :: start "" "E:\ZPCode\SERP3.0\SERP3.0.sln"
-:: start "" "E:\ZPCode\SuYa_V2\SuYa_V2.sln"
-start "" "E:\ZPCode\Mifei_v2\Mifei_v2.sln"
+start "" "E:\ZPCode\SuYa_V2\SuYa_V2.sln"
+:: start "" "E:\ZPCode\Mifei_v2\Mifei_v2.sln"
 
 start "" "C:\Program Files\Listary\Listary.exe"
 :: vid有点问题先关闭再打开
