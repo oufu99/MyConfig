@@ -70,6 +70,11 @@ let mapleader="<Space>"
 :inoremap ji <ESC>ha
 "后退一格
 :inoremap jl <ESC>la
+
+"向下一行
+:inoremap jn <ESC>ja
+:nmap jn ja
+
 "+++++++++++++++++++++光标移动结束+++++++++++++++++++++
 
 
