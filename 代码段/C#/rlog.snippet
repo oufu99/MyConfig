@@ -2,8 +2,8 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>wlog</Title>
-			<Shortcut>wlog</Shortcut>
+			<Title>rlog</Title>
+			<Shortcut>rlog</Shortcut>
 			<Description> </Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
@@ -12,12 +12,13 @@
 		</Header>
 		<Snippet>
 			<Declarations>
-				<Literal Editable="false">
-					<ID>SystemConsole</ID>
-					<Function>SimpleTypeName(global::System.Console)</Function>
+				<Literal>
+					<ID>path</ID>
+					<Default>path</Default>
+					<ToolTip>被分割的字符串</ToolTip>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[ System.IO.File.AppendAllText(@"d:\jialin.txt", $end$);]]>
+			<Code Language="csharp"><![CDATA[string text = File.ReadAllText($end$);]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
