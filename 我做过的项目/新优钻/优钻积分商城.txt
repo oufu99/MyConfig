@@ -1,0 +1,22 @@
+http://youzuan.mifeimobile.cn/youzuan/IntegralMall/SignIn
+http://youzuan.mifeimobile.cn/youzuan/IntegralMall/GiftList
+http://youzuan.mifeimobile.cn/youzuan/IntegralMall/ExchangeGift
+http://youzuan.wsweb.cn/mifeicustom/YouZuanIntegralMall/Add
+http://youzuan.wsweb.cn/mifeicustom/YouZuanIntegralMall/Edit/22
+
+
+
+http://youzuan.wsweb.cn/mifeicustom/YouZuanIntegralMall/GiftSetting
+
+
+http://youzuan.wsweb.cn/mifeicustom/YouZuanIntegralMall/GiftOrderList
+
+
+
+MiFei.Mobile.Common  FreigtDB
+
+
+素雅审核下级申请
+那个下级升级提示跳转
+
+ 
