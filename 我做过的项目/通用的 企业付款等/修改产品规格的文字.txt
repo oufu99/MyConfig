@@ -1,0 +1,9 @@
+SELECT TOP 100 * FROM dbo.tb_product WHERE tb_productID=13396
+--UPDATE  dbo.tb_goods SET texts='夜用' WHERE tb_goodsID=21276
+--UPDATE  dbo.tb_goods SET texts='20盒/箱' WHERE tb_goodsID=21276
+
+SELECT * FROM dbo.tb_goods_property WHERE manufacturer_id=10532
+SELECT * FROM tb_goods_property_value WHERE  goods_property_id=2292 AND tb_goods_property_valueID=6524
+
+--UPDATE   dbo.tb_goods_property_value SET name='夜用'  WHERE  goods_property_id=2292 AND tb_goods_property_valueID=6524
+--UPDATE   dbo.tb_goods_property_value SET name='20盒/箱'  WHERE  goods_property_id=2292 AND tb_goods_property_valueID=6524
