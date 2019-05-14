@@ -132,7 +132,7 @@
    },
    "appearance": {
       "theme": {
-
+         "file": "Cobalt2.listarytheme.json"
       }
    },
    "check_update": {
@@ -144,13 +144,16 @@
       "default_file_manager": {
 
       },
-      "language_file": "zh-CN.ini"
+      "disable_find_as_you_type": "",
+      "language_file": "zh-CN.ini",
+      "set_focus_to_xp_explorer": false
    },
    "history": {
 
    },
    "hotkey": {
-      "launch_apps": 20737
+      "main": 20737,
+      "popup_menu": 16897
    },
    "keywords": {
       "builtin_commands": [  ],
@@ -307,9 +310,9 @@
          "icon": {
 
          },
-         "keyword": "github",
-         "title": "git\u5B98\u7F51",
-         "url": "https://github.com/"
+         "keyword": "rss",
+         "title": "\u6211\u7684\u65B0\u95FB",
+         "url": "https://www.inoreader.com/all_articles"
       }, {
          "enabled": true,
          "icon": {
@@ -419,6 +422,10 @@
             }, {
                "name": "Mirror",
                "path": "D:\\Mirror",
+               "type": "favorite_folder"
+            }, {
+               "name": "Lind.DDD",
+               "path": "D:\\Lind.DDD",
                "type": "favorite_folder"
             } ],
             "type": "submenu"
@@ -577,7 +584,6 @@
    },
    "tip": {
       "action_hotkey": false,
-      "space_to_only_search_files": false,
       "tutorial_listary5": false
    },
    "version": 2,
