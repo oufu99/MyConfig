@@ -1,3 +1,0 @@
-在orderDB中GetGoodsByOrderID方法
-
-g.texts spec,   以前是v.name+v.name 改成g.texts 就可以了 直接去获取拼接后的文字

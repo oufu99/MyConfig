@@ -1,3 +1,7 @@
+在orderDB中GetGoodsByOrderID方法
+
+g.texts spec,   以前是v.name+v.name 改成g.texts 就可以了 直接去获取拼接后的文字
+
 SELECT TOP 100 * FROM dbo.tb_product WHERE tb_productID=13396
 --UPDATE  dbo.tb_goods SET texts='夜用' WHERE tb_goodsID=21276
 --UPDATE  dbo.tb_goods SET texts='20盒/箱' WHERE tb_goodsID=21276
