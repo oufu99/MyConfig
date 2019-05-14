@@ -1,0 +1,12 @@
+  var submitFlag = false;
+  
+   if (submitFlag) {
+                    $.toptip('请勿重复提交,等待上次提交结果返回！', 'warning');
+                    return;
+                }
+				
+				ajax成功:
+				   submitFlag = false;
+				   
+				   失败的时候:
+				    submitFlag = true;
