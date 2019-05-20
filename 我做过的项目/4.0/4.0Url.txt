@@ -2,17 +2,17 @@
 
 
 新版地址
-http://daixi.h5.zhengpinshop.cn/Login/Index
-
+http://mxdaixi.onlyid.com.cn
 13755750003    123456
 
-测试-徐观发 2019/5/5 11:04:01
-http://mxdaixi.admin.zhengpinshop.cn
- mxdaixi     mxdaixi123
 
+http://mxdaixi.admin.onlyid.com.cn
+mxdaixi     mxdaixi123
 adminymt   123456ymt
 
 
+生成的调试地址
+/swagger/index.html
 
 
 
@@ -21,47 +21,18 @@ rm-wz991l3t942rw3c3deo.mysql.rds.aliyuncs.com
 winmobi
 sql@$#P@ssw0rd
 
+阿里云自己的内网  我们配置文件中用:
+rm-wz991l3t942rw3c3d.mysql.rds.aliyuncs.com
+外网 我们调试的时候用:
+rm-wz991l3t942rw3c3deo.mysql.rds.aliyuncs.com
+winmobi
+sql@$#P@ssw0rd
 
 
-
-
-地址：
-http://ymtui.admin.zhengpinshop.cn
-
-一码通前台
-地址：
-http://ymtui.h5.zhengpinshop.cn
-
-本机的localHost地址:
-http://localhost:6410
-ymtApi:
-http://localhost:20822
-
-本地账号
-13432064486 111111   也许如此
-
-
-
-http://localhost:63852/Warehouse/WarehouseList
- 
-https://localhost:44330/swagger/index.html
-
-
-手机端:
-http://localhost:64077/AgentInfo/Index
-
-
-
-http://localhost:64077/AgentInfo/UpdateName
-
-customerApi
-https://localhost:44308
-
-
-
-http://ymt.customer.api.cn/AccountLogin?UrlDomain=ymtui&AccountName=17554145511&Password=111111
-
-https://localhost:44308/AccountLogin?UrlDomain=ymtui&AccountName=17554145511&Password=111111
+服务器站点启动
+地址：47.107.102.50:9001
+账号：ymtweb
+密码：123@abc.
 
 
 
