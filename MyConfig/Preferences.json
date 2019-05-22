@@ -152,7 +152,7 @@
 
    },
    "hotkey": {
-      "main": 20737,
+      "main": 18946,
       "popup_menu": 16897
    },
    "keywords": {
@@ -321,6 +321,14 @@
          "keyword": "fy",
          "title": "\u767E\u5EA6\u7FFB\u8BD1",
          "url": "http://fanyi.baidu.com/#en/zh/{query}"
+      }, {
+         "enabled": true,
+         "icon": {
+
+         },
+         "keyword": "8080",
+         "title": "vue",
+         "url": "http://localhost:8080"
       } ]
    },
    "launch_apps": {
