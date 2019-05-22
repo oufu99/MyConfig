@@ -87,7 +87,6 @@ let mapleader="<Space>"
 
 " 重写x和d的删除
 :nmap x <Del>
-:nmap d h<Del>
 
 
 "删除到行尾  普通模式加个l才不会把光标前的删除掉
