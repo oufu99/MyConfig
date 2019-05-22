@@ -6,7 +6,7 @@ http://mxdaixi.onlyid.com.cn
 13755750003    123456
 
 
-http://mxdaixi.admin.onlyid.com.cn
+http://mxdaixi.code.pinguanyun.cn
 mxdaixi     mxdaixi123
 adminymt   123456ymt
 

@@ -1,17 +1,22 @@
  
 
+ SELECT *
+ FROM   tb_customer_10532
+ WHERE  tb_customerID = 209;
 
- --清除订单
---SELECT * FROM tb_order_10532 WHERE Order_num='36505820180926'	 
---UPDATE  tb_order_10532 SET is_active=0 WHERE Order_num='36505820180926'
+--清除订单
+ SELECT *
+ FROM   tb_order_10532
+ WHERE  cust_id = 209
+        AND is_active = 1;
+--UPDATE  tb_order_10532 SET is_active=0 WHERE  cust_id=209  AND is_active=1
 
+
+ SELECT * FROM   stock_in_or_out_10532; 
 --UPDATE  tb_stock_10532 SET virtual_stock=0
---UPDATE  dbo.tb_manualModifyStock_10532 SET 
---SELECT * FROM tb_stock_in_10532
---delete stock_in_or_out_10532
-
- SELECT * FROM tb_stock_in_10532
-
+ SELECT * FROM   stock_in_or_out_10532  WHERE  cust_id = 209;
+--delete stock_in_or_out_10532 WHERE cust_id=209
+--UPDATE  tb_stock_10532 SET virtual_stock=2 WHERE cust_id=209 AND product_id=9444
 
  
  
