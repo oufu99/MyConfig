@@ -25,7 +25,7 @@ taskkill /f /im vimd.exe
 start "" "D:\MyLove\VimD\vimd.exe"
 start "" "C:\Program Files\PremiumSoft\Navicat Premium 12\navicat.exe" 
 :: start "" "C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\Ssms.exe"
-start "" "D:\MyLove\VimD\userPlugins\CodePrompt\CodePrompt.exe"
+:: start "" "D:\MyLove\VimD\userPlugins\CodePrompt\CodePrompt.exe"
 
 
 

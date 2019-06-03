@@ -51,8 +51,8 @@ SELECT * FROM dbo.tb_personal_center_withdrawals_10471--个人中心提现明细表
  
 
 
-
- 
+--产品直达页  
+ SELECT load_page_url, * FROM dbo.tb_public_product WHERE key_str='4107068939608999' OR return_id='vyWU1HQ5rdk'
  
 --定制活动拦截表    红包拦截好像没有用要在这里改viewUrl
 SELECT * FROM tb_activity_catalog_mode WHERE manufacturer_id=10500
