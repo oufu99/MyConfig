@@ -1,0 +1,39 @@
+﻿html, .wiz-editor-body {
+    /*default-font-size*/
+}
+
+body, .wiz-editor-body { 
+    /*default-font-family*/
+    /*default-line-height*/ !important
+    /*default-color*/
+    /*default-background-color*/
+    margin: 0 auto;
+    padding: 20px 16px;
+    padding: 1.25rem 1rem;
+}
+img{
+    max-width: 100%;
+}
+
+
+.wiz-editor-body h1 {
+padding: 10px 20px;
+
+margin: 0 0 20px;
+color: #333;
+font-size:20px;
+border-left: 6px solid #b4b4b4;
+background-color: #ded7d7;
+}
+
+
+
+.wiz-editor-body h2 {
+font-family: 微软雅黑;
+font-size:20px;
+font-weight: normal;
+}
+
+.wiz-editor-body{
+    font-size:20px;
+}
