@@ -1,0 +1,21 @@
+http://localhost:20822/Index
+
+
+后台的流转地址:
+先生成,然后加载到内存中:
+http://localhost:63476/Activity/Index
+http://localhost:63476/Drive/Index?ActivityId=1&IndexId=0
+ 
+ http://localhost:63476/ActivityBaseSetting/Test?Name=123&Age=12
+ 
+ 
+api: 
+http://localhost:20822/HotUpdate/UpdateController
+
+http://localhost:20822/ActivityBaseSetting/ActivitySaveHandler?model=123
+ 
+ 
+http://localhost:63476/ActivityBaseSetting/TestModel?Number=0
+ 
+ 
+http://localhost:63476//ActivityAdminTest/Index
