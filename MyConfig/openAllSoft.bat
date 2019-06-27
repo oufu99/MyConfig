@@ -23,7 +23,7 @@ start "" "C:\Program Files\Listary\Listary.exe"
 :: vid有点问题先关闭再打开
 taskkill /f /im vimd.exe
 start "" "D:\MyLove\VimD\vimd.exe"
-start "" "C:\Program Files\PremiumSoft\Navicat Premium 12\navicat.exe" 
+start "" "C:\Program Files\Navicat Premium 12 notsetup\navicat.exe" 
 :: start "" "C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\Ssms.exe"
 :: start "" "D:\MyLove\VimD\userPlugins\CodePrompt\CodePrompt.exe"
 

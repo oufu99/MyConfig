@@ -49,7 +49,7 @@ SELECT * FROM dbo.tb_personal_center_out_10471--现金红包提现表
 SELECT * FROM dbo.tb_personal_center_withdrawals_10471--个人中心提现明细表 
 
  
-
+Commoncs  改成 SERP3.Ymt.Common.Commoncs
 
 --产品直达页  
  SELECT load_page_url, * FROM dbo.tb_public_product WHERE key_str='4107068939608999' OR return_id='vyWU1HQ5rdk'
