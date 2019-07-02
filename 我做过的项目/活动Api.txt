@@ -34,8 +34,6 @@ http://localhost:5008/Activity/GetActivityProcessList?activityFormId=1
 
 
 
-
-
 测试的控制中心api:http://120.79.16.55:7100/
 测试sso:http://120.79.16.55:7080/
 测试总控后台：http://120.79.16.55:7098

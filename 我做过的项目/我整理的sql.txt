@@ -56,6 +56,7 @@ Commoncs  改成 SERP3.Ymt.Common.Commoncs
  
 --定制活动拦截表    红包拦截好像没有用要在这里改viewUrl
 SELECT * FROM tb_activity_catalog_mode WHERE manufacturer_id=10500
+UPDATE tb_activity_catalog_mode SET view_url='+view_url WHERE manufacturer_id=-10788 and 1=2
  
 
 --短信发送表
@@ -91,3 +92,6 @@ EXEC SearchPower 'isShowChouJiangAddress'
 --米菲积分商城
 SELECT * FROM tb_integral_goods_exchange WHERE manu_id=10532
  
+
+ 
+ tb_zp_scan_product 这个表的数据要去微信授权完才会插入,所以只有正式环境才有
