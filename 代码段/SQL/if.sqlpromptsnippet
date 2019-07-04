@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>atdt</Title>
-      <Shortcut>atdt</Shortcut>
-      <Description>Disable trigger</Description>
+      <Title>if</Title>
+      <Shortcut>if</Shortcut>
+      <Description>IF fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,12 +13,15 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>table_name</ID>
+          <ID>condition</ID>
           <ToolTip />
-          <Default>[schema].[table_name]</Default>
+          <Default>1 = 1</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[ALTER TABLE $table_name$ DISABLE TRIGGER ]]></Code>
+      <Code Language="sql"><![CDATA[IF $condition$
+BEGIN
+    $SELECTEDTEXT$$CURSOR$
+END]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

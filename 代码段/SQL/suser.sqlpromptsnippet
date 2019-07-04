@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">SELECT * FROM tb_user WHERE manufacturer_id=10596   AND custid=1</Code>
+      <Code Language="sql">SELECT * FROM tb_user WHERE manufacturer_id=10782   AND custid=1</Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

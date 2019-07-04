@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>atdta</Title>
-      <Shortcut>atdta</Shortcut>
-      <Description>Disable all triggers on table</Description>
+      <Title>pt</Title>
+      <Shortcut>pt</Shortcut>
+      <Description />
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[ALTER TABLE $SELECTIONEND$[schema].[table_name]$SELECTIONSTART$ DISABLE TRIGGER ALL]]></Code>
+      <Code Language="sql"><![CDATA[print]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

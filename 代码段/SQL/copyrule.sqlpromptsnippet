@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>bt</Title>
-      <Shortcut>bt</Shortcut>
-      <Description>Begin transaction</Description>
+      <Title>copyrule</Title>
+      <Shortcut>copyrule</Shortcut>
+      <Description />
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[BEGIN TRANSACTION ]]></Code>
+      <Code Language="sql"><![CDATA[EXEC CopyRuleMapper --10782,'shengtaimei',10782,'heyouxiang']]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

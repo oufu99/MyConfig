@@ -1,0 +1,36 @@
+
+
+
+http://sjlfj.mobile.cn/m/sales.aspx?CustID=0&openId=123
+
+
+http://sjlfj.web.cn/sysadmin/pages/custom/sjlfj/tb_salesList.aspx
+
+
+
+http://sjlfj.onlyid.cn/890847259863
+
+http://sjlfj.web.cn/sysadmin/pages/custom/sjlfj/salesRedMoney.aspx?c=890847259863&manuID=10789&openId=123
+
+
+rp.onlyid.cn/0Inrw5z47G9/8088217531128584
+
+
+
+http://rp.ymttest.cn/sjlfj/ChouJiang/ChouJiangIndex?activityId=2754&wxkeystr=0Inrw5z47G9&wxextinfo=8088217531128584&ManuId=10789&openId=123
+
+
+
+
+
+SELECT * FROM  tb_activity_history_2754_10789 WHERE identity_code='8088217531128584'
+SELECT * FROM  tb_activity_prize_history_2754_10789 WHERE identity_code='8088217531128584'
+SELECT * FROM  tb_activity_redPacket_send_result_2754_10789 WHERE identity_code='8088217531128584'
+
+delete  tb_activity_history_2754_10789 WHERE identity_code='8088217531128584'
+delete  tb_activity_prize_history_2754_10789 WHERE identity_code='8088217531128584'
+delete  tb_activity_redPacket_send_result_2754_10789 WHERE identity_code='8088217531128584'
+
+ 
+
+ 

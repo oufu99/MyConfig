@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[ALTER TABLE ]]></Code>
+      <Code Language="sql"><![CDATA[sp_rename 'tb_save_customerInfo_10389.creattime', 'creat_time', 'COLUMN']]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

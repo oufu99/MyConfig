@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
@@ -12,16 +12,8 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">SELECT  b.name ,
-        a.create_time ,
-        b.*
-FROM    dbo.tb_sales_redPackage_history_10328 a
-        LEFT JOIN tb_sales b ON a.open_id = b.openid
-WHERE   a.wl_code = '0011947157508843'
-        AND a.fail_msg = '';
-
-
-SELECT * FROM dbo.tb_wx_userinfo_10328</Code>
+      <Code Language="sql">SELECT  *  FROM    tb_sales WHERE manufacturer_id=10789
+</Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
