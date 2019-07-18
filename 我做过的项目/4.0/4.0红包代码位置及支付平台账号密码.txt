@@ -1,0 +1,38 @@
+ZP.Payment的ZP.Payment.PayAPI 主干
+
+FrameWork的ZP.Framework.Pay SDK的代码
+
+ZP.PayType 具体的实现
+
+
+SDK请求ZP.Payment.PayAPI
+
+http://localhost:51029/api/RedpacketManager/SendRedpacket?str=123
+
+
+http://localhost:51029/api/RedpacketManager/SendBussinessRedpacket
+
+
+http://localhost:51029/api/
+
+
+3056534807@qq.com	zp2018zpjgw2018
+1220656801  237818#
+
+甲骨文支付平台  1497305122
+1497305122   zpyfb#2018
+
+有例子在哪里请求过吗
+ApiType的具体配置文件
+
+代码写在jsAPi里面 在base中加一个发送红包的方法
+
+支付表在 test_order 的paytype表
+
+
+mogodb地址：10.1.20.41:27017
+研发-彭红发 17:30:58
+图片界面工具自己下载 robo 3T
+研发-彭红发 17:32:58
+团队代码管理代码地址：182.254.229.178
+

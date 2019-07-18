@@ -31,8 +31,13 @@ http://localhost:5008/Activity/GetActivityProcessList?activityFormId=1
 
 
 
+发红包到个人中心的地址:
+http://localhost:64572/Activity/SendPoint
 
 
+
+INSERt commissionkind (CommissionKindName,CreateTime) values("活动发积分", current_timestamp())
+INSERt commissionkind (CommissionKindName,CreateTime) values("活动发红包", current_timestamp())
 
 测试的控制中心api:http://120.79.16.55:7100/
 测试sso:http://120.79.16.55:7080/
