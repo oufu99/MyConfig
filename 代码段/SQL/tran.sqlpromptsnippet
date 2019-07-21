@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>tran</Title>
+      <Shortcut>tran</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[ BEGIN TRAN Tran_Money    --开始事务
+DECLARE @tran_error int;
+SET @tran_error = 0;
+    BEGIN TRY 
+      --此处写代码 
+        SET @tran_error = @tran_error + @@ERROR;
+    END TRY
+BEGIN CATCH
+    PRINT '出现异常，错误编号：' + convert(varchar,error_number()) + ',错误消息：' + error_message()
+    SET @tran_error = @tran_error + 1
+END CATCH
+IF(@tran_error > 0)
+    BEGIN
+        --执行出错，回滚事务
+        ROLLBACK TRAN;
+        PRINT '转账失败，取消交易!';
+    END
+ELSE
+    BEGIN
+        --没有异常，提交事务
+        COMMIT TRAN;
+        PRINT '转账成功!';
+    END]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

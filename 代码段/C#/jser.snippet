@@ -2,8 +2,8 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>splitStr</Title>
-			<Shortcut>splitStr</Shortcut>
+			<Title>jser</Title>
+			<Shortcut>jser</Shortcut>
 			<Description> </Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
@@ -12,18 +12,12 @@
 		</Header>
 		<Snippet>
 			<Declarations>
-				<Literal>
-					<ID>text</ID>
-					<Default>text</Default>
-					<ToolTip>被分割的字符串</ToolTip>
-				</Literal>
-				<Literal>
-					<ID>splitStr</ID>
-					<Default>;</Default>
-					<ToolTip>规则字符串</ToolTip>
+				<Literal Editable="false">
+					<ID>SystemConsole</ID>
+					<Function>SimpleTypeName(global::System.Console)</Function>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[$text$.Split(new string[] { @"$splitStr$" }, StringSplitOptions.RemoveEmptyEntries);$end$]]>
+			<Code Language="csharp"><![CDATA[ JsonConvert.SerializeObject(model)$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

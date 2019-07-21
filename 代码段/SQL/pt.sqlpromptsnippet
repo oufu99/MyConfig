@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ssales</Title>
-      <Shortcut>ssales</Shortcut>
+      <Title>pt</Title>
+      <Shortcut>pt</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,8 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">SELECT  *  FROM    tb_sales WHERE manufacturer_id=10789
-</Code>
+      <Code Language="sql"><![CDATA[print]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

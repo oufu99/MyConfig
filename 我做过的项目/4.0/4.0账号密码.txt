@@ -1,0 +1,42 @@
+
+
+200063
+我的OpenId
+oVmZN1l7536LZ8WaBcDXHNr07keM
+
+支付信息
+zp4_order 表的 paytype表
+select * from paytype where CustID=200063
+
+金牌导购：
+3056534807@qq.com	zp2018zpjgw2018
+
+
+
+
+先改数据库连接  然后改domain
+如果不知道domain就查  select * from customer where   CustID=200163
+拿到domain就去找账号密码
+select * from customer where   CustDomain='v4test'
+
+domain:zhengpinkeji
+
+zhengpinkeji
+zhengpinkeji123
+
+后台:
+zhengpinkeji.code.pinguanyun.cn
+前端:
+.onlyid.com.cn/Login/Index
+
+
+测试账号Url
+http://v4test.admin.winmobi.cn/Home/Index
+
+
+
+http://localhost:64077/Login/Index
+
+http://localhost:6410/UserInfo/GetUserInfoByUserId?userId=1
+
+

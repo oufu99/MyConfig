@@ -1,0 +1,30 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>vnew</Title>
+    <Author>Microsoft Corporation</Author>
+    <Shortcut>vnew</Shortcut>
+    <Description></Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+      <SnippetType>SurroundsWith</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>expression</ID>
+        <ToolTip>Expresión para evaluar</ToolTip>
+        <Default>true</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="JavaScript"><![CDATA[
+	var vue = new Vue({
+        el: '#app',
+        data: {},
+        mounted: function () {
+
+        }
+    });$end$
+]]></Code>
+  </Snippet>
+</CodeSnippet>

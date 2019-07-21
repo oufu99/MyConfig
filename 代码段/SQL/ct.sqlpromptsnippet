@@ -19,9 +19,16 @@
         </Literal>
       </Declarations>
       <Code Language="sql"><![CDATA[CREATE TABLE $table_name$
-(
-    $CURSOR$
-)]]></Code>
+
+        (
+
+          ID INT  IDENTITY(1,1),                    
+
+          upgradeId INT ,
+
+          creat_time DATETIME
+
+        );]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

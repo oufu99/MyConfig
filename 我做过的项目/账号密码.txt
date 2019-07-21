@@ -18,6 +18,11 @@ PT_DSe/XycOhQW_Q8Cu5tIZg_sg
 http://meixin.onlyid.cn/SysAdmin/Tools/Login.ashx?domain=meixin&manuId=10646
 
 
+微商3.0服务器：
+一码通web服务器（阿里云后台）
+47.106.222.177
+administrator
+win@#$aliy@220fwe
 
 
 
@@ -116,3 +121,12 @@ yanfa 123456
 https://43.230.164.82/svn/ymt/一码通独立服务器资料
 如果检出有问题,就浏览版本库,把要检出的文件夹给弄出来就可以了
 
+
+
+微网接口地址
+<add key="WeiWangJFUrl" value="http://api.winmobi.cn/API.ashx" />
+    <add key="WlAPI_Qyery_Url" value="http://10.1.10.4:3721/?action=checkcode" />
+    <add key="WlAPI_Validate_Url" value="http://10.1.10.4:3721/?action=check" />
+    <add key="WlAPI_QueryMappingFwCode_Url" value="http://10.1.10.4:3721/?action=wl2fw" />
+    <add key="WlAPI_QueryMappingWlCode_Url" value="http://10.1.10.4:3721/?action=getwlcode" />
+    <add key="FWAPI_QueryMappingWICode_Url" value="http://10.1.10.4:3721/?action=fw2wl" />

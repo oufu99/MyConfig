@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ssales</Title>
-      <Shortcut>ssales</Shortcut>
+      <Title>copyrule</Title>
+      <Shortcut>copyrule</Shortcut>
       <Description />
       <Author />
       <SnippetTypes>
@@ -12,8 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql">SELECT  *  FROM    tb_sales WHERE manufacturer_id=10789
-</Code>
+      <Code Language="sql"><![CDATA[EXEC CopyRuleMapper --10782,'shengtaimei',10782,'heyouxiang']]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
