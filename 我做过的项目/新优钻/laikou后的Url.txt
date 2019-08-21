@@ -1,0 +1,32 @@
+15034514634	lxl121617
+
+
+账号：33333333332
+密码：123456
+
+正式环境测试账号
+18127884006
+123456
+
+新微商米菲的线上演示版
+
+http://mifeim.winfinger.cn/
+15200000001/123456
+
+
+http://laikou.mifeimobile.cn/agent/Register?ParentId=0&Mode=RegisterPay&ManuId=10052&UserId=403&CustId=0&CatalogId=124
+
+
+
+提现表所有parentId改成-1
+发布E:\ZPCode\Mifei_Common_v2\MiFei.Mobile\Views\Partial
+改了积分兑换商品的href 为bx
+所有的配置文件的域名都改了
+
+添加新的提现设置  通用设置
+/GeneralSetting/GeneralSetting
+
+
+!new SMS.SMSBLL().IsOpenSMS(agentModel.ManuId)
+
+  INSERT INTO tb_manumethod_setting(`manu_id`, `dllname`, `namespace`, `classname`, `type`, `remark`, `sort`) VALUES (10052, 'AgentPolicyCommon', 'AgentPolicyCommon.PolicySetting', 'AgentPolicyAutoAuth', 'CustRegisterAudit', '自动授权', 1);
