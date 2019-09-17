@@ -1,9 +1,16 @@
 
 
+测试环境地址 admin网站:
+http://47.107.102.50:6016/
+
+mobileApi swagger地址
+http://47.107.102.50:5014/swagger/index.html
+
+ 创建活动:
+  http://localhost:5000/ActivityBaseSetting/Index?ActivityId=0&IndexId=0&activityTypeId=1&activityFormId=1&isEdit=1
 
 
-http://localhost:5008/Index
-
+http://47.107.102.50:6016/ActivityHistory/Index
 
 后台的流转地址:
 先生成,然后加载到内存中:
@@ -12,6 +19,8 @@ http://localhost:5008/HotUpdate/UpdateController
 
  http://localhost:5000/Drive/Index?ActivityId=1&IndexId=0&activityFormId=1&ActivityTypeId=1
  
+ 测试的奖项设置:
+ http://47.107.102.50:6016/ActivityPrize/Index?ActivityId=80&IndexId=2&activityTypeId=1&activityFormId=1&isEdit=1
  http://localhost:5000/Drive/Index?ActivityId=1&IndexId=0&activityFormId=1&activityTypeId=1
 
 获取页面数据:
@@ -34,9 +43,24 @@ http://localhost:5008/Activity/GetActivityBaseModel?activityId=1
 http://localhost:5008/Activity/GetActivityProcessList?activityFormId=1
 
 
+goodsId连到了正式库的问题:
+[SugarTable("zp4_goods  全部注释就可以了
 
 发红包到个人中心的地址:
 http://localhost:64572/Activity/SendPoint
+
+热更新地址
+控制器热更新
+http://47.107.102.50:6016/HotUpdate
+
+AdminApi:
+http://47.107.102.50:5013/HotUpdate/UpdateController
+
+//进程守护启动关闭
+4.0 supervisor
+http://47.107.102.50:9001
+ymtweb
+123@abc.
 
 
 
