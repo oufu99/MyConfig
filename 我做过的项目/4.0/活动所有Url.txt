@@ -6,6 +6,9 @@ http://47.107.102.50:6016/
 mobileApi swagger地址
 http://47.107.102.50:5014/swagger/index.html
 
+http://47.107.102.50:5014/HotUpdate/Index
+http://47.107.102.50:5014/HotUpdate/UpdateDLL
+
  创建活动:
   http://localhost:5000/ActivityBaseSetting/Index?ActivityId=0&IndexId=0&activityTypeId=1&activityFormId=1&isEdit=1
 
@@ -55,6 +58,13 @@ http://47.107.102.50:6016/HotUpdate
 
 AdminApi:
 http://47.107.102.50:5013/HotUpdate/UpdateController
+
+
+MobileApi热更新
+http://47.107.102.50:5014/HotUpdate
+http://47.107.102.50:5014/HotUpdate/UpdateDLL
+
+http://47.107.102.50:5014/HotUpdate/TestDll
 
 //进程守护启动关闭
 4.0 supervisor
