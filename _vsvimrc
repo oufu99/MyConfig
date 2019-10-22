@@ -63,10 +63,7 @@ let mapleader="<Space>"
 ":inoremap jb <Esc>jo
 ":nmap jb jo
 
-"向前进一格,用来进入() ""等位置
-:inoremap ji <ESC>ha
-"后退一格
-:inoremap jl <ESC>la
+
 
 "向下一行
 ":inoremap jn <ESC>ja
