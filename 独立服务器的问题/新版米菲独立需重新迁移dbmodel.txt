@@ -1,8 +1,0 @@
-  
-  首先把dbmodel项目复制到服务器上,然后新建一个空白解决方案,添加进去
-  
-  新建一个空白的mvc项目,把独立服务器上可以运行的wsbg的webconfig文件覆盖到这个新建的项目webconfig文件
-  
-  nuget控制台 如果没有entityframework 需要重新还原一下(会提示要不要还原)  然后直接Update-Database -Verbose  
-  
-  搞定

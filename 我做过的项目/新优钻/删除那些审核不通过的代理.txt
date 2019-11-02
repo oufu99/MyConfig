@@ -1,2 +1,0 @@
-select * from tb_user where manufacturer_id=10052 and CustId in (select tb_customerID from tb_customer where  Manufacturer_id=10052 and Mobile in ('18071867546'))
-select * from   tb_customer where  Manufacturer_id=10052 and Mobile in ('18071867546')

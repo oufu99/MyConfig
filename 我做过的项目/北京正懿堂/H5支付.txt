@@ -1,8 +1,0 @@
-{"Money":"10.00","ProductName":"支付运费","NotifyUrl":"/m/paynew/WX_Order_Notify_Url.aspx","Url":"/m/custom/pinkmifei/PickUpGoodsOrder.aspx?ispay=1u0026orderid=15361420180911","Cancelurl":"/m/custom/pinkmifei/PickUpGoodsOrder.aspx?ispay=0u0026orderid=15361420180911","OpenId":"","Mch_id":"1511629031","AppId":"wxbbabb3969ca1a559","Appkey":"4b8796331a321f3fc1e7c01c5cc7cebc","OrderId":"15361420180911","ReflectInfo":{"Assembly":"WeiXinPay","Namespace":"WeiXinPay","ClassName":"WXH5Pay"}}
-
-
-
-"{\"Money\":\"10.00\",\"ProductName\":\"支付运费\",\"NotifyUrl\":\"/m/paynew/WX_Order_Notify_Url.aspx\",\"Redirect_url\":null,\"Wap_Url\":\"http://zhengyitang.mobile.cn\",\"Wap_name\":\"zhengyitang\",\"Spbill_create_ip\":null,\"Mch_id\":\"1511629031\",\"AppId\":\"wxbbabb3969ca1a559\",\"Appkey\":\"4b8796331a321f3fc1e7c01c5cc7cebc\",\"OrderId\":\"15361420180911\",\"ReflectInfo\":{\"Assembly\":\"WeiXinPay\",\"Namespace\":\"WeiXinPay\",\"ClassName\":\"WXH5Pay\"}}"
-
-
-http://zhengyitang.mobile.cn/m/paynew/PayDoNew.aspx?assemblyname=SERP3.0&assembltype=SERP3._0&orderid=87749420180912&payclass=WXH5PayNew&paySource=freight&cip=112.94.224.188

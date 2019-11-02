@@ -1,8 +1,0 @@
-页面要放在img 的根目录下
-先调appCode的Authorization 方法
-
-
-
-如果显示不出来
-config里面的配置authorizeImgUrl   要加上/img
-或者看图片服务器里面的aspx是否返回了

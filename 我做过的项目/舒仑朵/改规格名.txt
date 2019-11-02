@@ -1,3 +1,0 @@
-UPDATE  dbo.tb_goods SET texts='夜用' WHERE tb_goodsID=21276
-
-UPDATE  dbo.tb_goods SET texts='20盒/箱' WHERE tb_goodsID=21276

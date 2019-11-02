@@ -1,8 +1,0 @@
-
--- È¡Ïû
-select * from   tb_role_permission where RoleId=(select RoleId from  tb_user_role where UserId=(select tb_userId from tb_user where  manufacturer_id=10052 and system_role_id=-10)
-) and PermissionId=(select Id from  tb_permission where   `Key`='WeixinOAuth')
-
--- ¿ªÆô
-INSERT INTO `ymt.ws_sys`.`tb_role_permission`(`PermissionId`, `RoleId`, `ManuId`) VALUES ((select Id from  tb_permission where   `Key`='WeixinOAuth'), (select RoleId from  tb_user_role where UserId=(select tb_userId from tb_user where  manufacturer_id=10052 and system_role_id=-10)
-), 0);

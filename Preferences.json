@@ -127,7 +127,12 @@
    "app_settings": {
       "by_path": [  ],
       "by_type": {
-
+         "desktop": {
+            "enable": false
+         },
+         "explorer": {
+            "enable": false
+         }
       }
    },
    "appearance": {
@@ -201,10 +206,21 @@
          "description": "",
          "display_title": "\u8BA1\u7B97\u5668",
          "enabled": true,
-         "keyword": "jsq",
+         "keyword": "calc",
          "only_show_in_launcher": false,
          "param": "",
          "path": "calc.exe",
+         "run_as_admin": false,
+         "slient": false,
+         "working_dir": ""
+      }, {
+         "description": "",
+         "display_title": "8088\u7801",
+         "enabled": true,
+         "keyword": "8088",
+         "only_show_in_launcher": false,
+         "param": "",
+         "path": "D:\\MyConfig\\\u6211\u505A\u8FC7\u7684\u9879\u76EE\\8088.txt",
          "run_as_admin": false,
          "slient": false,
          "working_dir": ""
@@ -239,6 +255,11 @@
          "keyword": "bd",
          "name": "\u767E\u5EA6\u7F51\u76D8",
          "path": "C:\\Users\\123\\AppData\\Roaming\\Microsoft\\Internet Explorer\\Quick Launch\\\u767E\u5EA6\u7F51\u76D8.lnk"
+      }, {
+         "enabled": true,
+         "keyword": "imba",
+         "name": "imba",
+         "path": "F:\\imba"
       } ],
       "web_search": [ {
          "enabled": false,
@@ -326,9 +347,9 @@
          "icon": {
 
          },
-         "keyword": "8080",
-         "title": "vue",
-         "url": "http://localhost:8080"
+         "keyword": "gjx",
+         "title": "\u5F00\u53D1\u5DE5\u5177\u7BB1",
+         "url": "http://www.box3.cn/"
       } ]
    },
    "launch_apps": {

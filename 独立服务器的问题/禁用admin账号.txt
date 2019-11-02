@@ -1,7 +1,0 @@
-
-禁用:
-UPDATE  tb_user SET status=1 WHERE name='admin' AND manufacturer_id=10034
-
-
-启用:
-UPDATE  tb_user SET status=0 WHERE name='admin' AND manufacturer_id=10034

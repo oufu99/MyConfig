@@ -1,5 +1,0 @@
-先看config的数据库配置
-登录正式的地址
-http://v4test.code.pinguanyun.cn/
-后把jwt复制到BaseController里面
-然后添加好菜单

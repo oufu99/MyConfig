@@ -1,2 +1,0 @@
-在EditLowerLevel.aspx  这个页面修改
-会调用 Set_CustPstr_UserID
