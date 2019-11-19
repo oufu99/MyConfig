@@ -17,6 +17,19 @@ img{
 
 
 .wiz-editor-body h1 {
+font-family: Consolas;
+font-size:20px;
+font-weight: normal;
+}
+
+
+.wiz-editor-body h2 {
+font-family: 微软雅黑;
+font-size:18px;
+font-weight: normal;
+}
+.wiz-editor-body h3 {
+color:  # 000;
 padding: 10px 20px;
 margin: 0 0 20px;
 color: #333;
@@ -25,14 +38,7 @@ border-left: 6px solid #b4b4b4;
 background-color: #ded7d7;
 }
 
-
-
-.wiz-editor-body h2 {
-font-family: 微软雅黑;
-font-size:20px;
-font-weight: normal;
-}
-
 .wiz-editor-body{
-    font-size:20px;
+    font-size:18px;
+	font-family: 微软雅黑;
 }
