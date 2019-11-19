@@ -23,5 +23,5 @@ start "" "D:\software\Navicat Premium 12\navicat.exe"
 :: start "" "D:\Common\VimD\userPlugins\CodePrompt\CodePrompt.exe"
 
 :: ´ò¿ªqq
-start "" "D:\Common\VimD\userPlugins\OpenQQ.ahk"
+start "" "D:\MyLove\AHK\OpenMyLoveQQ.ahk"
 exit
