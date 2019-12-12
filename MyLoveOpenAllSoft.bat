@@ -15,7 +15,9 @@ taskkill /f /im vimd.exe
 start "" "D:\Common\VimD\vimd.exe"
 start "" "D:\software\Navicat Premium 12\navicat.exe" 
 start "" "D:\software\WizNote\Wiz.exe"
-start "" "E:\Dossen\EC-Tmall\EC.Tmall.sln"
+start "" "E:\Dossen\EC-AutoHotelMapping\EC.AutoHotelMapping.sln"
+start "" "E:\Dossen\OTA-Interface\Web.Interface.sln"
+
 :: ´ò¿ªqq
 start "" "D:\MyLove\AHK\OpenMyLoveQQ.ahk" 
 exit
