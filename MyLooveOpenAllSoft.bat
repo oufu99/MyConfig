@@ -6,8 +6,8 @@ cd /d %~dp0
 :: 两个::是注释
 start "" "D:\MyLoove\AHK\StartAllMyLooveAhk.ahk"
 :: start "" "D:\MyLoove\AHK\OpenMyLooveQQ.ahk"
-start "" "D:\Common\VimD\vimd.ahk"
+start "" "D:\Common\VimD\vimd.exe"
 :: vid有点问题先关闭再打开
 taskkill /f /im vimd.exe
-start "" "D:\Common\VimD\vimd.ahk"
+start "" "D:\Common\VimD\vimd.exe"
 exit
