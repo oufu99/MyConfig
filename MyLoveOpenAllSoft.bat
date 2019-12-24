@@ -16,7 +16,7 @@ start "" "D:\Common\VimD\vimd.exe"
 start "" "D:\software\Navicat Premium 12\navicat.exe" 
 start "" "D:\software\WizNote\Wiz.exe"
 start "" "E:\Dossen\EC-AutoHotelMapping\EC.AutoHotelMapping.sln"
-ping /n 3 127.1>nul
+ping /n 8 127.1>nul
 start "" "E:\Dossen\OTA-Interface\Web.Interface.sln"
 
 :: ´ò¿ªqq
