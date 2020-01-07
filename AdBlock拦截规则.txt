@@ -55,3 +55,5 @@ www.sohu.com##A[href="https://www.sohu.com/a/236371835_355012?spm=smpc.content.s
 www.woshipm.com##DIV[class="back2top is-active"]
 www.madewill.com##DIV[class="td-more-articles-box td-front-end-display-block"]
 www.madewill.com##DIV[class="td-scroll-up td-scroll-up-visible"]
+zhidao.baidu.com##BUTTON[class="task-list-button"]
+zhidao.baidu.com##A[class="jump-goto-star"]
