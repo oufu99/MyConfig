@@ -15,7 +15,7 @@ taskkill /f /im vimd.exe
 start "" "D:\Common\VimD\vimd.exe"
 start "" "D:\software\Navicat Premium 12\navicat.exe" 
 start "" "D:\software\WizNote\Wiz.exe"
-start "" "E:\Dossen\EC-AutoHotelMapping\EC.AutoHotelMapping.sln"
+start "" "E:\Dossen\EC-RoomState\EC.RoomState.sln"
 ping /n 5 127.1>nul
 start "" "E:\Dossen\OTA-Interface\Web.Interface.sln"
 
