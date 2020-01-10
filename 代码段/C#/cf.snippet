@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>cf</Title>
+			<Shortcut>cf</Shortcut>
+			<Description>构造函数的代码片段</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+			    <Literal>
+					<ID>static</ID>
+					<ToolTip>接口名称</ToolTip>
+					<Default>static</Default>
+				</Literal>
+				<Literal>
+					<ID>funcName</ID>
+					<ToolTip>接口名称</ToolTip>
+					<Default>Func</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public $static$ void $funcName$()
+        {
+              $end$
+        }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
