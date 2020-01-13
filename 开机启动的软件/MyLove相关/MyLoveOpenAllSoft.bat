@@ -19,6 +19,6 @@ start "" "E:\Dossen\EC-RoomState\EC.RoomState.sln"
 ping /n 5 127.1>nul
 start "" "E:\Dossen\OTA-Interface\Web.Interface.sln"
 
-:: 打开qq等软件
-start "" "D:\MyLove\AHK\AutoRunSoftPath.ahk" 
+:: 打开qq
+start "" "D:\MyLove\AHK\OpenMyLoveQQ.ahk" 
 exit
