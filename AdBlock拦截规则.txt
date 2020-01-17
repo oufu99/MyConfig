@@ -1,35 +1,3 @@
-AdBlock 主页
-account_circle
-Premium
-settings
-常规
-format_list_bulleted
-拦截规则列表
-create
-自定义
-chat
-支持
-facebook
-twitter
-linkedin
-隐私政策
-版本 4.1.0
-自定义 AdBlock
-此拦截规则列表刻拦截网络上的大多数广告。你还可以...
-拦截更多广告
-根据 URL 拦截广告
-arrow_drop_down_circle
-隐藏网页的一部分
-arrow_drop_down_circle
-停止拦截广告
-在特定网页或域名上显示广告
-arrow_drop_down_circle
-除这些域名外，在其他网站上均显示广告...
-arrow_drop_down_circle
-手动编辑拦截规则
-编辑
-请小心：如果你在这里输入的内容出错，很多其他的拦截规则（包括官方的拦截规则）也可能失效！
-阅读拦截规则语法教程以了解如何添加高级黑名单和白名单规则。
 www.ali213.net##DIV[class="t5c_r_xyxh"]
 www.ali213.net##DIV[class="t5c_r_tjh"]
 www.ali213.net##DIV[class="t1c_app"]
@@ -118,7 +86,7 @@ www.xueba521.com##DIV[class="footer-wrap"]
 www.xueba521.com##ASIDE[class="share-bar"]
 www.cnblogs.com##IMG[src="https://img2018.cnblogs.com/blog/280044/201811/280044-20181106202835313-1017586049.jpg"]
 www.wsyyxz.com##DIV[class="player"]
-编辑禁用的拦截规则
-编辑
-翻译贡献者名单如下...
-Inlingo
+www.58dsd.com##DIV[class="merge"]
+www.58dsd.com##DIV[id="search_buy"][class="login_register"]
+zhidao.baidu.com##IMG[id="selectsearch-icon"]
+pan.baidu.com##DIV[class="phone-banner"]
