@@ -97,3 +97,4 @@ blog.csdn.net##IMG[src="https://csdnimg.cn/cdn/content-toolbar/csdnlogo_ChineseN
 tech.ifeng.com##DIV[class="select_share-2Q4zcawJ"]
 tech.ifeng.com##DIV[class="vote_box-3SSN8wLt clearfix"]
 jingyan.baidu.com##DIV[class="wrp-exp-share"]"share-bar"]
+www.imooc.com##LI[class="weichat-posi"]
