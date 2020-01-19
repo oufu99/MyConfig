@@ -7,7 +7,6 @@ cd /d %~dp0
 
 :: Á½¸ö::ÊÇ×¢ÊÍ
 start "" "D:\MyLove\AHK\MyLove.ahk"
-start "" "D:\Common\CommonAHK\Capsez\AaronAHK\ThirdAhk.ahk"
 start "" "D:\Common\VimD\vimd.exe"
 start "" "C:\Program Files (x86)\Tencent\WeChat\WeChat.exe"
 start "" "C:\Program Files\Listary\Listary.exe"
