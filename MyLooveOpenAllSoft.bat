@@ -10,4 +10,8 @@ start "" "D:\Common\VimD\vimd.exe"
 :: vid有点问题先关闭再打开
 taskkill /f /im vimd.exe
 start "" "D:\Common\VimD\vimd.exe"
+
+start "" "D:\Dossen\代码\Dossen\EC-AutoHotelMapping\EC.AutoHotelMapping.sln"
+start "" "D:\Dossen\代码\Dossen\OTA-Interface\Web.Interface.sln"
+
 exit
