@@ -2,28 +2,30 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>list</Title>
-			<Shortcut>list</Shortcut>
+			<Title>ccontain</Title>
+			<Shortcut>ccontain</Shortcut>
 			<Description> </Description>
 			<Author>Microsoft Corporation</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
 			</SnippetTypes>
 		</Header>
 		<Snippet>
-		<Declarations>
-		        <Literal>
+			<Declarations>
+				<Literal>
 					<ID>name</ID>
-					<ToolTip>name</ToolTip>
-					<Default>list</Default>
+					<Default>msg</Default>
 				</Literal>
 				<Literal>
-					<ID>type</ID>
-					<ToolTip>类型</ToolTip>
-					<Default>string</Default>
+					<ID>list</ID>
+					<Default>list</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[var $name$ = new List<$type$>();$end$]]>
+			<Code Language="csharp"><![CDATA[if ($list$.Contains($name$))
+                {
+					$selected$$end$
+                }]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
